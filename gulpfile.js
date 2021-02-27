@@ -114,7 +114,7 @@ function styles() {
 			propList: ['*'],// параметры например не перводить межбуквенный интервал или position
 			viewportUnit: 'vw',
 			fontViewportUnit: 'vw',
-			selectorBlackList: [], // 'body'блокирует список тегов или css классов 
+			selectorBlackList: ['img'], // /^body$/ 'body'блокирует список тегов или css классов 
 			minPixelValue: 1,
 			mediaQuery: true, // если false то не будет конверить в медиа запросах
 			replace: true,
