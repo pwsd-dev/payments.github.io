@@ -1,0 +1,647 @@
+@charset "UTF-8";
+
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 84.89583vw;
+  margin: 0 auto;
+  padding-left: 0.78125vw;
+  padding-right: 0.78125vw;
+}
+
+::-webkit-scrollbar {
+  width: 0.26042vw;
+  height: 0px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 2.60417vw;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 2.60417vw;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype'), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Firs-Regular';
+  src: url('../fonts/Firs/Firs-Regular.ttf') format('truetype'), url("../fonts/Firs/Firs-Regular.woff") format("woff"), url("../fonts/Firs/Firs-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Firs-Italic';
+  src: url('../fonts/Firs/Firs-Italic.ttf') format('truetype'), url("../fonts/Firs/Firs-Italic.woff") format("woff"), url("../fonts/Firs/Firs-Italic.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Firs-ExtraBold';
+  src: url('../fonts/Firs/Firs-ExtraBold.ttf') format('truetype'), url("../fonts/Firs/Firs-ExtraBold.woff") format("woff"), url("../fonts/Firs/Firs-ExtraBold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Firs-Bold';
+  src: url('../fonts/Firs/Firs-Bold.ttf') format('truetype'), url("../fonts/Firs/Firs-Bold.woff") format("woff"), url("../fonts/Firs/Firs-Bold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Firs-Medium';
+  src: url('../fonts/Firs/Firs-Medium.ttf') format('truetype'), url("../fonts/Firs/Firs-Medium.woff") format("woff"), url("../fonts/Firs/Firs-Medium.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype'), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'OpenSans-Regular';
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+input {
+  cursor: text;
+}
+
+input:focus {
+  outline: none;
+}
+
+.debugGrid {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+.debugGrid > div {
+  height: inherit;
+  max-width: 84.89583vw;
+  margin: 0 auto;
+  padding-left: 0.78125vw;
+  padding-right: 0.78125vw;
+}
+
+.debugGrid > div > div {
+  height: inherit;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.78125vw;
+  margin-right: -0.78125vw;
+}
+
+.debugGrid > div > div > div {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+  width: calc(8.333333333333334% - 1.5625vw);
+  height: inherit;
+  outline: 1px solid #ff0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.debugGrid-btn {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 2.60417vw;
+  height: 2.60417vw;
+  border: 1px solid #ff0;
+  border-radius: 50%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.debugGrid-btn__hidden {
+  display: none;
+}
+
+.debugGrid-btn:before,
+.debugGrid-btn:after {
+  content: '';
+  align-self: center;
+  background: #000;
+}
+
+.debugGrid-btn:before {
+  width: 1.30208vw;
+  height: 0.10417vw;
+}
+
+.debugGrid-btn__create:after {
+  width: 0.10417vw;
+  height: 1.30208vw;
+  position: absolute;
+}
+
+.debugGrid__z-index-negative {
+  z-index: -1;
+}
+
+.page__text {
+  font-family: "Firs-ExtraBold";
+}
+
+.page__text_Italic {
+  font-family: "Firs-Italic";
+}
+
+.page__text_small {
+  font-family: "Firs-Medium";
+  font-size: 0.88542vw;
+}
+
+.page__text_small-bold {
+  font-family: "Firs-Bold";
+}
+
+.page__title-h1 {
+  font-family: "Firs-ExtraBold";
+  font-size: 10.78125vw;
+  text-transform: uppercase;
+  /* прозрачный цвет букв */
+  -webkit-text-stroke: 0.15625vw #ffffff;
+  color: transparent;
+}
+
+.page__title-h1 span {
+  color: transparent;
+  /* прозрачный цвет букв */
+  -webkit-text-stroke: 0.15625vw #b11832;
+}
+
+.page__link {
+  font-family: "Firs-ExtraBold";
+  text-decoration: none;
+  color: #000;
+  font-size: 1.04167vw;
+  line-height: 1.19792vw;
+}
+
+.page__link a {
+  text-decoration: none;
+}
+
+.page__link:hover {
+  color: #b11832;
+  -webkit-transition: 0.2 ease-in;
+  transition: 0.2 ease-in;
+}
+
+.nav {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.78125vw;
+  margin-right: -0.78125vw;
+  flex-wrap: nowrap;
+}
+
+.nav__link {
+  padding-top: 3%;
+  width: calc(25% - 1.5625vw);
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+  flex-wrap: nowrap;
+  font-family: "Firs-ExtraBold";
+  text-decoration: none;
+  color: #000;
+  font-size: 1.04167vw;
+  text-transform: uppercase;
+}
+
+.nav__link a {
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #b11832;
+  -webkit-transition: 0.2 ease-in;
+  transition: 0.2 ease-in;
+}
+
+.nav__link_more {
+  padding-top: 3%;
+  position: relative;
+  left: 0.78125vw;
+  width: calc(25% - 1.5625vw);
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+  flex-wrap: nowrap;
+  font-family: "Firs-ExtraBold";
+  text-decoration: none;
+  color: #000;
+  font-size: 1.04167vw;
+  text-transform: uppercase;
+}
+
+.nav__link_more:hover {
+  color: #b11832;
+  -webkit-transition: 0.2 ease-in;
+  transition: 0.2 ease-in;
+}
+
+.nav__link_architect {
+  padding-top: 3%;
+  position: relative;
+  right: 0.78125vw;
+  width: calc(16.666666666666668% - 1.5625vw);
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+  flex-wrap: nowrap;
+  font-family: "Firs-ExtraBold";
+  text-decoration: none;
+  color: #000;
+  font-size: 1.04167vw;
+  text-transform: uppercase;
+}
+
+.nav__link_architect:hover {
+  color: #b11832;
+  -webkit-transition: 0.2 ease-in;
+  transition: 0.2 ease-in;
+}
+
+.header-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.78125vw;
+  margin-right: -0.78125vw;
+}
+
+.header-block .nav {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+  width: calc(83.33333333333334% - 1.5625vw);
+}
+
+.header-block-nav {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.78125vw;
+  margin-right: -0.78125vw;
+}
+
+.header-block-nav__logo {
+  padding-top: 2%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+  width: calc(15.000000000000002% - 1.5625vw);
+}
+
+.banner-block {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.78125vw;
+  margin-right: -0.78125vw;
+  flex-wrap: nowrap;
+}
+
+.banner-block .page__text_Italic {
+  width: calc(16.666666666666668% - 1.5625vw);
+}
+
+.banner-block-img {
+  position: relative;
+  height: 5000px;
+}
+
+.banner-block-img .page__img {
+  height: 5000px;
+}
+
+.banner-block-description {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+}
+
+.banner .page__title-h1 {
+  font-size: 10.78125vw;
+}
+
+@media screen and (max-width: 1550px) {
+  .wrapper {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .wrapper {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .wrapper {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .wrapper {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+
+  .debugGrid > div {
+    padding-left: 0.78125vw;
+    padding-right: 0.78125vw;
+  }
+}
