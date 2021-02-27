@@ -1,1 +1,2 @@
-# payments.io
+# template
+template for start project

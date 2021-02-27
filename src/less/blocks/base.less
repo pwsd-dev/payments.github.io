@@ -1,0 +1,56 @@
+@import '../fonts/fonts.less';
+.reset();
+
+.wrapper{
+    .wrapper();
+    // .laptopMd-block({
+    //     max-width: 1200px;
+    // });
+    @media screen and (orientation: landscape){
+      
+    }
+}
+
+.scrollbar(@color_scrollbar-track, @color_scrollbar-thumb);
+
+@font-face {
+  .font(@font; @fontBold);
+}
+@font-face {
+  .font(@font; @fontRegular);
+}
+@font-face {
+  .font(@Firs; "@{Firs}-Regular");
+}
+@font-face {
+  .font(@Firs; "@{Firs}-Italic");
+}
+@font-face {
+  .font(@Firs; "@{Firs}-ExtraBold");
+}
+@font-face {
+  .font(@Firs; "@{Firs}-Bold");
+}
+@font-face {
+  .font(@Firs; "@{Firs}-Medium");
+}
+
+@font-face {
+  .font(@Roboto; "@{Roboto}-Bold");
+}
+
+body {
+  font-family: @fontRegular;
+}
+a, button{
+  cursor: pointer;
+  &:focus{
+      outline: none;
+  }
+}
+input{
+  cursor: text;
+  &:focus{
+      outline: none;
+  }
+}

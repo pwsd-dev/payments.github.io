@@ -1,0 +1,56 @@
+.page{
+    &__text {
+        font-family: "@{Firs}-ExtraBold";
+        &_Italic {
+            font-family: "@{Firs}-Italic";
+        }
+        &_small {
+            font-family: "@{Firs}-Medium";
+            font-size: 17px;
+            &-bold {
+                font-family: "@{Firs}-Bold";
+            }
+        }
+
+        
+        
+    }
+
+    &__title {
+        &-h1 {
+            font-family: "@{Firs}-ExtraBold";
+            font-size: 207px;
+            text-transform: uppercase;
+            color: transparent; /* прозрачный цвет букв */
+            -webkit-text-stroke: 3px @color_white;
+            color: transparent;
+            span {
+                color: transparent; /* прозрачный цвет букв */
+                -webkit-text-stroke:  3px @color_red;
+            }
+            
+        }
+    }
+
+    &__link {
+        font-family: "@{Firs}-ExtraBold";
+        text-decoration: none;
+        color: @color_black;
+        font-size: 20px;
+        line-height: 23px;
+        a {
+            text-decoration: none;
+        }
+        &:hover {
+            color: @color_red;
+            transition: 0.2 ease-in;
+
+        }
+        svg {
+            //background-color: black;
+        }
+    }
+
+
+}
+
