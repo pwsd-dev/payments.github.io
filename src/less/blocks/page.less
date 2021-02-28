@@ -1,6 +1,11 @@
 .page{
     &__text {
-        font-family: "@{Firs}-ExtraBold";
+        
+        &_extra {
+            font-family: "@{Firs}-ExtraBold";
+            font-size: 53px;
+            color: @color_black;
+        }
         &_Italic {
             font-family: "@{Firs}-Italic";
         }
@@ -22,7 +27,11 @@
                 font-size: 26px;
                 line-height: 42px;
                 color: @color_black;
+                span {
+                    color: @color_red;
+                }
             }
+            
         }
 
         &-medium {
@@ -55,6 +64,16 @@
             font-family: "@{Firs}-ExtraBold";
             font-size: 122px;
             color: @color_red;
+        }
+
+        &-h3 {
+            font-family: "@{Firs}-ExtraBold";
+            font-size: 84px;
+            color: @color_black;
+
+            span{ 
+                color: @color_red;
+            }
         }
     }
 

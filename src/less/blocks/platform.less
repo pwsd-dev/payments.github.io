@@ -1,0 +1,151 @@
+.platform {
+    //display: flex;
+    
+    .wrapper {
+        border-left: 10px solid @color_red;
+        border-right: 10px solid @color_red;
+    }
+    padding-bottom: 30px;
+    .page__title-h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2%;
+        position: relative;
+        top: -50px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 10px;
+            top: 50px;
+            left: -20px;
+            background-color: @color_red;
+            display: inline-block;
+
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 10px;
+            top: 50px;
+            right: -20px;
+            //left: -15px;
+            background-color: @color_red;
+            display: inline-block;
+
+
+        }
+    }
+    
+    
+    &-block {
+        .row-flex();
+        border-bottom: 10px solid @color_red;
+        //display: flex;
+        &-description {
+            
+            .row-flex();
+            display: flex;
+            flex-wrap: wrap;
+            .col();
+            //.size(6);
+            position: relative;
+            top: -50px;
+            &-bg {
+                .size(5);
+                .shift-left(1);
+                margin-bottom: 2%;
+                padding-right: 1.4%;
+                background-color: @color_white;
+                box-shadow: 68.2536px 37.5778px 43.713px rgba(0, 0, 0, 0.04);
+                
+                padding-top: 3%;
+                .page__text-bold_mid {
+                    margin-bottom: 3%;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: inline-block;
+                        width: 134px;
+                        height: 145px;
+                        //left: -10px;
+                        //right: 510px;
+                        left: 20px;
+                        top: -10px;
+                        background-image: url(../assets/img/img-platform-hand.png);
+                        background-repeat: no-repeat;
+                    }
+                
+                }
+                ul {
+                    li {
+                        position: relative;
+                        font-family: "@{Firs}-Medium";
+                        margin-bottom: 6.8%;
+                        padding-left: 40px;
+                        padding-right: 30px;
+                        font-size: 20px;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            display: inline-block;
+                            width: 15px;
+                            height: 15px;
+                            left: -15px;
+                            background-color: @color_red;
+                            border-radius: 50%
+                        }
+
+                    }
+                }
+            }
+
+            &-other {
+                .size(4.9);
+                .col();
+                .shift-left(1);
+                padding-top: 3%;
+                ul {
+                    li {
+                        font-size: 24px;
+                        font-family: "@{Firs}-Bold";
+                        .size(11);
+                        margin-bottom: 4.5%;
+                    
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            display: inline-block;
+                            width: 134px;
+                            height: 145px;
+                            //left: -10px;
+                            //right: 510px;
+                            left: 870px;
+                            top: 10px;
+                            background-image: url(../assets/img/img-platform-dop-1.png);
+                            background-repeat: no-repeat;
+                    }
+                        &::after {
+                        content: '';
+                            position: absolute;
+                            display: inline-block;
+                            width: 134px;
+                            height: 145px;
+                            //left: -10px;
+                            //right: 510px;
+                            left: 870px;
+                            top: 120px;
+                            background-image: url(../assets/img/img-platform-dop-2.png);
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}

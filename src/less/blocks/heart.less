@@ -1,18 +1,37 @@
 .heart {
     position: relative;
-    
     &-block {
         .row-flex();
         position: relative;
         
         &-description {
             .size(6);
+            
+            .page__text-bold_mid {
+                margin-bottom: 2%;
+            }
+            &-bg {
+                position: absolute;
+                //bottom: 180px;
+                bottom: 20%;
+                left: 750px;
+                .shift-left(-6);
+                .size(5);
+                
+                height: 100px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.8);
+                z-index: -10;
+                transform: rotate(-20deg);
+                
+                box-shadow: 68.2536px 37.5778px 43.713px rgba(0, 0, 0, 0.04);
+
+            }
+
             .page__text-bold_mid, .page__text-medium {
                 .size(12);
                 align-items: center;
-            }
-            .page__text-bold_mid {
-                margin-bottom: 2%;
+                z-index: 100;
             }
         }
 
@@ -26,9 +45,6 @@
             left: 30px;
             height: 700px;
             
-            .page__img {
-
-            }
         }
     }
 }
