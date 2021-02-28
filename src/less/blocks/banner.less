@@ -1,34 +1,85 @@
 .banner{
-    
+    overflow: hidden;
+    height: 1200px;
 
     &-block {
         position: relative;
-        
         .row-flex();
+        align-items: center;
         flex-wrap: nowrap;
         .page__text_Italic {
-            .size(2);
+            .size(5);
+            .shift-left(7);
+            position: relative;
+            margin-bottom: 3%;
+            color: @color_black;
+            &::before, &::after {
+                position: absolute;
+                content: '';
+                background-image: url(../assets/img/img-kavichki.png);
+                display: inline-block;
+                background-repeat: no-repeat;
+                width: 33px;
+                height: 57px;
+
+            }
+            &::before{
+                transform: rotate(180deg);
+                bottom: 100%;
+                left: -12%;
+            }
+
+            &::after{
+                top: 100%;
+                left: 86%;
+            }
+            
         }
 
         &-img {
-            //.size(12);
-            position: relative;
-            height: 5000px;
+            position: relative; 
             
-            
+            top: -50px;
+            .shift-left(-.3);
             .page__img {
-                height: 5000px;
+               
+                .size(46);
+                //height: 90vh;
+                z-index: 20;
+            }
+
+            &-background {
+                position: relative;
+                bottom: 100px;
+                .page__img {
+                    .shift-left(18);
+                    .size(46);
+                    z-index: 10;
+                }
             }
             
 
         }
 
         &-description {
-            .col();
+            position: relative;
+            z-index: 40;
+            .row-flex();
+            .page__text_Italic, .page__text_small-bold, .page__text_small {
+                //text-align: end;
+                .shift-left(7);
+            }
+            .page__text_small {
+                position: absolute;
+                bottom: 1px;
+                left: 100px;
+            }
         }
     }
     .page__title-h1{
       font-size: 207px;
+      .shift-left(-.3);
+      margin-bottom: 40px;
     //   .laptopMd(font-size, 152.65px);
     //   .xs(font-size,67.4918px);
     }
