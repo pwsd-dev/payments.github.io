@@ -375,6 +375,12 @@ input:focus {
   text-transform: uppercase;
 }
 
+.page__text-bold_middle {
+  font-family: "Firs-Bold";
+  font-size: 1.14583vw;
+  color: #000;
+}
+
 .page__text-bold_mid {
   font-family: "Firs-Bold";
   font-size: 1.35417vw;
@@ -451,6 +457,30 @@ input:focus {
   color: #b11832;
   -webkit-transition: 0.2 ease-in;
   transition: 0.2 ease-in;
+}
+
+.page__btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-decoration: none;
+  border-radius: 0.26042vw;
+  height: 3.54167vw;
+  font-size: 1.04167vw;
+  letter-spacing: 1px;
+  line-height: 1.5625vw;
+  font-family: "Firs-ExtraBold";
+  font-size: 0.72917vw;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  background-color: #b11832;
+  border: transparent;
+  border-radius: 1.5625vw;
 }
 
 .nav {
@@ -871,12 +901,29 @@ input:focus {
   padding-top: 10%;
 }
 
+.architect .page__text-bold__middle {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
 .architect .page__title-h3 {
   width: calc(83.33333333333334% - 1.5625vw);
   margin-bottom: 5%;
 }
 
+.architect-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.78125vw;
+  margin-right: -0.78125vw;
+}
+
 .architect-block-calc {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
   border: 1px solid black;
   width: calc(50% - 1.5625vw);
 }
@@ -1018,9 +1065,9 @@ input:focus {
   content: '';
   position: absolute;
   display: inline-block;
-  left: 30.72917vw;
+  left: 30.98958vw;
   top: 0.78125vw;
-  width: 3.4375vw;
+  width: 3.64583vw;
   height: 0.10417vw;
   background-color: #000;
 }
@@ -1096,6 +1143,30 @@ input:focus {
   top: 2.08333vw;
 }
 
+.architect-block-calc-estimation-item_4-big-bg .page__text-medium-small::before {
+  content: '';
+  position: absolute;
+  top: 0.52083vw;
+  left: -5.72917vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimation-item_4-big-bg .page__text-medium-small::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 30.72917vw;
+  top: 0.36458vw;
+  width: 4.01042vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
 .architect-block-calc-estimation-item_4-small-bg {
   position: relative;
   width: calc(100% - 1.5625vw);
@@ -1105,6 +1176,347 @@ input:focus {
   position: absolute;
   left: 4.16667vw;
   top: 1.5625vw;
+}
+
+.architect-block-calc-estimation-item_4-small-bg .page__text-medium-small::before {
+  content: '';
+  position: absolute;
+  top: 0.52083vw;
+  left: 11.45833vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimation-item_4-small-bg .page__text-medium-small::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -25.625vw;
+  top: 1.40625vw;
+  width: 1.14583vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimcentr .page__text_extra {
+  position: relative;
+  top: -4.16667vw;
+  background-color: #ffffff;
+  z-index: 100;
+  width: calc(50% - 1.5625vw);
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0.52083vw solid #b11832;
+  padding-top: 3%;
+}
+
+.architect-block-calc-estimcentr-item_1 {
+  position: relative;
+  top: -2.86458vw;
+}
+
+.architect-block-calc-estimcentr-item_1-bg {
+  position: relative;
+}
+
+.architect-block-calc-estimcentr-item_1-bg::before {
+  content: '';
+  position: absolute;
+  top: 3.38542vw;
+  left: 7.8125vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimcentr-item_1-bg .page__img {
+  margin-left: calc(19.166666666666668% + 15px);
+  border: 1px solid #ffffff;
+}
+
+.architect-block-calc-estimcentr-item_1-bg .page__text-medium-small {
+  position: absolute;
+  top: 2.34375vw;
+  left: 15.625vw;
+}
+
+.architect-block-calc-estimcentr-item_1-bg .page__text-medium-small::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -9.89583vw;
+  top: 1.35417vw;
+  width: 1.875vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimcentr-item_1-bg .page__text-medium-small::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -9.89583vw;
+  top: -9.11458vw;
+  width: 0.10417vw;
+  height: 10.57292vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimcentr-item_1-bg .page__text-medium-small-two {
+  position: absolute;
+  top: 2.34375vw;
+  left: 15.625vw;
+  font-family: "Firs-Medium";
+  font-size: 0.88542vw;
+  color: #000;
+}
+
+.architect-block-calc-estimcentr-item_1-bg .page__text-medium-small-two::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -12.23958vw;
+  top: 1.35417vw;
+  width: 4.16667vw;
+  height: 0.10417vw;
+  background-color: black;
+}
+
+.architect-block-calc-estimcentr-item_1-bg .page__text-medium-small-two::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -12.5vw;
+  top: -17.96875vw;
+  width: 0.10417vw;
+  height: 19.53125vw;
+  background-color: black;
+}
+
+.architect-block-calc-estimcentr-item_1-bg .page__text-medium-small-grey {
+  position: absolute;
+  top: 3.90625vw;
+  left: 13.02083vw;
+}
+
+.architect-block-calc-estimcentr-item_3 {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  top: -1.14583vw;
+  width: calc(100% - 1.5625vw);
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+}
+
+.architect-block-calc-estimcentr-item_3-big-bg {
+  position: relative;
+  width: calc(116.66666666666667% - 1.5625vw);
+}
+
+.architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small {
+  position: absolute;
+  left: 4.6875vw;
+  top: 1.5625vw;
+}
+
+.architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -6.25vw;
+  top: 1.35417vw;
+  width: 1.04167vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 30.98958vw;
+  top: 0.78125vw;
+  width: 3.64583vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small-grey {
+  position: absolute;
+  top: 3.125vw;
+  left: 8.33333vw;
+}
+
+.architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small-grey::before {
+  content: '';
+  position: absolute;
+  top: -0.52083vw;
+  left: -8.85417vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small-grey::after {
+  content: '';
+  position: relative;
+  top: -1.19792vw;
+  left: 23.69792vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimcentr-item_3-small-bg {
+  position: relative;
+  width: calc(100% - 1.5625vw);
+}
+
+.architect-block-calc-estimcentr-item_3-small-bg .page__text-medium-small {
+  position: absolute;
+  left: 2.60417vw;
+  top: 1.30208vw;
+}
+
+.architect-block-calc-estimcentr-item_3-small-bg .page__text-medium-small-grey {
+  position: absolute;
+  top: 2.60417vw;
+  font-size: 0.78125vw;
+  left: 6.77083vw;
+}
+
+.architect-block-calc-estimcentr-item_4 {
+  display: -webkit-box;
+  display: flex;
+  width: calc(100% - 1.5625vw);
+  position: relative;
+  top: -0.9375vw;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+}
+
+.architect-block-calc-estimcentr-item_4-big-bg {
+  position: relative;
+  width: calc(116.66666666666667% - 1.5625vw);
+}
+
+.architect-block-calc-estimcentr-item_4-big-bg .page__text-medium-small-grey {
+  position: absolute;
+  top: 3.125vw;
+  left: 4.16667vw;
+}
+
+.architect-block-calc-estimcentr-item_4-big-bg .page__text-medium-small {
+  position: absolute;
+  left: 5.20833vw;
+  top: 2.08333vw;
+}
+
+.architect-block-calc-estimcentr-item_4-big-bg .page__text-medium-small::before {
+  content: '';
+  position: absolute;
+  top: 0.52083vw;
+  left: -5.72917vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimcentr-item_4-big-bg .page__text-medium-small::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 30.72917vw;
+  top: 0.36458vw;
+  width: 4.01042vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimcentr-item_4-small-bg {
+  position: relative;
+  width: calc(100% - 1.5625vw);
+}
+
+.architect-block-calc-estimcentr-item_4-small-bg .page__text-medium-small-grey {
+  position: absolute;
+  left: 3.64583vw;
+  top: 2.60417vw;
+}
+
+.architect-block-calc-estimcentr-item_4-small-bg .page__text-medium-small {
+  position: absolute;
+  left: 4.16667vw;
+  top: 1.5625vw;
+}
+
+.architect-block-calc-estimcentr-item_4-small-bg .page__text-medium-small::before {
+  content: '';
+  position: absolute;
+  top: 0.52083vw;
+  left: 11.45833vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimcentr-item_4-small-bg .page__text-medium-small::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -25.625vw;
+  top: 1.40625vw;
+  width: 1.14583vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
+.architect .information-row {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.78125vw;
+  margin-right: -0.78125vw;
+  padding-top: 2%;
+}
+
+.architect .information-row .page__text-bold__middle {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+}
+
+.architect .information-row .page__btn {
+  width: calc(25% - 1.5625vw);
+  margin-left: calc(2.5% + 0.78125vw);
+  position: relative;
+  top: 1.04167vw;
 }
 
 @media screen and (max-width: 1550px) {
