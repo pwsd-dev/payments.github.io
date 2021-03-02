@@ -1,3 +1,275 @@
 .architect {
-    
+    padding-top: 10%;
+    //position: relative;
+    .page__title-h3 {
+        .size(10);
+       
+        margin-bottom: 5%;
+    }
+    &-block {
+        &-calc {
+
+            border: 1px solid black;
+            .size(6);
+            &-estimation {
+                
+                .page__text_extra {
+                    position: relative;
+                    top: -60px;
+                    background-color: @color_white;
+                    z-index: 100;
+                    .size(6);
+                    margin: 0 auto;
+                    text-align: center;
+                    text-transform: uppercase;
+                    border: 10px solid @color_red;
+                    //margin-bottom: 10%;
+                    padding-top: 3%;
+                    padding-bottom: 2%;
+                }
+
+                &-item {
+                    &_1 {
+                        &-bg {
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 65px;
+                                left: 150px;
+                                width: 6px;
+                                height: 6px;
+                                display: inline-block;
+                                background-color: #fff;
+                                border-radius: 50%;
+                                border: 4px solid @color_red;
+                                
+                            }
+                            .page__img {
+                                .shift-left(2.3);
+                                border: 1px solid @color_white;
+
+                            }
+                            
+                            .page__text-medium-small {
+                                position: absolute;
+                                top: 45px;
+                                left: 300px;
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    display: inline-block;
+                                    left: -190px;
+                                    top: 26px;
+                                    width: 36px;
+                                    height: 2px;
+                                    background-color: @color_black;
+                                    
+                                }
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    display: inline-block;
+                                    left: -190px;
+                                    top: -175px;
+                                    width: 2px;
+                                    height: 200px;
+                                    background-color: @color_black;
+                                }
+                                &-two {
+                                    position: absolute;
+                                    top: 45px;
+                                    left: 300px;
+                                    font-family: "@{Firs}-Medium";
+                                    font-size: 17px;
+                                    color: @color_black;
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        display: inline-block;
+                                        left: -235px;
+                                        top: 26px;
+                                        width: 80px;
+                                        height: 2px;
+                                        background-color: black;
+                                    }
+
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        display: inline-block;
+                                        left: -240px;
+                                        top: -345px;
+                                        width: 2px;
+                                        height: 375px;
+                                        background-color: black;
+                                    }
+                                }
+                            }
+
+                            .page__text-medium-small-grey {
+                                position: absolute;
+                                top: 75px;
+                                left: 250px;
+                            }
+                           
+                        }
+                    }
+
+                    &_3 {
+                        display: flex;
+                        .size(12);
+                        .col();
+
+
+                        &-big {
+                            
+                            &-bg {
+                                position: relative;
+                                .size(14);
+                                .page__img {
+                                    //.size(12);
+                                }
+
+                                .page__text-medium-small {
+                                    position: absolute;
+                                    left: 100px;
+                                    top: 30px;
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        display: inline-block;
+                                        left: -130px;
+                                        top: 26px;
+                                        width: 26px;
+                                        height: 2px;
+                                        background-color: @color_black;
+                                    }
+
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        display: inline-block;
+                                        left: 590px;
+                                        top: 15px;
+                                        width: 66px;
+                                        height: 2px;
+                                        background-color: @color_black;
+                                    }
+                                    
+                                }
+
+                                .page__text-medium-small-grey {
+                                    position: absolute;
+                                    top: 60px;
+                                    left: 20px;
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        top: -10px;
+                                        left: -30px;
+                                        width: 6px;
+                                        height: 6px;
+                                        display: inline-block;
+                                        background-color: #fff;
+                                        border-radius: 50%;
+                                        border: 4px solid @color_red;
+                                    }
+
+                                    &::after {
+                                        content: '';
+                                        position: relative;
+                                        top: -23px;
+                                        left: 380px;
+                                        width: 6px;
+                                        height: 6px;
+                                        display: inline-block;
+                                        background-color: #fff;
+                                        border-radius: 50%;
+                                        border: 4px solid @color_red;
+                                    }
+                                }
+                                
+                            }
+                        }
+                        
+                        &-small {
+                            
+                            &-bg {
+                                position: relative;
+                                
+                                .page__text-medium-small {
+                                    position: absolute;
+                                    left: 80px;
+                                    top: 25px;
+                                    
+                                }
+
+                                .page__text-medium-small-grey {
+                                    position: absolute;
+                                    top: 50px;
+                                    font-size: 15px;
+                                    left: 20px;
+                                }
+
+                                 
+
+
+                                .size(12);
+                                .page__img {
+                                    //.size(12);
+                                }
+                                
+                            }
+                        }
+                    }
+
+                    &_4 {
+                        display: flex;
+                        .size(12);
+                        .col();
+                        &-big {
+                            
+                            &-bg {
+                                position: relative;
+                                .size(14);
+                                .page__img {
+                                    //.size(12);
+                                }
+
+                                .page__text-medium-small {
+                                    position: absolute;
+                                    left: 100px;
+                                    top: 40px;
+                                    
+                                }
+                                
+                            }
+                        }
+                        
+                        &-small {
+                            
+                            &-bg {
+                                position: relative;
+                                
+                                .page__text-medium-small {
+                                    position: absolute;
+                                    left: 80px;
+                                    top: 30px;
+                                    
+                                }
+
+                                .size(12);
+                                .page__img {
+                                    //.size(12);
+                                }
+                                
+                            }
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
 }

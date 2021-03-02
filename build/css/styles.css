@@ -392,6 +392,18 @@ input:focus {
   line-height: 2.03125vw;
 }
 
+.page__text-medium-small {
+  font-family: "Firs-Medium";
+  font-size: 0.88542vw;
+  color: #000;
+}
+
+.page__text-medium-small-grey {
+  font-family: "Firs-Medium";
+  font-size: 0.88542vw;
+  color: #666;
+}
+
 .page__title-h1 {
   font-family: "Firs-ExtraBold";
   font-size: 10.78125vw;
@@ -583,7 +595,7 @@ input:focus {
 .banner-block .page__text_Italic::after {
   position: absolute;
   content: '';
-  background-image: url(../assets/img/img-kavichki.png);
+  background-image: url(../assets/img/kavichki.svg);
   display: inline-block;
   background-repeat: no-repeat;
   width: 1.71875vw;
@@ -853,6 +865,246 @@ input:focus {
   top: 6.25vw;
   background-image: url(../assets/img/img-platform-dop-2.png);
   background-repeat: no-repeat;
+}
+
+.architect {
+  padding-top: 10%;
+}
+
+.architect .page__title-h3 {
+  width: calc(83.33333333333334% - 1.5625vw);
+  margin-bottom: 5%;
+}
+
+.architect-block-calc {
+  border: 1px solid black;
+  width: calc(50% - 1.5625vw);
+}
+
+.architect-block-calc-estimation .page__text_extra {
+  position: relative;
+  top: -3.125vw;
+  background-color: #ffffff;
+  z-index: 100;
+  width: calc(50% - 1.5625vw);
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0.52083vw solid #b11832;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.architect-block-calc-estimation-item_1-bg {
+  position: relative;
+}
+
+.architect-block-calc-estimation-item_1-bg::before {
+  content: '';
+  position: absolute;
+  top: 3.38542vw;
+  left: 7.8125vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimation-item_1-bg .page__img {
+  margin-left: calc(19.166666666666668% + 15px);
+  border: 1px solid #ffffff;
+}
+
+.architect-block-calc-estimation-item_1-bg .page__text-medium-small {
+  position: absolute;
+  top: 2.34375vw;
+  left: 15.625vw;
+}
+
+.architect-block-calc-estimation-item_1-bg .page__text-medium-small::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -9.89583vw;
+  top: 1.35417vw;
+  width: 1.875vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimation-item_1-bg .page__text-medium-small::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -9.89583vw;
+  top: -9.11458vw;
+  width: 0.10417vw;
+  height: 10.41667vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimation-item_1-bg .page__text-medium-small-two {
+  position: absolute;
+  top: 2.34375vw;
+  left: 15.625vw;
+  font-family: "Firs-Medium";
+  font-size: 0.88542vw;
+  color: #000;
+}
+
+.architect-block-calc-estimation-item_1-bg .page__text-medium-small-two::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -12.23958vw;
+  top: 1.35417vw;
+  width: 4.16667vw;
+  height: 0.10417vw;
+  background-color: black;
+}
+
+.architect-block-calc-estimation-item_1-bg .page__text-medium-small-two::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -12.5vw;
+  top: -17.96875vw;
+  width: 0.10417vw;
+  height: 19.53125vw;
+  background-color: black;
+}
+
+.architect-block-calc-estimation-item_1-bg .page__text-medium-small-grey {
+  position: absolute;
+  top: 3.90625vw;
+  left: 13.02083vw;
+}
+
+.architect-block-calc-estimation-item_3 {
+  display: -webkit-box;
+  display: flex;
+  width: calc(100% - 1.5625vw);
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+}
+
+.architect-block-calc-estimation-item_3-big-bg {
+  position: relative;
+  width: calc(116.66666666666667% - 1.5625vw);
+}
+
+.architect-block-calc-estimation-item_3-big-bg .page__text-medium-small {
+  position: absolute;
+  left: 5.20833vw;
+  top: 1.5625vw;
+}
+
+.architect-block-calc-estimation-item_3-big-bg .page__text-medium-small::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: -6.77083vw;
+  top: 1.35417vw;
+  width: 1.35417vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimation-item_3-big-bg .page__text-medium-small::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 30.72917vw;
+  top: 0.78125vw;
+  width: 3.4375vw;
+  height: 0.10417vw;
+  background-color: #000;
+}
+
+.architect-block-calc-estimation-item_3-big-bg .page__text-medium-small-grey {
+  position: absolute;
+  top: 3.125vw;
+  left: 1.04167vw;
+}
+
+.architect-block-calc-estimation-item_3-big-bg .page__text-medium-small-grey::before {
+  content: '';
+  position: absolute;
+  top: -0.52083vw;
+  left: -1.5625vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimation-item_3-big-bg .page__text-medium-small-grey::after {
+  content: '';
+  position: relative;
+  top: -1.19792vw;
+  left: 19.79167vw;
+  width: 0.3125vw;
+  height: 0.3125vw;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.20833vw solid #b11832;
+}
+
+.architect-block-calc-estimation-item_3-small-bg {
+  position: relative;
+  width: calc(100% - 1.5625vw);
+}
+
+.architect-block-calc-estimation-item_3-small-bg .page__text-medium-small {
+  position: absolute;
+  left: 4.16667vw;
+  top: 1.30208vw;
+}
+
+.architect-block-calc-estimation-item_3-small-bg .page__text-medium-small-grey {
+  position: absolute;
+  top: 2.60417vw;
+  font-size: 0.78125vw;
+  left: 1.04167vw;
+}
+
+.architect-block-calc-estimation-item_4 {
+  display: -webkit-box;
+  display: flex;
+  width: calc(100% - 1.5625vw);
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+}
+
+.architect-block-calc-estimation-item_4-big-bg {
+  position: relative;
+  width: calc(116.66666666666667% - 1.5625vw);
+}
+
+.architect-block-calc-estimation-item_4-big-bg .page__text-medium-small {
+  position: absolute;
+  left: 5.20833vw;
+  top: 2.08333vw;
+}
+
+.architect-block-calc-estimation-item_4-small-bg {
+  position: relative;
+  width: calc(100% - 1.5625vw);
+}
+
+.architect-block-calc-estimation-item_4-small-bg .page__text-medium-small {
+  position: absolute;
+  left: 4.16667vw;
+  top: 1.5625vw;
 }
 
 @media screen and (max-width: 1550px) {
