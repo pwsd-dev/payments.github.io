@@ -185,9 +185,9 @@ function grid(done) {
 	let settings = require('./smartgrid.js');
 	smartgrid('./src/less/smartgrid', settings);
 
-	// settings.offset = '3.1%';
-	// settings.filename = 'smart-grid-per';
-	// smartgrid('./src/less/smartgrid', settings);
+	settings.offset = '3.1%';
+	settings.filename = 'smart-grid-per';
+	smartgrid('./src/less/smartgrid', settings);
 
 	done();
 }

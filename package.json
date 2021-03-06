@@ -14,11 +14,11 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.14",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-if": "^2.0.2",
@@ -33,7 +33,7 @@
     "gulp-webp": "^4.0.1",
     "gulp.spritesmith": "^6.0.0",
     "imagemin-pngquant": "^8.0.0",
-    "postcss": "^8.2.6",
+    "postcss": "^8.2.7",
     "postcss-px-to-viewport": "^1.1.1",
     "smart-grid": "^2.1.2"
   },
