@@ -14,6 +14,11 @@
                     color: @color_red;
                 }
             }
+            &-md {
+                font-family: "@{Firs}-ExtraBold";
+                font-size: 26px;
+                line-height: 30px;
+            }
             &-mid {
                 font-family: "@{Firs}-ExtraBold";
                 font-size: 34px;
@@ -101,10 +106,27 @@
             color: @color_red;
         }
 
+        &-h4 {
+            font-family: "@{Firs}-ExtraBold";
+            font-size: 61px;
+            color: @color_red;
+        }
+
         &-h3 {
             font-family: "@{Firs}-ExtraBold";
             font-size: 84px;
             color: @color_black;
+            
+
+            &-numbers {
+                font-family: "@{Firs}-ExtraBold";
+                font-size: 84px;
+                color: @color_black;
+                span {
+                    color: transparent; /* прозрачный цвет букв */
+                    -webkit-text-stroke:  3px @color_red;
+                }
+            }
 
             &-white {
                 font-family: "@{Firs}-ExtraBold";
@@ -150,7 +172,7 @@
         border-radius: 5px;
         height: 68px;
         font-size: 20px;
-        letter-spacing: 1px;
+        letter-spacing: 8px;
         line-height: 30px;
         font-family: "@{Firs}-ExtraBold";
         font-size: 14px;
