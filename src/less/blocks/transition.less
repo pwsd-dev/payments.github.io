@@ -1,0 +1,44 @@
+.transition {
+    &-block {
+
+        .row-flex();
+       &-iso {
+        .size(3);
+        .col();
+        border: 10px solid @color_red;
+        height: 180px;
+        .page__img {
+            position: relative;
+            top: 37px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+       }
+
+       &-record {
+        .size(9);
+        .col();
+
+        .background {
+            background-color: #f6f6f6;
+            .shift-left(-.4);
+            .page__text-medium-middle {
+                
+                padding: 50px 70px 50px 50px;
+                span {
+                    font-family: "@{Firs}-Bold";
+                    font-size: 20px;
+                    color: @color_black;
+                    
+                }
+            }
+        }
+        
+
+        .page__btn {
+            .size(6);
+        }
+       }
+    }
+}

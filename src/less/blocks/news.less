@@ -1,12 +1,162 @@
 .news {
     padding-top: 4%;
-    padding-bottom: 20%;
+    padding-bottom: 8%;
     background-color: #f6f6f6;
     .page__title-h3 {
         text-transform: uppercase;
         margin-bottom: 5%;
     }
     &-block {
-        
+        &-items {
+            .row-flex();
+           &-spb {
+               .col();
+               .size(4);
+               .page__img {
+                   margin-bottom: 8%;
+                   position: relative;
+                   &::after {
+                        content: '';
+                        background-image: url(../assets/img/arrow-news.svg);
+                        display: inline-block;
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        left: 420px;
+                        top: 3px;
+                        &:hover {
+                            background-image: url(../assets/img/arrow-news-black.svg);
+                            display: inline-block;
+                            position: absolute;
+                        }
+                    }
+                }
+                .page__text-bold_middle {
+                    &:hover {
+                        color: @color_red;
+                        text-decoration: underline;
+                    }
+                }
+               .page__text-medium-small {
+                    margin-bottom: 8%;
+                    position: relative;
+                    &:hover {
+                        color: @color_red;
+                        text-decoration: underline;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 20px;
+                        
+                        display: inline-block;
+                        width: 50px;
+                        left: 100px;
+                        height: 1px;
+                        background-color: @color_red;
+                    }
+                }
+               
+           }
+           &-spo {
+            .size(4);
+            .col();
+            .page__img {
+                margin-bottom: 12%;
+                position: relative;
+                top: 20px;
+                &::after {
+                     content: '';
+                     background-image: url(../assets/img/arrow-news.svg);
+                     display: inline-block;
+                     position: absolute;
+                     width: 50px;
+                     height: 50px;
+                     left: 420px;
+                     top: -8px;
+                 }
+             }
+
+             .page__text-bold_middle {
+                &:hover {
+                    color: @color_red;
+                    text-decoration: underline;
+                }
+            }
+            .page__text-medium-small {
+                 margin-bottom: 8%;
+                 position: relative;
+                 &:hover {
+                    color: @color_red;
+                    text-decoration: underline;
+                }
+                 &::after {
+                     content: '';
+                     position: absolute;
+                     top: 20px;
+                     display: inline-block;
+                     width: 50px;
+                     left: 100px;
+                     height: 1px;
+                     background-color: @color_red;
+                     &:hover {
+                        background-color: @color_black;
+                    }
+                }
+             }
+           }
+
+           &-conews {
+            .size(4);
+            .col();
+            .page__img {
+                margin-bottom: 12%;
+                position: relative;
+                top: 20px;
+                &::after {
+                     content: '';
+                     background-image: url(../assets/img/arrow-news.svg);
+                     display: inline-block;
+                     position: absolute;
+                     width: 50px;
+                     height: 50px;
+                     left: 420px;
+                     top: -8px;
+                 }
+             }
+             .page__text-bold_middle {
+                &:hover {
+                    color: @color_red;
+                    text-decoration: underline;
+                }
+            }
+            .page__text-medium-small {
+                 margin-bottom: 8%;
+                 position: relative;
+                 //line-height: 30px;
+                 &:hover {
+                    color: @color_red;
+                    text-decoration: underline;
+                }
+                 &::after {
+                     content: '';
+                     position: absolute;
+                     top: 20px;
+                     
+                     display: inline-block;
+                     width: 50px;
+                     left: 100px;
+                     height: 1px;
+                     background-color: @color_red;
+                 }
+             }
+           }
+        }
+        .page__btn {
+            .size(4);
+            .shift-left(4);
+            position: relative;
+            top: 100px;
+        }
     }
 }
