@@ -1,6 +1,16 @@
 .transition {
+    padding-top: 3%;
+    background-image: url(../assets/img/connecting.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .page__title-h3 {
+        position: relative;
+        margin-bottom: 2%;
+        z-index: 40;
+    }
     &-block {
-
+        position: relative;
+        z-index: 40;
         .row-flex();
        &-iso {
         .size(3);
@@ -17,10 +27,13 @@
        }
 
        &-record {
-        .size(9);
+        .size(8.9);
         .col();
-
+        position: relative;
+        z-index: 40;
         .background {
+            position: relative;
+            z-index: 40;
             background-color: #f6f6f6;
             .shift-left(-.4);
             .page__text-medium-middle {
@@ -34,11 +47,170 @@
                 }
             }
         }
-        
+        .record-row {
+            position: relative;
+            z-index: 40;
+            .size(12.65);
+            .row-flex();
+            .col();
+            .shift-left(-.45);
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+            .page__text-medium {
+                padding-left: 60px;
+                position: relative;
+                top: 20px;
+            }
+        }
 
         .page__btn {
-            .size(6);
+            .size(5);
+            .shift-left(.3);
+            margin-right: 10px;
         }
        }
     }
+
+    .connection-block {
+        position: relative;
+        z-index: 40;
+        padding-top: 4%;
+        padding-bottom: 5%;
+        .page__title-h3 {
+            text-transform: uppercase;
+            position: relative;
+            z-index: 40;
+        }
+
+        .page__text-bold-thirty {
+            .col();
+            position: relative;
+            z-index: 40;
+        }
+
+        .page__text-medium {
+            .col();
+            position: relative;
+            z-index: 40;
+            margin-bottom: 2%;
+        }
+
+        .page__btn {
+            .size(4);
+            .shift-left(.1);
+            position: relative;
+            z-index: 40;
+        }
+    }
+
+    .footer {
+        position: relative;
+        z-index: 40;
+        &-block {
+           &-row {
+               .row-flex();
+               position: relative;
+                z-index: 40;
+               .copy {
+                    .row-flex();
+                    position: relative;
+                    z-index: 40;
+                   .col();
+                   .size(6);
+                   .page__img {
+                       margin-right: 10px;
+                       position: relative;
+                        z-index: 40;
+                   }
+                   .page__text-medium-small {
+                       position: relative;
+                       top: 4px;
+                       position: relative;
+                        z-index: 40;
+                       &::after {
+                           content: '';
+                           position: absolute;
+                           width: 500px;
+                           left: -20px;
+                           height: 1px;
+                           background-color: #d4d4d4;
+                           top: 45px;
+                       }
+                    }
+               }
+
+               .page__btn {
+
+                   .size(2);
+                   height: 55px;
+                   background-color: @color_black;
+                }
+
+                .page__text-bold-thirty {
+                    .shift-left(2);
+                    position: relative;
+                    z-index: 40;
+                    span {
+                        color: @color_red;
+                    }
+                }
+           } 
+
+           &-bottom {
+               .row-flex();
+               position: relative;
+                z-index: 80;
+                .soc {
+                    position: relative;
+                    z-index: 70;
+                    .row-flex();
+                    .shift-left(4.8);
+                    position: relative;
+                    top: 60px;
+                    a {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        
+                    }
+                    .youtube {
+                        margin-left: 40px;
+                        position: relative;
+                        top: 5px;
+                        position: relative;
+                        z-index: 50;
+                    }
+
+                    .telegram {
+                        margin-left: 20px;
+                        position: relative;
+                        top: 5px;
+                        position: relative;
+                        z-index: 50;
+                    }
+                    .page__img {
+                        
+                    }
+                }
+               .sites {
+                   padding-top: 3%;
+                   padding-bottom: .5%;
+                   .row-flex();
+                   .size(6);
+                   
+
+                .page__text-medium {
+                    .col();
+                    
+                    span {
+                        color: @color_red;
+                    }
+                }
+               }
+           }
+        }
+    }
+    
 }
