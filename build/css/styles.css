@@ -372,6 +372,12 @@ input:focus {
   line-height: 1.5625vw;
 }
 
+.page__text_extra-small {
+  font-family: "Firs-ExtraBold";
+  font-size: 1.14583vw;
+  line-height: 1.5625vw;
+}
+
 .page__text_extra-mid {
   font-family: "Firs-ExtraBold";
   font-size: 1.77083vw;
@@ -1604,6 +1610,14 @@ input:focus {
   margin-left: calc(2.5% + 0.78125vw);
   position: relative;
   top: 1.04167vw;
+}
+
+.products {
+  padding-top: 3%;
+}
+
+.products .page__title-h3 {
+  text-transform: uppercase;
 }
 
 .safety {
