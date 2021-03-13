@@ -1,6 +1,15 @@
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background: #fff;
+    padding: 1% 0;
     &-block {
         .row-flex();
+        align-items: center;
+        justify-content: space-between;
         .nav {
             .col();
             .size(10);
@@ -16,9 +25,8 @@
         &-nav {
             .row-flex();
             &__logo {
-                padding-top: 2%;
+                width: 14%;
                 .col();
-                .size(1.8);
                 .page__img{
                     //.size(2);
                 }

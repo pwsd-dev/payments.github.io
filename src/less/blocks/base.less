@@ -39,8 +39,15 @@
   .font(@Roboto; "@{Roboto}-Bold");
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   font-family: @fontRegular;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 a, button{
   cursor: pointer;
