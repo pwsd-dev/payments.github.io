@@ -17,7 +17,7 @@
 					<div class="header-block">
 						<div class="header-block-nav__logo"><a href="/">
 								<div class="page__img"><img src="assets/img/logo.svg"></div></a></div>
-						<div class="nav">        <a class="nav__link" href="#">ПЛАТФОРМА</a><a class="nav__link_more padding_left-30" href="#">Бизнес</a><a class="nav__link_architect" href="#">-архитектура</a><a class="nav__link" href="#">Продукты</a><a class="nav__link" href="#">Безопасность</a><a class="nav__link" href="#">Преимущества</a><a class="nav__link" href="#">цифры</a><a class="nav__link" href="#">клиенты</a><a class="nav__link" href="#">новости</a></div>
+						<div class="nav">        <a class="nav__link" href="#">ПЛАТФОРМА</a><a class="nav__link_more padding_left-30" href="#">Бизнес</a><a class="nav__link_architect" href="#">-архитектура</a><a class="nav__link" href="#products">Продукты</a><a class="nav__link" href="#">Безопасность</a><a class="nav__link" href="#">Преимущества</a><a class="nav__link" href="#">цифры</a><a class="nav__link" href="#">клиенты</a><a class="nav__link" href="#">новости</a></div>
 					</div>
 				</div>
 			</header>
@@ -61,6 +61,12 @@
 			</section>
 			<section class="platform">
 				<div class="wrapper">
+					<div class="border_top left"></div>
+					<div class="border_top right"></div>
+					<div class="border_side left"></div>
+					<div class="border_side right"></div>
+					<div class="border_bottom left"></div>
+					<div class="border_bottom right"></div>
 					<h3 class="page__title-h3">для чего нужна <span>платформа</h3>
 					<div class="platform-block">
 						<div class="platform-block-description">
@@ -217,11 +223,11 @@
 					</div>
 					<div class="information-row">
 						<p class="page__text-bold__middle">Есть вопросы? Можете пообщаться с архитектором платформы</p>
-						<div class="page__btn">отправить сообщение</div>
+						<div class="page__btn open-modal" data-modal="modal">отправить сообщение</div>
 					</div>
 				</div>
 			</section>
-			<section class="products">
+			<section class="products" id="products">
 				<div class="wrapper">
 					<h3 class="page__title-h3"><span>Продукты</span><br> и возможности</h3>
 					<div class="products-block">
@@ -476,10 +482,21 @@
 					</footer>
 				</div>
 			</section>
+			<div class="modal" id="modal" data-modal="modal">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+				</div>
+			</div>
+			<div class="modal" id="tratat" data-modal="tratat">
+				<div class="modal__in modal-container">
+					<div class="modal__title">tratat</div>
+				</div>
+			</div>
 		</div>
 		<script src="js/debug-grid-create.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/modal.js"></script>
 	</body>
 </html>

@@ -1,5 +1,23 @@
+@property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+}
 .numbers {
     padding-top: 6%;
+    .page__title-h4 {
+        transition: --num 5s;
+        counter-reset: num var(--num);
+        
+        &::after {
+            content: counter(num);
+        }
+    }
+    &.isVisible {
+        .page__title-h4 {
+            --num: var(--targetNum);
+        }
+    }
     &-block {
         border: 10px solid @color_red;
         .page__title-h3-numbers {
@@ -61,6 +79,7 @@
                 .row-top {
                     .row-flex();
                     .page__title-h4 {
+                        
                         .col();
                         margin-right: 3%;
                         margin-bottom: 4%;
@@ -78,6 +97,7 @@
                     .page__title-h4 {
                         .col();
                         margin-right: 3%;
+                        
                         //margin-bottom: 4%;
                         //position: relative;
                     }
@@ -130,6 +150,7 @@
                         .col();
                         margin-right: 3%;
                         margin-bottom: 4%;
+                        
                         //position: relative;
                     }
                     .page__text_extra-middle {
@@ -153,6 +174,7 @@
                     .page__title-h4 {
                         .col();
                         margin-right: 3%;
+                        
                         //margin-bottom: 4%;
                         //position: relative;
                     }
@@ -183,6 +205,7 @@
                         .col();
                         margin-right: 3%;
                         margin-bottom: 4%;
+                        
                         //position: relative;
                     }
                     .page__text_extra-middle {
@@ -206,6 +229,7 @@
                     .page__title-h4 {
                         .col();
                         margin-right: 3%;
+                        
                         //margin-bottom: 4%;
                         //position: relative;
                     }

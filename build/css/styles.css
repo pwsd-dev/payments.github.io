@@ -2014,8 +2014,27 @@ input:focus {
   background-color: #b11832;
 }
 
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
 .numbers {
   padding-top: 6%;
+}
+
+.numbers .page__title-h4 {
+  transition: --num 5s;
+  counter-reset: num var(--num);
+}
+
+.numbers .page__title-h4::after {
+  content: counter(num);
+}
+
+.numbers.isVisible .page__title-h4 {
+  --num: var(--targetNum);
 }
 
 .numbers-block {
@@ -2290,6 +2309,23 @@ input:focus {
 .clients {
   padding-top: 5%;
   padding-bottom: 4%;
+}
+
+.clients .tag_cloud .tagcloud {
+  width: 100% !important;
+  height: 20.83333vw !important;
+  overflow: hidden;
+}
+
+.clients .tag_cloud .tagcloud .tagcloud--item {
+  font-size: 2.08333vw;
+  line-height: 93.5%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.clients .tag_cloud .tagcloud .tagcloud--item:nth-child(4n+1) {
+  color: #B11832;
 }
 
 .clients-block .page__title-h3 {

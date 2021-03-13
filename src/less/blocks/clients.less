@@ -1,7 +1,23 @@
 .clients {
     padding-top: 5%;
     padding-bottom: 4%;
+    .tag_cloud .tagcloud {
+        width: 100% !important;
+        height: 400px !important;
+        overflow: hidden;
+        .tagcloud--item {
+            font-size: 40px;
+            line-height: 93.5%;
+            text-transform: uppercase;
+            color: #000000;
+
+            &:nth-child(4n+1) {
+                color: #B11832;
+            }
+        }
+    }
     &-block {
+        
         .page__title-h3 {
             text-transform: uppercase;
             padding-bottom: .2%;

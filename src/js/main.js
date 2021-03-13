@@ -54,13 +54,29 @@ gsap.to('.border_bottom', {
         scrub: 1,
     }
 });
-// gsap.to('.border_top.right', {
-//     right: '0',
-//     scrollTrigger: {
-//         trigger: ".platform",
-//         start: 'bottom bottom',
-//         end: 'bottom center',
-//         scrub: true,
-//      
-//     }
-// });
+
+
+
+var isInViewport = function(elem) {
+    var distance = elem.getBoundingClientRect();
+    return (
+      distance.top >= 0 &&
+      distance.left >= 0 &&
+      distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+  // read the link on how above code works
+  
+  var findMe = document.querySelectorAll('.checkViewport');
+  
+  window.addEventListener('scroll', function(event) {
+  // add event on scroll
+  findMe.forEach(element => {
+      //for each .thisisatest
+      if (isInViewport(element)) {
+        //if in Viewport
+        element.classList.add("isVisible");
+      }
+  });
+  }, false);
