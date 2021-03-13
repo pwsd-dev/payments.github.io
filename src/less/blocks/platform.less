@@ -1,49 +1,92 @@
 .platform {
     //display: flex;
     
-    .wrapper {
-        border-left: 10px solid @color_red;
-        border-right: 10px solid @color_red;
-    }
+    // .wrapper {
+    //     border-left: 10px solid @color_red;
+    //     border-right: 10px solid @color_red;
+    // }
     padding-bottom: 30px;
+    .wrapper {
+        position: relative;
+    }
+    .border_top {
+        position: absolute;
+        top: 0;
+        height: 10px;
+        background-color: @color_red;
+        &.left {
+            right: 94%;
+            left: 6%;
+        }
+        &.right {
+            left: 94%;
+            right: 6%;
+        }
+    }
+    .border_side {
+        position: absolute;
+        top: 1px;
+        width: 10px;
+        height: 0;
+        background-color: @color_red;
+        &.left {
+            left: 0;
+        }
+        &.right {
+            right: 0;
+        }
+    }
+    .border_bottom {
+        position: absolute;
+        bottom: -1px;
+        width: 0;
+        height: 10px;
+        background-color: @color_red;
+        &.left {
+            left: 0;
+        }
+        &.right {
+            right: 0;
+        }
+    }
     .page__title-h3 {
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 2%;
         position: relative;
         top: -50px;
-        &::before {
-            content: '';
-            position: absolute;
-            width: 120px;
-            height: 10px;
-            top: 50px;
-            left: -20px;
-            background-color: @color_red;
-            display: inline-block;
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     width: 120px;
+        //     height: 10px;
+        //     top: 50px;
+        //     left: -20px;
+        //     background-color: @color_red;
+        //     display: inline-block;
 
 
-        }
+        // }
 
-        &::after {
-            content: '';
-            position: absolute;
-            width: 120px;
-            height: 10px;
-            top: 50px;
-            right: -20px;
-            //left: -15px;
-            background-color: @color_red;
-            display: inline-block;
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     width: 120px;
+        //     height: 10px;
+        //     top: 50px;
+        //     right: -20px;
+        //     //left: -15px;
+        //     background-color: @color_red;
+        //     display: inline-block;
 
 
-        }
+        // }
     }
     
     
     &-block {
         .row-flex();
-        border-bottom: 10px solid @color_red;
+        //border-bottom: 10px solid @color_red;
         //display: flex;
         &-description {
             

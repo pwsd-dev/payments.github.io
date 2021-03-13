@@ -82,6 +82,11 @@ function images() {
 	// .pipe(notify({ message: 'Images task complete' }));
 }
 
+function videos() {
+	return gulp.src(['./src/assets/video/*'])
+		.pipe(gulp.dest('./build/assets/video/'))
+}
+
 function html() {
 	return gulp.src('./src/*.html')
 		.pipe(gulp.dest('./build'))
@@ -193,7 +198,7 @@ function grid(done) {
 }
 
 let build = gulp.series(clear,
-	gulp.parallel(sprite, images, fonts, html, pugc, pugProd, styles, scripts)
+	gulp.parallel(sprite, images, videos, fonts, html, pugc, pugProd, styles, scripts)
 );
 
 gulp.task('build', gulp.series(grid, build));

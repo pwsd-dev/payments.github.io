@@ -251,8 +251,16 @@ img {
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'OpenSans-Regular';
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 a,
@@ -571,7 +579,6 @@ input:focus {
 }
 
 .nav__link {
-  padding-top: 3%;
   width: calc(25% - 1.5625vw);
   box-sizing: border-box;
   word-wrap: break-word;
@@ -596,7 +603,6 @@ input:focus {
 }
 
 .nav__link_more {
-  padding-top: 3%;
   position: relative;
   left: 0.78125vw;
   width: calc(25% - 1.5625vw);
@@ -619,7 +625,6 @@ input:focus {
 }
 
 .nav__link_architect {
-  padding-top: 3%;
   position: relative;
   right: 0.78125vw;
   width: calc(16.666666666666668% - 1.5625vw);
@@ -641,12 +646,26 @@ input:focus {
   transition: 0.2 ease-in;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  background: #fff;
+  padding: 1% 0;
+}
+
 .header-block {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.78125vw;
   margin-right: -0.78125vw;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .header-block .nav {
@@ -666,12 +685,11 @@ input:focus {
 }
 
 .header-block-nav__logo {
-  padding-top: 2%;
+  width: 14%;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 0.78125vw;
   margin-right: 0.78125vw;
-  width: calc(15.000000000000002% - 1.5625vw);
 }
 
 .banner {
@@ -723,14 +741,28 @@ input:focus {
 }
 
 .banner-block-img {
-  position: relative;
-  top: -50px;
+  position: absolute;
+  width: 63.4%;
   margin-left: calc(-2.5% + 15px);
 }
 
 .banner-block-img .page__img {
-  width: calc(383.33333333333337% - 30px);
+  padding-top: 100%;
   z-index: 20;
+  -webkit-clip-path: polygon(50% 0%, 93% 20%, 93% 76%, 51% 100%, 6% 76%, 6% 19%);
+          clip-path: polygon(50% 0%, 93% 20%, 93% 76%, 51% 100%, 6% 76%, 6% 19%);
+}
+
+.banner-block-img .page__img video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .banner-block-img-background {
@@ -831,8 +863,56 @@ input:focus {
 }
 
 .platform .wrapper {
-  border-left: 0.52083vw solid #b11832;
-  border-right: 0.52083vw solid #b11832;
+  position: relative;
+}
+
+.platform .border_top {
+  position: absolute;
+  top: 0;
+  height: 0.52083vw;
+  background-color: #b11832;
+}
+
+.platform .border_top.left {
+  right: 94%;
+  left: 6%;
+}
+
+.platform .border_top.right {
+  left: 94%;
+  right: 6%;
+}
+
+.platform .border_side {
+  position: absolute;
+  top: 1px;
+  width: 0.52083vw;
+  height: 0;
+  background-color: #b11832;
+}
+
+.platform .border_side.left {
+  left: 0;
+}
+
+.platform .border_side.right {
+  right: 0;
+}
+
+.platform .border_bottom {
+  position: absolute;
+  bottom: -1px;
+  width: 0;
+  height: 0.52083vw;
+  background-color: #b11832;
+}
+
+.platform .border_bottom.left {
+  left: 0;
+}
+
+.platform .border_bottom.right {
+  right: 0;
 }
 
 .platform .page__title-h3 {
@@ -843,35 +923,12 @@ input:focus {
   top: -2.60417vw;
 }
 
-.platform .page__title-h3::before {
-  content: '';
-  position: absolute;
-  width: 6.25vw;
-  height: 0.52083vw;
-  top: 2.60417vw;
-  left: -1.04167vw;
-  background-color: #b11832;
-  display: inline-block;
-}
-
-.platform .page__title-h3::after {
-  content: '';
-  position: absolute;
-  width: 6.25vw;
-  height: 0.52083vw;
-  top: 2.60417vw;
-  right: -1.04167vw;
-  background-color: #b11832;
-  display: inline-block;
-}
-
 .platform-block {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.78125vw;
   margin-right: -0.78125vw;
-  border-bottom: 0.52083vw solid #b11832;
 }
 
 .platform-block-description {
@@ -2709,6 +2766,44 @@ input:focus {
 
 .transition .footer-block-bottom .sites .page__text-medium span {
   color: #b11832;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 103;
+  text-align: center;
+  -webkit-backdrop-filter: blur(0.26042vw);
+          backdrop-filter: blur(0.26042vw);
+  background-color: #01223770;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal.zoomOut {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.modal__in {
+  width: 31.25vw;
+  height: 7.8125vw;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 1550px) {
