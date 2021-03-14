@@ -545,6 +545,12 @@ input:focus {
   transition: 0.2 ease-in;
 }
 
+.page__link-platform {
+  font-family: "Firs-Bold";
+  font-size: 1.66667vw;
+  color: #b11832;
+}
+
 .page__btn {
   cursor: pointer;
   display: -webkit-box;
@@ -923,113 +929,96 @@ input:focus {
   top: -2.60417vw;
 }
 
-.platform-block {
+.platform-block-description .block__ul {
+  margin: 0;
+  padding: 0px 4.6875vw;
+  position: relative;
+  list-style: none;
   display: -webkit-box;
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -0.78125vw;
-  margin-right: -0.78125vw;
-}
-
-.platform-block-description {
-  margin-left: -0.78125vw;
-  margin-right: -0.78125vw;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
+  width: calc(100% - 1.5625vw);
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 0.78125vw;
   margin-right: 0.78125vw;
-  position: relative;
-  top: -2.60417vw;
+  flex-wrap: wrap;
 }
 
-.platform-block-description-bg {
-  width: calc(41.66666666666667% - 1.5625vw);
-  margin-left: calc(8.333333333333334% + 0.78125vw);
-  margin-bottom: 2%;
-  padding-right: 1.4%;
-  background-color: #ffffff;
-  box-shadow: 3.55488vw 1.95718vw 2.27672vw rgba(0, 0, 0, 0.04);
-  padding-top: 3%;
+.platform-block-description .block__li {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: calc(50% - 1.5625vw);
 }
 
-.platform-block-description-bg .page__text-bold_mid {
-  margin-bottom: 3%;
-}
-
-.platform-block-description-bg .page__text-bold_mid::after {
-  content: '';
+.platform-block-description .block__li:nth-child(1) {
   position: absolute;
-  display: inline-block;
-  width: 6.97917vw;
-  height: 7.55208vw;
-  left: 1.04167vw;
-  top: -0.52083vw;
-  background-image: url(../assets/img/img-platform-hand.png);
-  background-repeat: no-repeat;
+  top: 1.30208vw;
+  left: 41.66667vw;
 }
 
-.platform-block-description-bg ul li {
-  position: relative;
-  font-family: "Firs-Medium";
-  margin-bottom: 6.8%;
-  padding-left: 2.08333vw;
-  padding-right: 1.5625vw;
-  font-size: 1.04167vw;
-}
-
-.platform-block-description-bg ul li::before {
+.platform-block-description .block__li:nth-child(3) {
   position: absolute;
-  content: '';
-  display: inline-block;
-  width: 0.78125vw;
-  height: 0.78125vw;
-  left: -0.78125vw;
-  background-color: #b11832;
+  top: -5.20833vw;
+  left: 41.66667vw;
+}
+
+.platform-block-description .block__li:nth-child(2) {
+  position: absolute;
+  top: 7.8125vw;
+}
+
+.platform-block-description .block__li:not(:last-child) {
+  margin-bottom: 1.5625vw;
+}
+
+.platform-block-description-center {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.platform-block-description .page__text-bold_middle {
+  width: calc(100% - 5.20833vw);
+}
+
+.platform .polygon {
+  width: 4.6875vw;
+  height: 4.6875vw;
+  background-color: #b41f34;
+  z-index: 100;
+  -webkit-clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
+          clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
+}
+
+.platform .polygon:hover {
+  background: transparent;
+}
+
+.platform .polygon__item {
+  position: absolute;
+  width: 4.6875vw;
+  height: 4.6875vw;
+}
+
+.platform .polygon__item img {
+  height: 54px;
+  width: 54px;
+  position: absolute;
+  font-size: 0;
   border-radius: 50%;
+  overflow: hidden;
+  z-index: 500;
 }
 
-.platform-block-description-other {
-  width: calc(40.833333333333336% - 1.5625vw);
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 0.78125vw;
-  margin-right: 0.78125vw;
-  margin-left: calc(8.333333333333334% + 0.78125vw);
-  padding-top: 3%;
-}
-
-.platform-block-description-other ul li {
-  font-size: 1.25vw;
-  font-family: "Firs-Bold";
-  width: calc(91.66666666666667% - 1.5625vw);
-  margin-bottom: 4.5%;
-}
-
-.platform-block-description-other ul li::before {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  width: 6.97917vw;
-  height: 7.55208vw;
-  left: 45.3125vw;
-  top: 0.52083vw;
-  background-image: url(../assets/img/img-platform-dop-1.png);
-  background-repeat: no-repeat;
-}
-
-.platform-block-description-other ul li::after {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  width: 6.97917vw;
-  height: 7.55208vw;
-  left: 45.3125vw;
-  top: 6.25vw;
-  background-image: url(../assets/img/img-platform-dop-2.png);
-  background-repeat: no-repeat;
+.platform .polygon__item img:hover {
+  fill: #b41f34;
 }
 
 .architect {
