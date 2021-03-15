@@ -424,6 +424,12 @@ input:focus {
   color: #000;
 }
 
+.page__text-bold_middle_top {
+  font-family: "Firs-Bold";
+  font-size: 1.14583vw;
+  color: #000;
+}
+
 .page__text-bold_mid {
   font-family: "Firs-Bold";
   font-size: 1.35417vw;
@@ -926,16 +932,33 @@ input:focus {
   top: -2.60417vw;
 }
 
-.platform-block .page__text-bold_middle_top {
-  color: #b11832;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 0.78125vw;
-  margin-right: 0.78125vw;
-  margin-left: calc(8.333333333333334% + 0.78125vw);
-  width: calc(33.333333333333336% - 1.5625vw);
+.platform-block .pay {
+  margin-left: calc(7.083333333333334% + 0.78125vw);
   position: relative;
   top: -15.625vw;
+}
+
+.platform-block .pay__li {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.platform-block .pay__li .page__text-bold_middle_top {
+  color: #b11832;
+  position: relative;
+  margin-right: 1.04167vw;
+}
+
+.platform-block .pay__li .page__text-bold_middle_top::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 11.97917vw;
+  height: 0.10417vw;
+  background-color: #000;
+  bottom: -0.26042vw;
 }
 
 .platform-block-description .block__ul {

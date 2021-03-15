@@ -61,17 +61,28 @@
 
     
     &-block {
-        .page__text-bold_middle_top {
-            color: @color_red;
-
-            .col();
-            .shift-left(1);
-            .size(4);
-            
-            //.shift-left(1);
+        .pay {
+            .shift-left(.85);
             position: relative;
             top: -300px;
-            
+            &__li{ 
+                display: flex;
+                align-items: center;
+                .page__text-bold_middle_top {
+                    color: @color_red;
+                    position: relative;
+                    margin-right: 20px;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        display: inline-block;
+                        width: 230px;
+                        height: 2px;
+                        background-color: #000;
+                        bottom: -5px;
+                    }
+                }
+            }
         }
         &-description {
             
