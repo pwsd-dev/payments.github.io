@@ -1,35 +1,82 @@
 .advantages {
-    
+    .xs-block({
+        padding-bottom: 100%;
+        background-color: @color_red;
+    });
     background-image: url(../assets/img/advantages-bg.svg);
     background-repeat: no-repeat;
-    
+    .xs-block({
+        padding: 7% 0;
+    });
     .page__title-h3-white {
         text-transform: uppercase;
         .size(7);
+        .xs-block({
+            font-size: 180px;
+            line-height: 180px;
+            .size(12);
+        });
         padding-top: 5%;
         padding-bottom: 4%;
     }
 
     &-block {
         .row-flex();
+        .xs-block({
+            
+            flex-direction: column;
+        });
         &-item {
             position: relative;
             padding-bottom: 150px;
             .row-flex();
             .col();
             .size(6);
+            .xs-block({
+                .size(12);
+                flex-direction: column;
+            });
             
             .page__img {
                 .size(2);
+                .xs-block({
+                    .size(4);
+                    .shift-left(4);
+                    margin-bottom: 200px;
+                    
+                });
+                
              }
              .page__text_extra-mid {
                 .size(8);
+                .xs-block({
+                    .size(11);
+                    font-size: 120px;
+                    line-height: 130px;
+                    position: absolute;
+                    text-align: center;
+                    left: 70px;
+                    top: 560px;
+                    
+                });
                 position: absolute;
                 left: 140px;
                 top: -1px;
              }
              .page__text-medium {
                 .size(10);
+
+               
+                .xs-block({
+                    .size(10);
+                    font-size: 90px;
+                    line-height: 120px;
+                    position: absolute;
+                    text-align: center;
+                    //left: 70px;
+                    top: 890px;
+                    
+                });
                 position: absolute;
                 left: 140px;
                 top: 100px;
@@ -38,7 +85,21 @@
                 span {
                     position: absolute;
                     top: -40px;
+                    .xs-block({
+                        left: -300px;
+                    });
                 }
+
+            }
+
+            .left {
+                display: none;
+                .xs-block({
+                    position: absolute;
+                    display: block;
+                    left: 300px;
+                });
+                
             }
         }
         
