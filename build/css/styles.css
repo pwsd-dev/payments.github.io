@@ -864,10 +864,6 @@ input:focus {
   height: 700px;
 }
 
-.platform {
-  padding-bottom: 1.5625vw;
-}
-
 .platform .wrapper {
   position: relative;
 }
@@ -922,6 +918,7 @@ input:focus {
 }
 
 .platform .page__title-h3 {
+  padding-bottom: 15.625vw;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 2%;
@@ -929,10 +926,23 @@ input:focus {
   top: -2.60417vw;
 }
 
+.platform-block .page__text-bold_middle_top {
+  color: #b11832;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
+  margin-left: calc(8.333333333333334% + 0.78125vw);
+  width: calc(33.333333333333336% - 1.5625vw);
+  position: relative;
+  top: -15.625vw;
+}
+
 .platform-block-description .block__ul {
   margin: 0;
   padding: 0px 4.6875vw;
   position: relative;
+  top: -13.02083vw;
   list-style: none;
   display: -webkit-box;
   display: flex;
