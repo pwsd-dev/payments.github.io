@@ -1,30 +1,62 @@
 .principles {
     background-color: #f6f6f6;
     padding-bottom: 3.5%;
+
     .page__title-h3 {
         .size(8);
+        .xs-block({
+            .size(8);
+            font-size: 180px;
+            margin-bottom: 5%;
+        });
         padding-top: 5%;
         padding-bottom: 4%;
     }
     &-block {
         .row-flex();
+        .xs-block({
+            flex-direction: column;
+        });
         &-products {
             .size(5.5);
-            
+            .xs-block({
+                .size(12);
+            });
             &-title {
                 display: flex;
                 margin-bottom: 4%;
-                
+                .xs-block({
+                    flex-direction: column;
+                });
                 .page__img {
                     .size(2.3);
-                    
+                    .xs-block({
+                        .size(12);
+                        .shift-left(3.5);
+                        margin-bottom: 6%;
+
+                    });
                 }
-                
+                .page__text_extra-middle {
+                    .xs-block({
+                        .size(12);
+                        font-size: 100px;
+                        line-height: 100px;
+                        text-align: center;
+                        margin-bottom: 3%;
+
+                    });
+                }
             }
 
             &-spisok {
                 ul {
                     li {
+                        .xs-block({
+                            font-size: 90px;
+                            line-height: 120px;
+                            margin-bottom: 10%;
+                        });
                         font-family: "@{Firs}-Medium";
                         font-size: 22px;
                         line-height: 36px;
@@ -54,13 +86,32 @@
         &-clients {
             .size(5.5);
             .shift-left(1);
-            
+            .page__text_extra-middle {
+                .xs-block({
+                    .size(12);
+                    .shift-left(-1.2);
+                    font-size: 120px;
+                    line-height: 110px;
+                    text-align: center;
+                    margin-bottom: 5%;
+                });
+            }
+            .xs-block({
+                .size(12);
+            });
             &-title {
                 display: flex;
                 margin-bottom: 4%;
-                
+                .xs-block({
+                    flex-direction: column;
+                });
                 .page__img {
                     .size(2.3);
+                    .xs-block({
+                        .size(12);
+                        .shift-left(2.5);
+                        margin-bottom: 6%;
+                    });
                     
                 }
                 
@@ -69,6 +120,13 @@
             &-spisok {
                 ul {
                     li {
+                        .xs-block({
+                            font-size: 90px;
+                            line-height: 120px;
+                            margin-bottom: 10%;
+                            .size(12);
+                            .shift-left(-1);
+                        });
                         font-family: "@{Firs}-Medium";
                         font-size: 22px;
                         line-height: 36px;

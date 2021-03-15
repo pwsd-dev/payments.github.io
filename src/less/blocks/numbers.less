@@ -20,13 +20,21 @@
     }
     &-block {
         border: 10px solid @color_red;
+        .xs-block({
+            border: transparent;
+        });
         .page__title-h3-numbers {
+
             text-align: center;
             padding-bottom: 1%;
             position: relative;
             top: -50px;
             .size(3);
             .shift-left(4.5);
+            .xs-block({
+               font-size: 190px;
+               .shift-left(3);
+            });
             background-color: @color_white;
         }
         
@@ -63,12 +71,23 @@
 
         &-items {
             display: flex;
+            .xs-block({
+                flex-direction: column;
+            });
             &-platform {
                 .size(4);
                 .shift-left(1);
                 .page__text_extra-md {
                     text-transform: uppercase;
                     .size(6);
+                    .xs-block({
+                        .size(5);
+                        .shift-left(7);
+                        font-size: 90px;
+                        line-height: 120px;
+                        text-align: center;
+
+                    });
                     margin-bottom: 5%;
                 }
 
@@ -78,6 +97,9 @@
 
                 .row-top {
                     .row-flex();
+                    .xs-block({
+                        
+                    });
                     .page__title-h4 {
                         
                         .col();
