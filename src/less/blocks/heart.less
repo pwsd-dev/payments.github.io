@@ -9,6 +9,7 @@
             
             .page__text-bold_mid {
                 margin-bottom: 2%;
+                
             }
             &-bg {
                 position: absolute;
@@ -28,8 +29,33 @@
 
             }
 
+            .page__text-bold {
+                .xs-block({
+                    font-size: 90px;
+                    text-align: center;
+                    .size(24);
+                });
+                
+            }
+
+            .page__title-h2 {
+                .xs-block({
+                    font-size: 300px;
+                    
+                });
+            }
+
             .page__text-bold_mid, .page__text-medium {
                 .size(12);
+                
+                .xs-block({
+                    font-size: 80px;
+                    line-height: 135px;
+                    text-align: center;
+                    .size(18);
+                    .shift-left(3);
+
+                });
                 align-items: center;
                 z-index: 100;
             }
@@ -38,6 +64,12 @@
         &-img {
             .size(7);
             .shift-left(-1);
+            .xs-block({
+                .size(32);
+                top: 10px;
+                left: 0px;
+                height: 410px;
+            });
             //overflow: auto;
             z-index: 10;
             position: relative;

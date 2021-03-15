@@ -6,6 +6,12 @@
     z-index: 101;
     background: #fff;
     padding: 1% 0;
+    .xs-block({
+        left: -23%;
+        top: 4%;
+        background: transparent;
+        
+    });
     &-block {
         .row-flex();
         align-items: center;
@@ -13,6 +19,9 @@
         .nav {
             .col();
             .size(10);
+            .xs-block({
+                display: none;
+            });
             //.page__link {
                 //.size(2);
                 //.shift-left(2);
@@ -24,11 +33,22 @@
         }
         &-nav {
             .row-flex();
+            .xs-block({
+                display: none;
+            });
             &__logo {
                 width: 14%;
+                .xs-block({
+                    width: 80%;
+                    
+                    
+                });
                 .col();
                 .page__img{
                     //.size(2);
+                    .xs-block({
+                        //.size(12);
+                    });
                 }
             }
            

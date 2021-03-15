@@ -2,9 +2,105 @@
     padding-top: 3%;
     .page__title-h3 {
         text-transform: uppercase;
+        margin-bottom: 3%;
     }
+    //.size(12);
 
     &-block {
+        margin-bottom: 3%;
+        &-items {
+            display: flex;
+            flex-wrap: wrap;
+            
+          &-calculations {
+            //.col();
+            .size(4);
+            height: 337px;
+            width: 540px;
+            position: relative;
+            padding-bottom: 1%;
+            background-color: #f6f6f6;
+           
+            .polygon {
+                position: absolute;
+                right: 30px;
+                top: 45px;
+            }
 
+            .page__img {
+                padding: 57px 0 36px 66px;
+                
+            }
+
+            .page__text_extra-small {
+                padding: 0 0 126px 65px ;
+                text-transform: uppercase;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 130px;
+                    height: 5px;
+                    background-color: @color_red;
+                    bottom: 70px;
+                    left: 70px;
+                }
+            }
+        }  
+        }
+        .polygon {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            background-color: #b41f34;
+            z-index: 100;
+            &:hover {
+                background: transparent;
+                
+            }
+            //position: relative;
+            
+            &__item {
+                position: absolute;
+                width: 90px;
+                height: 90px;
+                
+                img {
+                    height: 25px;
+                    width: 30px;
+                    position: absolute;
+                    left: 16px;
+                    top: 18px;
+                    font-size: 0;
+                    
+                    border-radius: 50%;
+                    overflow: hidden; 
+                    z-index: 500;
+                }
+    
+                svg path {
+                    stroke:inherit;
+                    stroke-width:inherit;
+                    fill:inherit;
+                    
+                }
+    
+    
+                svg:hover {
+                    color: #b41f34;
+                    stroke: red;
+                    //stroke: rgba(0, 0, 0, .5);
+                    fill: red;  
+                }
+            }
+    
+            clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
+        }
+    }
+
+    .page__btn {
+        .size(4);
+        .shift-left(4);
+        margin-bottom: 2%;
     }
 }
