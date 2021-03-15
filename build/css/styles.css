@@ -963,19 +963,20 @@ input:focus {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
+  margin: 0px 1.04167vw;
   width: calc(50% - 1.5625vw);
 }
 
 .platform-block-description .block__li:nth-child(1) {
   position: absolute;
   top: 1.30208vw;
-  left: 41.66667vw;
+  left: 40.88542vw;
 }
 
 .platform-block-description .block__li:nth-child(3) {
   position: absolute;
   top: -5.20833vw;
-  left: 41.66667vw;
+  left: 40.88542vw;
 }
 
 .platform-block-description .block__li:nth-child(2) {
@@ -1001,6 +1002,7 @@ input:focus {
 .platform .polygon {
   width: 4.6875vw;
   height: 4.6875vw;
+  margin-right: 0.78125vw;
   background-color: #b41f34;
   z-index: 100;
   -webkit-clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
@@ -1021,14 +1023,24 @@ input:focus {
   height: 54px;
   width: 54px;
   position: absolute;
+  left: 15px;
+  top: 14px;
   font-size: 0;
   border-radius: 50%;
   overflow: hidden;
   z-index: 500;
 }
 
-.platform .polygon__item img:hover {
-  fill: #b41f34;
+.platform .polygon__item svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
+}
+
+.platform .polygon__item svg:hover {
+  color: #b41f34;
+  stroke: red;
+  fill: red;
 }
 
 .architect {
