@@ -1,46 +1,47 @@
 module.exports = {
-	columns: 12,
-	offset: "30px",
-	//mobileFirst: true,
-	container: {
+    columns: 12,
+    offset: "30px",
+    //mobileFirst: true,
+    container: {
         maxWidth: "1630px",
         fields: "15px"
     },
-	breakPoints: {
+    breakPoints: {
         desktop: {
-            width: "1921px",
+            width: "1920px",
             fields: "15px"
         },
-        desktop: {
-            width: "1550px",
+        laptopBig: {
+            width: "1600px",
             fields: "15px"
         },
-        laptopMid: {
-            width: "1550px",
+        laptopMiddle: {
+            width: "1440px",
             fields: "15px"
         },
         laptopMd: {
             width: "1367px",
             fields: "15px"
         },
+        laptopMmd: {
+            width: "1280px",
+            fields: "15px"
+        },
+
         laptopMini: {
             width: "1200px",
             fields: "15px"
         },
-        ipad: {
+        Ipad: {
             width: "1024px",
             fields: "15px"
         },
-        md: {
-            width: "920px",
-            fields: "15px"
-        },
-		md: {
-            width: "920px",
+        tablets: {
+            width: "992px",
             fields: "15px"
         },
         sm: {
-            width: "720px"
+            width: "768px"
         },
         xs: {
             width: "576px"
@@ -52,6 +53,6 @@ module.exports = {
             fields: "5px"
             */
         }
-	},
+    },
     //detailedCalc: true
 };

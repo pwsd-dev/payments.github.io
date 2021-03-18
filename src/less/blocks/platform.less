@@ -78,6 +78,7 @@
     
     &-block {
         .pay {
+            
             .xs-block({
                 display: none;
             });
@@ -116,10 +117,12 @@
         }
         .pay-second {
             .size(5);
+           
             .xs-block({
                 display: none;
             });
             &__li {
+                display: none;
                 .page__text-medium {
                     margin-bottom: 20px;
                     position: relative;
@@ -166,24 +169,26 @@
                 .size(6);
                 &:nth-child(1) {
                     position: absolute;
-                    top: 25px;
-                    top: -400px;
+                    top: 100px;
                     left: 785px;
+                   
                     
                 }
                 &:nth-child(3) {
                     position: absolute;
-                    top: -270px;
+                    top: -10px;
                     left: 785px;
+                    
                 }
                 &:nth-child(2) {
                     position: absolute;
-                    top: 150px;
-                    display: none;
+                    top: 120px;
+                    //display: none;
                     //left: 200px;
+                    
                 }
                 &:nth-child(4) {
-                    display: none;
+                    //display: none;
                     
                 }
                 
@@ -217,6 +222,7 @@
             }
 
             .pay-mob-second {
+                
                 li {
                     display: flex;
                     align-items: center;
@@ -257,32 +263,30 @@
                 width: 270px;
                 height: 270px;
             });
-            img {
-                height: 54px;
-                width: 54px;
-                position: absolute;
+
+            
+
+            svg {
+                position: relative;
+                width: 60px;
+                height: 60px;
                 left: 15px;
-                top: 14px;
-                font-size: 0;
+                top: 13px;
+                color: red;
+                max-width: 100%;
                 
-                border-radius: 50%;
-                overflow: hidden; 
-                z-index: 500;
             }
-
+            
             svg path {
-                stroke:inherit;
-                stroke-width:inherit;
-                fill:inherit;
+                stroke: white;
+                //transition: all .5s ease;
+                
                 
             }
 
-
-            svg:hover {
-                color: #b41f34;
+            svg:hover path {
                 stroke: red;
-                //stroke: rgba(0, 0, 0, .5);
-                fill: red;  
+                transition: all .5s ease;
             }
         }
 

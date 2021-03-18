@@ -7,8 +7,209 @@
         position: relative;
         margin-bottom: 2%;
         z-index: 40;
+        .xs-block({
+            font-size: 180px;
+        });
+    }
+
+    .mob {
+        display: none;
+        .xs-block({
+            display: block;
+        });
+
+        .page__img {
+            border: 5px solid @color_red;
+        }
+
+        .page__text-medium-middle {
+            padding: 5% 8% 10% 8%;
+            font-size: 70px;
+            line-height: 110px;
+            span {
+                font-size: 70px;
+                font-family: "@{Firs}-Bold";
+                color: @color_black;
+            }
+        }
+        
+
+        .background-grey {
+            background-color: #f6f6f6;
+            margin: 20px;
+        }
+        .background-white {
+            background-color: #fff;
+            .page__text-medium {
+                font-size: 65px;
+                line-height: 110px;
+                text-align: center;
+                padding: 7% 5%;
+                
+            }
+        }
+
+        .page__btn {
+            font-size: 70px;
+            height: 7vh;
+            letter-spacing: 35px;
+            border-radius: 0%;
+        }
+
+
+        .page__title-h3 {
+            padding: 12% 0;
+            font-size: 180px;
+            text-transform: uppercase;
+            line-height: 160px;
+        }
+
+        .page__text-bold-thirty {
+            font-size: 95px;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+
+        .page__text-medium {
+            font-size: 70px;
+            line-height: 110px;
+            text-align: center;
+            .size(7);
+            .shift-left(2);
+            margin-bottom: 7%;
+        }
+
+        .form {
+            .col();
+            form {
+
+                input {
+                    .size(12);
+                    height: 270px;
+                    border: 20px solid @color_black;
+                    
+                    
+                } 
+
+                .place {
+                    text-align: center;
+                    font-family: "@{Firs}-Medium";
+                    font-size: 80px;
+                }
+
+                
+            }
+
+            .background-red {
+                .col();
+                background-color: @color_red;
+                margin: 5% 0;
+                padding: 9% 0;
+                text-align: center;
+                
+                a {
+                    text-decoration: none;
+                }
+                .page__text-bold {
+                    font-size: 70px;
+                    
+                    color: @color_white;
+                    span {
+                        font-family: "@{Firs}-Medium";
+                        text-transform: none;
+                        padding-left: 8%;
+                    }
+                }
+                a {
+                    cursor: pointer;
+                }
+            }
+
+            .textarea {
+                font-family: "@{Firs}-Medium";
+                text-align: center;
+                padding: 5% 0;
+                height: 600px;
+                border: 20px solid @color_black;
+                margin-bottom: 150px;
+                .size(12);
+            }
+
+        }
+
+        .footer-mob {
+            .size(12);
+            .page__text-medium {
+                .col();
+                text-align: center;
+                .size(12);
+                padding: 8% 0;
+            }
+
+            .page__text-medium-small {
+                font-size: 100px;
+                padding: 0 0 12% 0;
+                .shift-left(3.2);
+                position: relative;
+                span {
+                    
+                    color: @color_red;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    height: 5px;
+                    width: 2300px;
+                    left: -590px;
+                    background-color: #d4d4d4;
+                    bottom: 0;
+                }
+            }
+
+            .row-mail{ 
+                display: flex;
+                span {
+                    color: @color_red;
+                }
+            }
+
+            .page__text-bold-thirty  {
+                text-decoration: none;
+                font-size: 100px;
+                text-align: center;
+                
+                .shift-left(2.8);
+                span {
+                    color: @color_red;
+                }
+            }
+
+            .row-soc {
+                padding: 8% 0;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                a {
+                    &:nth-child(2) {
+                        position: relative;
+                        top: 40px;
+                    }
+                }
+                
+                .page__img {
+                    border: none;
+                    
+                }
+            }
+        }
     }
     &-block {
+        
+        .xs-block({
+            display: none;
+        });
         position: relative;
         z-index: 40;
         .row-flex();
@@ -29,6 +230,9 @@
        &-record {
         .size(8.9);
         .col();
+        .xs-block({
+            display: none;
+        });
         position: relative;
         z-index: 40;
         .background {
@@ -48,6 +252,9 @@
             }
         }
         .record-row {
+            .xs-block({
+                display: none;
+            });
             position: relative;
             z-index: 40;
             .size(12.65);
@@ -75,6 +282,9 @@
     }
 
     .connection-block {
+        .xs-block({
+            display: none;
+        });
         position: relative;
         z-index: 40;
         padding-top: 4%;
@@ -109,6 +319,9 @@
     .footer {
         position: relative;
         z-index: 40;
+        .xs-block({
+            display: none;
+        });
         &-block {
            &-row {
                .row-flex();

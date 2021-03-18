@@ -1,716 +1,838 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<base href="build/">
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-	<title>Заголовок страницы</title>
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
-</head>
-
-<body>
-	<div class="page">
-		<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
-		<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
-		<div class="debugGrid debugGrid__z-index-negative"></div>
-		<header class="header">
-			<div class="wrapper">
-				<div class="header-block">
-					<div class="header-block-nav__logo"><a href="/">
-							<div class="page__img"><img src="assets/img/logo.svg"></div>
-						</a></div>
-					<div class="nav"> <a class="nav__link" href="#">ПЛАТФОРМА</a><a
-							class="nav__link_more padding_left-30" href="#">Бизнес</a><a class="nav__link_architect"
-							href="#">-архитектура</a><a class="nav__link" href="#products">Продукты</a><a
-							class="nav__link" href="#">Безопасность</a><a class="nav__link" href="#">Преимущества</a><a
-							class="nav__link" href="#">цифры</a><a class="nav__link" href="#">клиенты</a><a
-							class="nav__link" href="#">новости</a></div>
-				</div>
-			</div>
-		</header>
-		<section class="banner">
-			<div class="wrapper">
-				<div class="banner-block">
-					<div class="mob">
-						<div class="page__img"><img src="assets/img/banner-mob-bg-top.svg"></div>
-						<div class="page__img-mid"><img src="assets/img/banner-mob-bg-bottom.svg"></div>
-						<div class="page__img-bottom"><img src="assets/img/banner-bottom.svg"></div>
-						<p class="page__text-bold_middle">ПЛАТФОРМА РАЗВИТИЯ БИЗНЕСА<br> DIGITAL Q</p>
-						<p class="page__title-h1">pay<span>ments</p>
+<html lang="ru"> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<title>Заголовок страницы</title>
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
+	</head>
+	<body>
+		<div class="page">
+			<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
+			<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
+			<div class="debugGrid debugGrid__z-index-negative"></div>
+			<header class="header">
+				<div class="wrapper">
+					<div class="header-block">
+						<div class="header-block-nav__logo"><a href="/">
+								<div class="page__img"><img src="assets/img/logo.svg"></div></a></div>
+						<div class="nav">        <a class="nav__link" href="#banner">ПЛАТФОРМА</a><a class="nav__link_more padding_left-30" href="#architect">Бизнес</a><a class="nav__link_architect" href="#architect">-архитектура</a><a class="nav__link" href="#products">Продукты</a><a class="nav__link" href="#safety">Безопасность</a><a class="nav__link" href="#advantages">Преимущества</a><a class="nav__link" href="#numbers">цифры</a><a class="nav__link" href="#clients">клиенты</a><a class="nav__link" href="#news">новости</a></div>
 					</div>
-					<div class="banner-block-img">
-						<div class="page__img">
-							<video type="video/mp4" muted loop autoplay>
-								<source src="assets/video/video.mp4">
-							</video>
+				</div>
+			</header>
+			<section class="banner" id="banner">
+				<div class="wrapper">
+					<div class="banner-block">
+						<div class="mob">
+							<div class="page__img"><img src="assets/img/banner-mob-bg-top.svg"></div>
+							<div class="page__img-mid"><img src="assets/img/banner-mob-bg-bottom.svg"></div>
+							<div class="page__img-bottom"><img src="assets/img/banner-bottom.svg"></div>
+							<p class="page__text-bold_middle">ПЛАТФОРМА РАЗВИТИЯ БИЗНЕСА<br> DIGITAL Q</p>
+							<p class="page__title-h1">pay<span>ments</p>
+						</div>
+						<div class="banner-block-img">
+							<div class="page__img">
+								<video type="video/mp4" muted loop autoplay>
+									<source src="assets/video/video.mp4">
+								</video>
+							</div>
+						</div>
+						<div class="banner-block-img-background">
+							<div class="page__img"><img src="assets/img/bg-banner.png"></div>
+						</div>
+						<div class="banner-block-description">
+							<p class="page__title-h1">pay<span>ments</p>
+							<p class="page__text_Italic">Банковская система – кровеносная система организма, а капиталы – кровь, питающая различные его части</p>
+							<p class="page__text_small-bold">Д. М. Кейнc</p>
+							<p class="page__text_small">\ английский экономист</p>
 						</div>
 					</div>
-					<div class="banner-block-img-background">
-						<div class="page__img"><img src="assets/img/bg-banner.png"></div>
-					</div>
-					<div class="banner-block-description">
-						<p class="page__title-h1">pay<span>ments</p>
-						<p class="page__text_Italic">Банковская система – кровеносная система организма, а капиталы –
-							кровь, питающая различные его части</p>
-						<p class="page__text_small-bold">Д. М. Кейнc</p>
-						<p class="page__text_small">\ английский экономист</p>
+				</div>
+			</section>
+			<section class="heart" id="heart">
+				<div class="wrapper">
+					<div class="heart-block">
+						<div class="heart-block-description">
+							<p class="page__text-bold">ПЛАТФОРМА РАЗВИТИЯ БИЗНЕСА DIGITAL Q</p>
+							<h2 class="page__title-h2">PAYMENTS</h2>
+							<p class="page__text-bold_mid">Выполнение расчетов в национальной и иностранной валюте через платежные и расчетные системы.</p>
+							<p class="page__text-medium">Платформа применима для всех банков и некредитных финансовых организаций.           </p>
+							<div class="heart-block-description-bg"></div>
+						</div>
+						<div class="heart-block-img"> 
+							<div class="page__img"><img src="assets/img/heart.svg"></div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="heart">
-			<div class="wrapper">
-				<div class="heart-block">
-					<div class="heart-block-description">
-						<p class="page__text-bold">ПЛАТФОРМА РАЗВИТИЯ БИЗНЕСА DIGITAL Q</p>
-						<h2 class="page__title-h2">PAYMENTS</h2>
-						<p class="page__text-bold_mid">Выполнение расчетов в национальной и иностранной валюте через
-							платежные и расчетные системы.</p>
-						<p class="page__text-medium">Платформа применима для всех банков и некредитных финансовых
-							организаций. </p>
-						<div class="heart-block-description-bg"></div>
-					</div>
-					<div class="heart-block-img">
-						<div class="page__img"><img src="assets/img/heart.svg"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="platform">
-			<div class="wrapper">
-				<div class="border_top left"></div>
-				<div class="border_top right"></div>
-				<div class="border_side left"></div>
-				<div class="border_side right"></div>
-				<div class="border_bottom left"></div>
-				<div class="border_bottom right"></div>
-				<h3 class="page__title-h3">для чего нужна <span>платформа</h3>
-				<div class="platform-block">
-					<div class="mob">
-						<ul class="pay-mob">
-							<li class="pay-mob">
-								<div class="polygon">
-									<div class="polygon__item"><img src="assets/img/hand.svg"></div>
-								</div><a class="page__text-bold_middle_top">Быстрые расчеты и платежи</a>
-							</li>
-						</ul>
-						<ul class="pay-mob-second">
-							<li class="pay-mob-second">
-								<div class="polygon">
-									<div class="polygon__item"><img src="assets/img/clock.svg"></div>
-								</div>
-								<p class="page__text-bold_middle">Простое подключение новых платформ и расчетных систем
-								</p>
-							</li>
-							<li class="pay-mob-second">
-								<div class="polygon">
-									<div class="polygon__item"><img src="assets/img/clock.svg"></div>
-								</div>
-								<p class="page__text-bold_middle">Формирование и обработка операций по денежным
-									переводам</p>
-							</li>
-							<li class="pay-mob-second">
-								<div class="polygon">
-									<div class="polygon__item"><img src="assets/img/clock.svg"></div>
-								</div>
-								<p class="page__text-bold_middle">Поддержка различных форматов обмена информацией</p>
-							</li>
-							<li class="pay-mob-second">
-								<div class="polygon">
-									<div class="polygon__item"><img src="assets/img/clock.svg"></div>
-								</div>
-								<p class="page__text-bold_middle">Эффективная маршрутизация платежных документов</p>
-							</li>
-						</ul>
-					</div>
-					<ul class="pay pay-second">
-						<li class="pay__li">
-							<div class="polygon">
-								<div class="polygon__item"><img src="assets/img/hand.svg"></div>
-							</div><a class="page__text-bold_middle_top">Быстрые расчеты и платежи</a>
-							<div class="page__img"><img src="assets/img/line-red.svg"></div>
-						</li>
-						<li class="pay-second__li">
-							<div class="page__text-medium">Высокая производительность и масштабируемость решений в
-								составе платформы для обслуживания большого числа одновременно работающих пользователей
-							</div>
-							<div class="page__text-medium">Гибкое масштабирование решений при росте бизнеса и открытии
-								новых точек обслуживания клиентов</div>
-						</li>
-					</ul>
-					<div class="platform-block-description">
-						<ul class="block__ul">
-							<li class="block__li">
-								<div class="polygon">
-									<div class="polygon__item"><img src="assets/img/marshrut.svg"></div>
-								</div>
-								<p class="page__text-bold_middle">Эффективная маршрутизация платежных <br> документов
-								</p>
-							</li>
-							<li class="block__li">
-								<div class="polygon">
-									<div class="polygon__item"><img src="assets/img/forming.svg"></div>
-								</div>
-								<p class="page__text-bold_middle">Формирование и обработка операций по <br> денежным
-									переводам</p>
-							</li>
-							<li class="block__li">
-								<div class="polygon">
-									<div class="polygon__item"><img src="assets/img/format-inf.svg"></div>
-								</div>
-								<p class="page__text-bold_middle">Поддержка различных форматов обмена <br> информацией
-								</p>
-							</li>
-							<li class="block__li">
-								<div class="polygon">
+			</section>
+			<section class="platform" id="platform">
+				<div class="wrapper">
+					<div class="border_top left"></div>
+					<div class="border_top right"></div>
+					<div class="border_side left"></div>
+					<div class="border_side right"></div>
+					<div class="border_bottom left"></div>
+					<div class="border_bottom right"></div>
+					<h3 class="page__title-h3">для чего нужна <span>платформа</h3>
+					<div class="platform-block">
+						<div class="mob">
+							<ul class="pay-mob">
+								<li class="pay-mob">
+									<div class="polygon">
+										<div class="polygon__item"><img src="assets/img/hand.svg"></div>
+									</div><a class="page__text-bold_middle_top">Быстрые расчеты и платежи</a>
+								</li>
+							</ul>
+							<ul class="pay-mob-second">
+								<li class="pay-mob-second">
 									<div class="polygon">
 										<div class="polygon__item"><img src="assets/img/clock.svg"></div>
 									</div>
-								</div>
-								<p class="page__text-bold_middle">Поддержка различных форматов обмена <br> информацией
-								</p>
+									<p class="page__text-bold_middle">Простое подключение новых платформ и расчетных систем</p>
+								</li>
+								<li class="pay-mob-second">
+									<div class="polygon">
+										<div class="polygon__item"><img src="assets/img/clock.svg"></div>
+									</div>
+									<p class="page__text-bold_middle">Формирование и обработка операций по денежным переводам</p>
+								</li>
+								<li class="pay-mob-second">
+									<div class="polygon">
+										<div class="polygon__item"><img src="assets/img/clock.svg"></div>
+									</div>
+									<p class="page__text-bold_middle">Поддержка различных форматов обмена информацией</p>
+								</li>
+								<li class="pay-mob-second">
+									<div class="polygon">
+										<div class="polygon__item"><img src="assets/img/clock.svg"></div>
+									</div>
+									<p class="page__text-bold_middle">Эффективная маршрутизация платежных документов</p>
+								</li>
+							</ul>
+						</div>
+						<ul class="pay pay-second">
+							<li class="pay__li">
+								<div class="polygon">
+									<div class="polygon__item"><img src="assets/img/hand.svg"></div>
+								</div><a class="page__text-bold_middle_top">Быстрые расчеты и платежи</a>
+								<div class="page__img"><img src="assets/img/line-red.svg"></div>
+							</li>
+							<li class="pay-second__li">
+								<div class="page__text-medium">Высокая производительность и масштабируемость решений в составе платформы для обслуживания большого числа одновременно работающих пользователей</div>
+								<div class="page__text-medium">Гибкое масштабирование решений при росте бизнеса и открытии новых точек обслуживания клиентов</div>
 							</li>
 						</ul>
+						<div class="platform-block-description">
+							<ul class="block__ul">
+								<li class="block__li">
+									<div class="polygon">
+										<div class="polygon__item"><img src="assets/img/marshrut.svg"></div>
+									</div>
+									<p class="page__text-bold_middle">Эффективная маршрутизация платежных <br> документов</p>
+								</li>
+								<li class="block__li">
+									<div class="polygon">
+										<div class="polygon__item"><svg width="56" height="49" viewBox="0 0 56 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M32.5412 31.5875C29.8812 37.2225 24.15 41.125 17.5 41.125C8.32125 41.125 0.875 33.6787 0.875 24.5C0.875 15.3213 8.32125 7.875 17.5 7.875C24.1938 7.875 29.9687 11.83 32.6025 17.535" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.5 41.125C23.7822 41.125 28.875 33.6817 28.875 24.5C28.875 15.3183 23.7822 7.875 17.5 7.875C11.2178 7.875 6.125 15.3183 6.125 24.5C6.125 33.6817 11.2178 41.125 17.5 41.125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.5 41.125C20.8827 41.125 23.625 33.6817 23.625 24.5C23.625 15.3183 20.8827 7.875 17.5 7.875C14.1173 7.875 11.375 15.3183 11.375 24.5C11.375 33.6817 14.1173 41.125 17.5 41.125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.5 7.875V41.125" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M29.75 13.125H5.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M30.625 35H4.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M32.375 24.5H0.875" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M30.9224 9.70375C33.1886 8.53125 35.7699 7.875 38.4999 7.875C47.6786 7.875 55.1249 15.3213 55.1249 24.5C55.1249 33.6787 47.6786 41.125 38.4999 41.125C35.7961 41.125 33.2324 40.4775 30.9749 39.3313" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M42 21C42 19.0662 40.4338 17.5 38.5 17.5C36.5662 17.5 35 19.0662 35 21C35 22.9338 36.75 23.625 38.5 24.5C40.25 25.375 42 26.0662 42 28C42 29.9338 40.4338 31.5 38.5 31.5C36.5662 31.5 35 29.9338 35 28" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.5 17.5V14.875" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.5 31.5V34.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.625 24.5H46.375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.625 21H46.375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.625 28H46.375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 0.875488H44.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M46.375 0.875H48.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M49.875 0.875H51.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M53.375 0.875H55.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M4.375 48.125H6.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0.875 48.125H2.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M7.875 48.125H9.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M11.375 48.125H56" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="56" height="49" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+										</div>
+									</div>
+									<p class="page__text-bold_middle">Формирование и обработка операций по <br> денежным переводам</p>
+								</li>
+								<li class="block__li">
+									<div class="polygon">
+										<div class="polygon__item"><img src="assets/img/format-inf.svg"></div>
+									</div>
+									<p class="page__text-bold_middle">Поддержка различных форматов обмена <br> информацией</p>
+								</li>
+								<li class="block__li">
+									<div class="polygon">
+										<div class="polygon">
+											<div class="polygon__item"><svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M52 25L47 20L33 34L25 26L20 31L33 44L52 25Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35 57H37" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M35 7H37" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M10 32H12" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M60 32H62" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M36 63C53.1208 63 67 49.1208 67 32C67 14.8792 53.1208 1 36 1C18.8792 1 5 14.8792 5 32C5 49.1208 18.8792 63 36 63Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
+											</div>
+										</div>
+									</div>
+									<p class="page__text-bold_middle">Поддержка различных форматов обмена <br> информацией</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="architect">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span>БИЗНЕС-АРХИТЕКТУРА</span> ПЛАТФОРМЫ</h3>
-				<div class="architect-block">
-					<div class="mob">
-						<p class="page__text_extra">Расчеты</p>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Платежный документ </p>
-									<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Обработка постановлений </p>
-									<p class="page__text-medium-small-grey">ФССП и исполнительных документов</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Ведение очередей </p>
-									<p class="page__text-medium-small-grey">распоряжений (картотек) документов</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Координатор операций </p>
-									<p class="page__text-medium-small-grey left">ОПКЦ СБП</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small left-too">Поручение банка</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Платежный документ </p>
-									<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="architect-block-calc">
-						<div class="architect-block-calc-estimation">
+			</section>
+			<section class="architect" id="architect">
+				<div class="wrapper">
+					<h3 class="page__title-h3"><span>БИЗНЕС-АРХИТЕКТУРА</span> ПЛАТФОРМЫ</h3>
+					<div class="architect-block">
+						<div class="mob">
 							<p class="page__text_extra">Расчеты</p>
-							<div class="architect-block-calc-estimation-item_1">
-								<div class="architect-block-calc-estimation-item_1-bg">
-									<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-									<p class="page__text-medium-small">Платежный документ </p>
-									<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
-								</div>
-							</div>
-							<div class="architect-block-calc-estimation-item_1">
-								<div class="architect-block-calc-estimation-item_1-bg">
-									<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-									<p class="page__text-medium-small-two">Обработка постановлений </p>
-									<p class="page__text-medium-small-grey">ФССП и исполнительных документов</p>
-								</div>
-							</div>
-						</div>
-						<div class="architect-block-calc-estimation-item_3">
-							<div class="architect-block-calc-estimation-item_3">
-								<div class="architect-block-calc-estimation-item_3-big">
-									<div class="architect-block-calc-estimation-item_3-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Ведение очередей </p>
-										<p class="page__text-medium-small-grey">распоряжений (картотек) документов</p>
-									</div>
-								</div>
-							</div>
-							<div class="architect-block-calc-estimation-item_3">
-								<div class="architect-block-calc-estimation-item_3-small">
-									<div class="architect-block-calc-estimation-item_3-small-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
 										<p class="page__text-medium-small">Платежный документ </p>
 										<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="architect-block-calc-estimation-item_4">
-							<div class="architect-block-calc-estimation-item_4">
-								<div class="architect-block-calc-estimation-item_4-big">
-									<div class="architect-block-calc-estimation-item_4-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Обработка постановлений </p>
+										<p class="page__text-medium-small-grey">ФССП и исполнительных документов</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Ведение очередей </p>
+										<p class="page__text-medium-small-grey">распоряжений (картотек) документов</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Координатор операций </p>
+										<p class="page__text-medium-small-grey left">ОПКЦ СБП</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small left-too">Поручение банка</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
 										<p class="page__text-medium-small">Кассовый документ</p>
 									</div>
 								</div>
 							</div>
-							<div class="architect-block-calc-estimation-item_4">
-								<div class="architect-block-calc-estimation-item_4-small">
-									<div class="architect-block-calc-estimation-item_4-small-bg">
+							<p class="page__text_extra">Расчетный центр</p>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Обмен сообщениями банка </p>
+										<p class="page__text-medium-small-grey left-too">России формата УФЕБС</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Картотека незавершенных </p>
+										<p class="page__text-medium-small-grey left">расчетов</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Картотека невыясненных </p>
+										<p class="page__text-medium-small-grey left-first">сумм</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Обмен сообщениями </p>
+										<p class="page__text-medium-small-grey left-third">с платежной системой SWIFT</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Обработка сообщений </p>
+										<p class="page__text-medium-small-grey left-fourth">формата «Банк-Партнер»</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Защита электронных </p>
+										<p class="page__text-medium-small-grey left-fourth">сообщений Банка России</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Защита сообщений </p>
+										<p class="page__text-medium-small-grey left">SWIFT</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="architect-block-calc">
+							<div class="architect-block-calc-estimation">
+								<p class="page__text_extra">Расчеты</p>
+								<div class="architect-block-calc-estimation-item_1">
+									<div class="architect-block-calc-estimation-item_1-bg">
 										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Поручение банка</p>
+										<p class="page__text-medium-small">Платежный документ </p>
+										<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimation-item_1">
+									<div class="architect-block-calc-estimation-item_1-bg">
+										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+										<p class="page__text-medium-small-two">Обработка постановлений </p>
+										<p class="page__text-medium-small-grey">ФССП и исполнительных документов</p>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimation-item_3">
+								<div class="architect-block-calc-estimation-item_3">
+									<div class="architect-block-calc-estimation-item_3-big">
+										<div class="architect-block-calc-estimation-item_3-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Ведение очередей </p>
+											<p class="page__text-medium-small-grey">распоряжений (картотек) документов</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimation-item_3">
+									<div class="architect-block-calc-estimation-item_3-small">
+										<div class="architect-block-calc-estimation-item_3-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Платежный документ </p>
+											<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimation-item_4">
+								<div class="architect-block-calc-estimation-item_4">
+									<div class="architect-block-calc-estimation-item_4-big">
+										<div class="architect-block-calc-estimation-item_4-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Кассовый документ</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimation-item_4">
+									<div class="architect-block-calc-estimation-item_4-small">
+										<div class="architect-block-calc-estimation-item_4-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Поручение банка</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="architect-block-calc">
+							<div class="architect-block-calc-estimcentr">
+								<p class="page__text_extra">Расчетный центр</p>
+								<div class="architect-block-calc-estimcentr-item_1">
+									<div class="architect-block-calc-estimcentr-item_1-bg">
+										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+										<p class="page__text-medium-small">Обмен сообщениями</p>
+										<p class="page__text-medium-small-grey">банка России формата УФЕБС</p>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimcentr-item_3">
+								<div class="architect-block-calc-estimcentr-item_3">
+									<div class="architect-block-calc-estimcentr-item_3-big">
+										<div class="architect-block-calc-estimcentr-item_3-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Картотека незавершенных</p>
+											<p class="page__text-medium-small-grey">расчетов</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimcentr-item_3">
+									<div class="architect-block-calc-estimcentr-item_3-small">
+										<div class="architect-block-calc-estimcentr-item_3-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Картотека невыясненных </p>
+											<p class="page__text-medium-small-grey">сумм</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimcentr-item_4">
+								<div class="architect-block-calc-estimcentr-item_4">
+									<div class="architect-block-calc-estimcentr-item_4-big">
+										<div class="architect-block-calc-estimcentr-item_4-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Обмен сообщениями с </p>
+											<p class="page__text-medium-small-grey">платежной системой SWIFT</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimcentr-item_4">
+									<div class="architect-block-calc-estimcentr-item_4-small">
+										<div class="architect-block-calc-estimcentr-item_4-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Обработка сообщений</p>
+											<p class="page__text-medium-small-grey-bank">формата «Банк-Партнер»</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimcentr-item_4">
+								<div class="architect-block-calc-estimcentr-item_4">
+									<div class="architect-block-calc-estimcentr-item_4-big">
+										<div class="architect-block-calc-estimcentr-item_4-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Защита электронных </p>
+											<p class="page__text-medium-small-grey">сообщений Банка России</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimcentr-item_4">
+									<div class="architect-block-calc-estimcentr-item_4-small">
+										<div class="architect-block-calc-estimcentr-item_4-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Защита сообщений </p>
+											<p class="page__text-medium-small-grey">swift</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="architect-block-calc">
-						<div class="architect-block-calc-estimcentr">
-							<p class="page__text_extra">Расчетный центр</p>
-							<div class="architect-block-calc-estimcentr-item_1">
-								<div class="architect-block-calc-estimcentr-item_1-bg">
-									<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-									<p class="page__text-medium-small">Обмен сообщениями</p>
-									<p class="page__text-medium-small-grey">банка России формата УФЕБС</p>
-								</div>
-							</div>
-						</div>
-						<div class="architect-block-calc-estimcentr-item_3">
-							<div class="architect-block-calc-estimcentr-item_3">
-								<div class="architect-block-calc-estimcentr-item_3-big">
-									<div class="architect-block-calc-estimcentr-item_3-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Картотека незавершенных</p>
-										<p class="page__text-medium-small-grey">расчетов</p>
-									</div>
-								</div>
-							</div>
-							<div class="architect-block-calc-estimcentr-item_3">
-								<div class="architect-block-calc-estimcentr-item_3-small">
-									<div class="architect-block-calc-estimcentr-item_3-small-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Картотека невыясненных </p>
-										<p class="page__text-medium-small-grey">сумм</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="architect-block-calc-estimcentr-item_4">
-							<div class="architect-block-calc-estimcentr-item_4">
-								<div class="architect-block-calc-estimcentr-item_4-big">
-									<div class="architect-block-calc-estimcentr-item_4-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Обмен сообщениями с </p>
-										<p class="page__text-medium-small-grey">платежной системой SWIFT</p>
-									</div>
-								</div>
-							</div>
-							<div class="architect-block-calc-estimcentr-item_4">
-								<div class="architect-block-calc-estimcentr-item_4-small">
-									<div class="architect-block-calc-estimcentr-item_4-small-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Обработка сообщений</p>
-										<p class="page__text-medium-small-grey-bank">формата «Банк-Партнер»</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="architect-block-calc-estimcentr-item_4">
-							<div class="architect-block-calc-estimcentr-item_4">
-								<div class="architect-block-calc-estimcentr-item_4-big">
-									<div class="architect-block-calc-estimcentr-item_4-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Защита электронных </p>
-										<p class="page__text-medium-small-grey">сообщений Банка России</p>
-									</div>
-								</div>
-							</div>
-							<div class="architect-block-calc-estimcentr-item_4">
-								<div class="architect-block-calc-estimcentr-item_4-small">
-									<div class="architect-block-calc-estimcentr-item_4-small-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Защита сообщений </p>
-										<p class="page__text-medium-small-grey">swift</p>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="information-row">
+						<p class="page__text-bold__middle">Есть вопросы? Можете пообщаться с архитектором платформы</p>
+						<div class="page__btn open-modal" data-modal="modal">отправить сообщение</div>
 					</div>
 				</div>
-				<div class="information-row">
-					<p class="page__text-bold__middle">Есть вопросы? Можете пообщаться с архитектором платформы</p>
+				<div class="mob-button">
 					<div class="page__btn open-modal" data-modal="modal">отправить сообщение</div>
 				</div>
-			</div>
-		</section>
-		<section class="products" id="products">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span>Продукты</span><br> и возможности</h3>
-				<div class="products-block">
-					<div class="products-block-items">
-						<div class="products-block-items-calculations">
-							<div class="page__img"><img src="assets/img/estim-products.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
+			</section>
+			<section class="products" id="products">
+				<div class="wrapper">
+					<h3 class="page__title-h3"><span>Продукты</span><br> и возможности</h3>
+					<div class="products-block">
+						<div class="products-block-items">
+							<div class="products-block-items-calculations">
+								<div class="page__img"><img src="assets/img/estim-products.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
+								</div>
+								<p class="page__text_extra-small">Расчеты</p>
 							</div>
-							<p class="page__text_extra-small">Расчеты</p>
+							<div class="products-block-items-calculations">
+								<div class="page__img"><img src="assets/img/icon-item-2.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
+								</div>
+								<p class="page__text_extra-small">Расчетный центр</p>
+							</div>
+							<div class="products-block-items-calculations">
+								<div class="page__img"><img src="assets/img/icon-item-3.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
+								</div>
+								<p class="page__text_extra-small">СБП. Координатор</p>
+							</div>
+							<div class="products-block-items-calculations">
+								<div class="page__img"><img src="assets/img/icon-item-4.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
+								</div>
+								<p class="page__text_extra-small">Расчеты через SWIFT</p>
+							</div>
+							<div class="products-block-items-calculations">
+								<div class="page__img"><img src="assets/img/icon-item-5.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
+								</div>
+								<p class="page__text_extra-small">Защита сообщений SWIFT</p>
+							</div>
+							<div class="products-block-items-calculations">
+								<div class="page__img"><img src="assets/img/icon-item-6.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
+								</div>
+								<p class="page__text_extra-small">Защита электронных<br> сообщений Банка России</p>
+							</div>
 						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__img"><img src="assets/img/icon-item-2.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
+					</div>
+					<div class="page__btn open-modal" data-modal="demo">запросить демо</div>
+				</div>
+				<div class="page__btn mob">запросить демо</div>
+			</section>
+			<section class="safety" id="safety">
+				<div class="wrapper">
+					<h3 class="page__title-h3"><span> безопасность </span> расчетов</h3>
+					<p class="page__text-medium">Важная задача платформы развития бизнеса <span> Payments </span> – обеспечить безопасность расчетов. Для ее выполнения в рамках платформы реализовано несколько продуктов.</p>
+					<div class="safety-block">
+						<div class="safety-block-messages">
+							<div class="bg_white">
+								<div class="safety-block-messages">
+									<div class="safety-block-messages-row">
+										<div class="page__img"><img src="assets/img/safety-1.svg"></div>
+										<p class="page__text_extra-mid">ЗАЩИТА ЭЛЕКТРОННЫХ СООБЩЕНИЙ (УФЭБС)</p>
+									</div>
+									<p class="page__text-medium-small"><span> Обеспечение информационной безопасности при передаче электронных сообщений в Банк России. Для выполнения проверки кодов аутентификации и защитных кодов, шифрования и дешифрования электронных сообщений в программном продукте применяется СКАД «Сигнатура»</p>
+									<p class="page__text-bold">Возможности продукта:</p>
+									<ul>
+										<li>Загрузка электронных сообщений и пакетов электронных сообщений из АБС клиента</li>
+										<li>Проверка контрольной суммы электронного сообщения, полученного из АБС клиента</li>
+										<li>Установка защитных кодов и кодов аутентификации на электронные сообщения и пакеты электронных сообщений, полученные из АБС клиента</li>
+										<li>Выгрузка и получение данных из Автоматизированного рабочего места клиента Банка России (новое) (АРМ КБР-Н)</li>
+										<li>Проверка подписи, поставленной в АРМ КБР-Н</li>
+									</ul>
+								</div>
 							</div>
-							<p class="page__text_extra-small">Расчетный центр</p>
 						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__img"><img src="assets/img/icon-item-3.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
+						<div class="safety-block-swift">
+							<div class="bg_grey">
+								<div class="safety-block-swift">
+									<div class="safety-block-swift-row">
+										<div class="page__img"><img src="assets/img/safety-2.svg"></div>
+										<p class="page__text_extra-mid">ЗАЩИТА СООБЩЕНИЙ (SWIFT LAU)</p>
+									</div>
+									<p class="page__text-medium-small"><span> Обеспечение передачи защитного ключа из АБС клиента в SWIFT-терминал в составе SWIFT-сообщения. Ключ формируется с использованием алгоритма хеширования HMAC-SHA256</p>
+									<p class="page__text-bold">Возможности продукта:</p>
+									<ul>
+										<li> 
+											<div class="page__img"><img src="assets/img/red-dot.svg"></div>
+											<p class="page__text-mediun">Подписание исходящих сообщений SWIFT с использованием алгоритма LAU перед их передачей в терминал SWIFT</p>
+										</li>
+										<li>Проверка подписи с использованием алгоритма LAU для входящих сообщений SWIFT, приходящих из терминала SWIFT</li>
+									</ul>
+								</div>
 							</div>
-							<p class="page__text_extra-small">СБП. Координатор</p>
-						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__img"><img src="assets/img/icon-item-4.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
-							</div>
-							<p class="page__text_extra-small">Расчеты через SWIFT</p>
-						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__img"><img src="assets/img/icon-item-5.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
-							</div>
-							<p class="page__text_extra-small">Защита сообщений SWIFT</p>
-						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__img"><img src="assets/img/icon-item-6.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><img src="assets/img/line-white.svg"></div>
-							</div>
-							<p class="page__text_extra-small">Защита электронных<br> сообщений Банка России</p>
 						</div>
 					</div>
 				</div>
-				<div class="page__btn">запросить демо</div>
-			</div>
-		</section>
-		<section class="safety">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span> безопасность </span> расчетов</h3>
-				<p class="page__text-medium">Важная задача платформы развития бизнеса <span> Payments </span> –
-					обеспечить безопасность расчетов. Для ее выполнения в рамках платформы реализовано несколько
-					продуктов.</p>
-				<div class="safety-block">
-					<div class="safety-block-messages">
-						<div class="bg_white">
-							<div class="safety-block-messages">
-								<div class="safety-block-messages-row">
-									<div class="page__img"><img src="assets/img/safety-1.svg"></div>
-									<p class="page__text_extra-mid">ЗАЩИТА ЭЛЕКТРОННЫХ СООБЩЕНИЙ (УФЭБС)</p>
-								</div>
-								<p class="page__text-medium-small"><span> Обеспечение информационной безопасности при
-										передаче электронных сообщений в Банк России. Для выполнения проверки кодов
-										аутентификации и защитных кодов, шифрования и дешифрования электронных сообщений
-										в программном продукте применяется СКАД «Сигнатура»</p>
-								<p class="page__text-bold">Возможности продукта:</p>
+			</section>
+			<section class="advantages" id="advantages">
+				<div class="wrapper">
+					<h3 class="page__title-h3-white">Преимущества <span> Для бизнеса </span></h3>
+					<div class="advantages-block">
+						<div class="advantages-block-item">
+							<div class="page__img"><img src="assets/img/advantages-1.svg"></div>
+							<div class="page__text_extra-mid"> <span> Централизация </span> процессов </div>
+							<div class="page__text-medium">Единый бэк-офис. Единый операционный день. Единый корреспондентский счет</div>
+						</div>
+						<div class="advantages-block-item">
+							<div class="page__img"><img src="assets/img/advantages-2.svg"></div>
+							<div class="page__text_extra-mid"><span> Time-to-Market</div>
+							<div class="page__text-medium left"><span> Внедрение новых технологий и облегчение доступа к сервисам платежных систем. Совершенствование календаря платежей</div>
+						</div>
+						<div class="advantages-block-item">
+							<div class="page__img"><img src="assets/img/advantages-3.svg"></div>
+							<div class="page__text_extra-mid"><span> Гибкая настройка<span> и контроль</div>
+							<div class="page__text-medium">Внедрение новых технологий и облегчение доступа к сервисам платежных систем. Совершенствование календаря платежей</div>
+						</div>
+						<div class="advantages-block-item">
+							<div class="page__img"><img src="assets/img/advantages-4.svg"></div>
+							<div class="page__text_extra-mid"><span> Работа </span><br> 24х7 </div>
+							<div class="page__text-medium">Поддержка работы многофилиального банка в режиме 24х7</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="principles" id="principles">
+				<div class="wrapper">
+					<h3 class="page__title-h3"><span> АРХИТЕКТУРНЫЕ </span> ПРИНЦИПЫ</h3>
+					<div class="principles-block">
+						<div class="principles-block-products">
+							<div class="principles-block-products-title">
+								<div class="page__img"><img src="assets/img/princips-1.svg"></div>
+								<p class="page__text_extra-middle">В <span>разработке</span> программных продуктов</p>
+							</div>
+							<div class="principles-block-products-spisok">
 								<ul>
-									<li>Загрузка электронных сообщений и пакетов электронных сообщений из АБС клиента
-									</li>
-									<li>Проверка контрольной суммы электронного сообщения, полученного из АБС клиента
-									</li>
-									<li>Установка защитных кодов и кодов аутентификации на электронные сообщения и
-										пакеты электронных сообщений, полученные из АБС клиента</li>
-									<li>Выгрузка и получение данных из Автоматизированного рабочего места клиента Банка
-										России (новое) (АРМ КБР-Н)</li>
-									<li>Проверка подписи, поставленной в АРМ КБР-Н</li>
+									<li>Открытая, надежная, масштабируемая и событийно управляемая микросервисная архитектура</li>
+									<li>Разработка приложений (PBC) и сервисов ведется один раз для всех каналов одной командой</li>
+									<li>Компонуемая бизнес-архитектура на основе платформ развития бизнеса</li>
+									<li>Технологические платформы и каналы не содержат продуктовой логики</li>
+									<li>Стандартизированный технологический стек с ориентацией на ПО с открытым исходным кодом (open source) и на российские компоненты</li>
+								</ul>
+							</div>
+						</div>
+						<div class="principles-block-clients">
+							<div class="principles-block-clients-title">
+								<div class="page__img"><img src="assets/img/princips-2.svg"></div>
+								<p class="page__text_extra-middle">Во <span> заимодействии </span> с клиентом</p>
+							</div>
+							<div class="principles-block-clients-spisok">
+								<ul>
+									<li>Омниканальная процессно-ориентированная среда взаимодействия с клиентом</li>
+									<li>Единая логика представления пользовательских сценариев (UX) во всех каналах</li>
+									<li>Компонуемые бизнес-решения на основе платформ развития бизнеса</li>
+									<li>Надежная и удобная система идентификации клиента в каждом канале</li>
+									<li>Роботизация и использование технологий искусственного интеллекта</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="safety-block-swift">
-						<div class="bg_grey">
-							<div class="safety-block-swift">
-								<div class="safety-block-swift-row">
-									<div class="page__img"><img src="assets/img/safety-2.svg"></div>
-									<p class="page__text_extra-mid">ЗАЩИТА СООБЩЕНИЙ (SWIFT LAU)</p>
+				</div>
+			</section>
+			<section class="numbers checkViewport" id="numbers">
+				<div class="wrapper">
+					<div class="numbers-block">
+						<h3 class="page__title-h3-numbers"><span> ЦИФРЫ </span></h3>
+						<div class="numbers-block-items">
+							<div class="numbers-block-items-platform">
+								<p class="page__text_extra-md">разработка платформы</p>
+								<p class="page__text-medium-small">Развиваем платформу</p>
+								<div class="row-top">
+									<div class="page__title-h4" style="--targetNum: 25"></div>
+									<div class="page__text_extra-middle">лет</div>
 								</div>
-								<p class="page__text-medium-small"><span> Обеспечение передачи защитного ключа из АБС
-										клиента в SWIFT-терминал в составе SWIFT-сообщения. Ключ формируется с
-										использованием алгоритма хеширования HMAC-SHA256</p>
-								<p class="page__text-bold">Возможности продукта:</p>
-								<ul>
-									<li>Подписание исходящих сообщений SWIFT с использованием алгоритма LAU перед их
-										передачей в терминал SWIFT</li>
-									<li>Проверка подписи с использованием алгоритма LAU для входящих сообщений SWIFT,
-										приходящих из терминала SWIFT</li>
-								</ul>
+								<p class="page__text-medium-small">Команда разработки</p>
+								<div class="row-bottom">
+									<div class="page__title-h4" style="--targetNum: 127"></div>
+									<div class="page__text_extra-middle">человек</div>
+								</div>
+							</div>
+							<div class="numbers-block-items-productivity">
+								<p class="page__text_extra-md">производительность</p>
+								<p class="page__text-medium-small">Обработка
+									<div class="page__title-h4" style="--targetNum: 200000"></div>
+									<div class="page__text_extra-middle">документов/час</div>
+								</p>
+								<p class="page__text-medium-small">Работа одновременно
+									<div class="page__title-h4" style="--targetNum: 10000"></div>
+									<div class="page__text_extra-middle">пользователей</div>
+								</p>
+							</div>
+							<div class="numbers-block-items-spb">
+								<p class="page__text_extra-md">производительность операций СБП
+									<div class="page__title-h4" style="--targetNum: 100"></div>
+									<div class="page__text_extra-middle">мс/операция</div>
+									<div class="page__title-h4" style="--targetNum: 50000"></div>
+									<div class="page__text_extra-middle">переводов/час</div>
+									<div class="page__title-h4" style="--targetNum: 70"></div>
+									<div class="page__text_extra-middle">транзакций/с</div>
+								</p>
 							</div>
 						</div>
+						<div class="page__btn open-modal" data-modal="modal">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="advantages">
-			<div class="wrapper">
-				<h3 class="page__title-h3-white">Преимущества <span> Для бизнеса </span></h3>
-				<div class="advantages-block">
-					<div class="advantages-block-item">
-						<div class="page__img"><img src="assets/img/advantages-1.svg"></div>
-						<div class="page__text_extra-mid"> <span> Централизация </span> процессов </div>
-						<div class="page__text-medium">Единый бэк-офис. Единый операционный день. Единый
-							корреспондентский счет</div>
-					</div>
-					<div class="advantages-block-item">
-						<div class="page__img"><img src="assets/img/advantages-2.svg"></div>
-						<div class="page__text_extra-mid"><span> Time-to-Market</div>
-						<div class="page__text-medium"><span> Внедрение новых технологий и облегчение доступа к сервисам
-								платежных систем. Совершенствование календаря платежей</div>
-					</div>
-					<div class="advantages-block-item">
-						<div class="page__img"><img src="assets/img/advantages-3.svg"></div>
-						<div class="page__text_extra-mid"><span> Гибкая настройка<span> и контроль</div>
-						<div class="page__text-medium">Единый бэк-офис. Единый операционный день. Единый
-							корреспондентский счет</div>
-					</div>
-					<div class="advantages-block-item">
-						<div class="page__img"><img src="assets/img/advantages-4.svg"></div>
-						<div class="page__text_extra-mid"><span> Работа </span><br> 24х7 </div>
-						<div class="page__text-medium">Единый бэк-офис. Единый операционный день. Единый
-							корреспондентский счет</div>
+			</section>
+			<section class="clients" id="clients">
+				<div class="wrapper">
+					<div class="clients-block">
+						<h3 class="page__title-h3"><span>Клиенты</h3>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="principles">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span> АРХИТЕКТУРНЫЕ </span> ПРИНЦИПЫ</h3>
-				<div class="principles-block">
-					<div class="principles-block-products">
-						<div class="principles-block-products-title">
-							<div class="page__img"><img src="assets/img/princips-1.svg"></div>
-							<p class="page__text_extra-middle">В <span>разработке</span> программных продуктов</p>
-						</div>
-						<div class="principles-block-products-spisok">
-							<ul>
-								<li>Открытая, надежная, масштабируемая и событийно управляемая микросервисная
-									архитектура</li>
-								<li>Разработка приложений (PBC) и сервисов ведется один раз для всех каналов одной
-									командой</li>
-								<li>Компонуемая бизнес-архитектура на основе платформ развития бизнеса</li>
-								<li>Технологические платформы и каналы не содержат продуктовой логики</li>
-								<li>Стандартизированный технологический стек с ориентацией на ПО с открытым исходным
-									кодом (open source) и на российские компоненты</li>
-							</ul>
-						</div>
-					</div>
-					<div class="principles-block-clients">
-						<div class="principles-block-clients-title">
-							<div class="page__img"><img src="assets/img/princips-2.svg"></div>
-							<p class="page__text_extra-middle">Во <span> заимодействии </span> с клиентом</p>
-						</div>
-						<div class="principles-block-clients-spisok">
-							<ul>
-								<li>Омниканальная процессно-ориентированная среда взаимодействия с клиентом</li>
-								<li>Единая логика представления пользовательских сценариев (UX) во всех каналах</li>
-								<li>Компонуемые бизнес-решения на основе платформ развития бизнеса</li>
-								<li>Надежная и удобная система идентификации клиента в каждом канале</li>
-								<li>Роботизация и использование технологий искусственного интеллекта</li>
-							</ul>
-						</div>
+				<div class="tag_cloud"></div>
+				<div class="wrapper">
+					<div class="clients-block">
+						<p class="page__text-medium-small"><span>*</span> Клиенты СБП</p>
+						<div class="page__btn open-modal" data-modal="modal">список клиентов</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="numbers checkViewport">
-			<div class="wrapper">
-				<div class="numbers-block">
-					<h3 class="page__title-h3-numbers"><span> ЦИФРЫ </span></h3>
-					<div class="numbers-block-items">
-						<div class="numbers-block-items-platform">
-							<p class="page__text_extra-md">разработка платформы</p>
-							<p class="page__text-medium-small">Развиваем платформу</p>
-							<div class="row-top">
-								<div class="page__title-h4" style="--targetNum: 25"></div>
-								<div class="page__text_extra-middle">лет</div>
+			</section>
+			<section class="news" id="news">
+				<div class="wrapper">
+					<h3 class="page__title-h3"><span>Новости</span> о платформе</h3>
+					<div class="mob">
+						<div class="mob-slider-news">
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+						</div>
+					</div>
+					<div class="news-block">
+						<div class="news-block-items">
+							<div class="news-block-items-spb">
+								<div class="page__img"><img src="assets/img/spb-logo.svg"></div>
+								<p class="page__text-medium-small">10.09.2020</p>
+								<p class="page__text-bold_middle">«Диасофт» – в числе официальных сертифицированных поставщиков решений для Системы быстрых платежей</p>
 							</div>
-							<p class="page__text-medium-small">Команда разработки</p>
-							<div class="row-bottom">
-								<div class="page__title-h4" style="--targetNum: 127"></div>
-								<div class="page__text_extra-middle">человек</div>
+							<div class="news-block-items-spo">
+								<div class="page__img"><img src="assets/img/nfa.svg"></div>
+								<p class="page__text-medium-small">02.09.2020</p>
+								<p class="page__text-bold_middle">Сергей Добриднюк о комплексном подходе к решению задачи автоматизации работы с СБП</p>
+							</div>
+							<div class="news-block-items-conews">
+								<div class="page__img"><img src="assets/img/c-news.svg"></div>
+								<p class="page__text-medium-small">02.09.2020</p>
+								<p class="page__text-bold_middle">«Универсальные» микросервисы: почему «Интерпромбанк» выбрал необычный способ подключения к СБП</p>
 							</div>
 						</div>
-						<div class="numbers-block-items-productivity">
-							<p class="page__text_extra-md">производительность</p>
-							<p class="page__text-medium-small">Обработка
-								<div class="page__title-h4" style="--targetNum: 200000"></div>
-								<div class="page__text_extra-middle">документов/час</div>
-							</p>
-							<p class="page__text-medium-small">Работа одновременно
-								<div class="page__title-h4" style="--targetNum: 10000"></div>
-								<div class="page__text_extra-middle">пользователей</div>
-							</p>
-						</div>
-						<div class="numbers-block-items-spb">
-							<p class="page__text_extra-md">производительность операций СБП
-								<div class="page__title-h4" style="--targetNum: 100"></div>
-								<div class="page__text_extra-middle">мс/операция</div>
-								<div class="page__title-h4" style="--targetNum: 50000"></div>
-								<div class="page__text_extra-middle">переводов/час</div>
-								<div class="page__title-h4" style="--targetNum: 70"></div>
-								<div class="page__text_extra-middle">транзакций/с</div>
-							</p>
-						</div>
+						<div class="page__btn open-modal" data-modal="modal">еще новости</div>
 					</div>
-					<div class="page__btn">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</div>
 				</div>
-			</div>
-		</section>
-		<section class="clients">
-			<div class="wrapper">
-				<div class="clients-block">
-					<h3 class="page__title-h3"><span>Клиенты</h3>
-				</div>
-			</div>
-			<div class="tag_cloud"></div>
-			<div class="wrapper">
-				<div class="clients-block">
-					<p class="page__text-medium-small"><span>*</span> Клиенты СБП</p>
-					<div class="page__btn">список клиентов</div>
-				</div>
-			</div>
-		</section>
-		<section class="news">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span>Новости</span> о платформе</h3>
-				<div class="news-block">
-					<div class="news-block-items">
-						<div class="news-block-items-spb">
-							<div class="page__img"><img src="assets/img/spb-logo.svg"></div>
-							<p class="page__text-medium-small">10.09.2020</p>
-							<p class="page__text-bold_middle">«Диасофт» – в числе официальных сертифицированных
-								поставщиков решений для Системы быстрых платежей</p>
-						</div>
-						<div class="news-block-items-spo">
-							<div class="page__img"><img src="assets/img/nfa.svg"></div>
-							<p class="page__text-medium-small">02.09.2020</p>
-							<p class="page__text-bold_middle">Сергей Добриднюк о комплексном подходе к решению задачи
-								автоматизации работы с СБП</p>
-						</div>
-						<div class="news-block-items-conews">
-							<div class="page__img"><img src="assets/img/c-news.svg"></div>
-							<p class="page__text-medium-small">02.09.2020</p>
-							<p class="page__text-bold_middle">«Универсальные» микросервисы: почему «Интерпромбанк»
-								выбрал необычный способ подключения к СБП</p>
-						</div>
-					</div>
-					<div class="page__btn">еще новости</div>
-				</div>
-			</div>
-		</section>
-		<section class="transition">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span>ПЕРЕХОД</span><br> НА ISO 20022</h3>
-				<div class="transition-block">
-					<div class="transition-block-iso">
+			</section>
+			<section class="transition" id="transition">
+				<div class="mob">
+					<div class="wrapper">
 						<div class="page__img"><img src="assets/img/iso.svg"></div>
 					</div>
-					<div class="transition-block-record">
-						<div class="background">
-							<p class="page__text-medium-middle"><span>«Диасофт»</span> ведет активную подготовку к
-								глобальному переходу финансовых систем на новый стандарт <span>ISO 20022.</span> Идет
-								процесс разработки механизмов формирования сообщений SWIFT в формате ISO 20022 с
-								возможностью отправки в составе электронного сообщения ED506 в формате
-								<span>УФЭБС.</span></p>
-						</div>
-						<div class="record-row">
-							<p class="page__text-medium">Узнайте о других планах по развитию платформы в 2021 году</p>
-							<div class="page__btn">ЗАПИСЬ ВЕБИНАРА</div>
-						</div>
+					<div class="background-grey">
+						<p class="page__text-medium-middle"><span>«Диасофт»</span> ведет активную подготовку к глобальному переходу финансовых систем на новый стандарт <span>ISO 20022.</span> Идет процесс разработки механизмов формирования сообщений SWIFT в формате ISO 20022 с возможностью отправки в составе электронного сообщения ED506 в формате <span>УФЭБС.</span></p>
 					</div>
-				</div>
-				<div class="connection-block">
-					<h3 class="page__title-h3"><span>обратная</span> связь</h3>
-					<p class="page__text-bold-thirty">Остались вопросы?</p>
-					<p class="page__text-medium">Напишите нам, и мы обязательно вам ответим!</p>
-					<div class="page__btn">ОБРАТНАЯ СВЯЗЬ</div>
-				</div>
-				<footer class="footer">
+					<div class="background-white">
+						<p class="page__text-medium">Узнайте о других планах по развитию<br> платформы в 2021 году</p>
+					</div>
+					<div class="page__btn open-modal" data-modal="modal">запись вебинара</div>
 					<div class="wrapper">
-						<div class="footer-block">
-							<div class="footer-block-row">
-								<div class="copy">
-									<div class="page__img"><img src="assets/img/copy.svg"></div>
-									<p class="page__text-medium-small">2021 Diasoft</p>
-								</div>
-								<div class="page__btn">наверх</div>
-								<p class="page__text-bold-thirty"><span>+7 495</span> 780—7575</p>
+						<h3 class="page__title-h3"><span>обратная</span> связь</h3>
+						<p class="page__text-bold-thirty">Остались вопросы?</p>
+						<p class="page__text-medium">Напишите нам, и мы обязательно вам ответим!</p>
+						<div class="form">
+							<form action="">
+								<input class="place" type="text" placeholder="Ваше имя" required>
+							</form>
+							<div class="background-red"><a class="page__text-bold" href="#">Email <span> voodoos.lab@gmail.com</a></div>
+							<textarea class="textarea">Ваш вопрос </textarea>
+						</div>
+					</div>
+					<div class="page__btn">отправить</div>
+					<div class="footer-mob">
+						<div class="wrapper">
+							<p class="page__text-medium">Нажимая кнопку отправить Вы соглашаетесь на предоставление персональных данных</p>
+							<p class="page__text-medium-small"><span> © </span> 2020 Diasoft</p>
+							<div class="row-mail">
+								<p class="page__text-medium">info<span>@</span>diasoft.ru</p>
+								<p class="page__text-medium">sales<span>@</span>diasoft.ru</p>
+							</div><a class="page__text-bold-thirty" href="#"><span>+7 495</span> 780—7575</a>
+							<div class="row-soc"><a href="#">
+									<div class="page__img"><img src="assets/img/facebook.svg"></div></a><a class="youtube" href="#">
+									<div class="page__img"><img src="assets/img/youtube.svg"></div></a><a class="telegram" href="#">
+									<div class="page__img"><img src="assets/img/telegram.svg"></div></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper">
+					<div class="transition-block">
+						<div class="transition-block-iso">
+							<div class="page__img"><img src="assets/img/iso.svg"></div>
+						</div>
+						<div class="transition-block-record">
+							<div class="background">
+								<p class="page__text-medium-middle"><span>«Диасофт»</span> ведет активную подготовку к глобальному переходу финансовых систем на новый стандарт <span>ISO 20022.</span> Идет процесс разработки механизмов формирования сообщений SWIFT в формате ISO 20022 с возможностью отправки в составе электронного сообщения ED506 в формате <span>УФЭБС.</span></p>
 							</div>
-							<div class="footer-block-bottom">
-								<div class="sites">
-									<p class="page__text-medium">info<span>@</span>diasoft.ru</p>
-									<p class="page__text-medium">sales<span>@</span>diasoft.ru</p>
-								</div>
-								<div class="soc"><a href="#">
-										<div class="page__img"><img src="assets/img/facebook.svg"></div>
-									</a><a class="youtube" href="#">
-										<div class="page__img"><img src="assets/img/youtube.svg"></div>
-									</a><a class="telegram" href="#">
-										<div class="page__img"><img src="assets/img/telegram.svg"></div>
-									</a></div>
+							<div class="record-row">
+								<p class="page__text-medium">Узнайте о других планах по развитию платформы в 2021 году</p>
+								<div class="page__btn open-modal" data-modal="modal">ЗАПИСЬ ВЕБИНАРА</div>
 							</div>
 						</div>
 					</div>
-				</footer>
+					<div class="connection-block">
+						<h3 class="page__title-h3"><span>обратная</span> связь</h3>
+						<p class="page__text-bold-thirty">Остались вопросы?</p>
+						<p class="page__text-medium">Напишите нам, и мы обязательно вам ответим!</p>
+						<div class="page__btn open-modal" data-modal="modal">ОБРАТНАЯ СВЯЗЬ</div>
+					</div>
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer-block">
+								<div class="footer-block-row">
+									<div class="copy">
+										<div class="page__img"><img src="assets/img/copy.svg"></div>
+										<p class="page__text-medium-small">2021 Diasoft</p>
+									</div><a class="page__btn" href="#banner">наверх </a>
+									<p class="page__text-bold-thirty"><span>+7 495</span> 780—7575</p>
+								</div>
+								<div class="footer-block-bottom">
+									<div class="sites">
+										<p class="page__text-medium">info<span>@</span>diasoft.ru</p>
+										<p class="page__text-medium">sales<span>@</span>diasoft.ru</p>
+									</div>
+									<div class="soc"><a href="#">
+											<div class="page__img"><img src="assets/img/facebook.svg"></div></a><a class="youtube" href="#">
+											<div class="page__img"><img src="assets/img/youtube.svg"></div></a><a class="telegram" href="#">
+											<div class="page__img"><img src="assets/img/telegram.svg"></div></a></div>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</section>
+			<div class="modal" id="modal" data-modal="modal">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
 			</div>
-		</section>
-		<div class="modal" id="modal" data-modal="modal">
-			<div class="modal__in modal-container">
-				<div class="modal__title">modal</div>
-				<div class="modal__body">test</div>
+			<div class="modal" id="demo" data-modal="demo">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
+			</div>
+			<div class="modal" id="numbers" data-modal="numbers">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
+			</div>
+			<div class="modal" id="clients" data-modal="clients">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
+			</div>
+			<div class="modal" id="news" data-modal="news">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
 			</div>
 		</div>
-		<div class="modal" id="platform" data-modal="platform">
-			<div class="modal__in modal-container">
-				<ul>
-					<li>Высокая производительность и масштабируемость решений в составе платформы для обслуживания
-						большого числа одновременно работающих пользователей</li>
-					<li>Гибкое масштабирование решений при росте бизнеса и открытии новых точек обслуживания клиентов
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<script src="js/debug-grid-create.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/tagcloud.min.js"></script>
-	<script src="js/modal.js"></script>
-</body>
-
+		<script src="js/debug-grid-create.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/tagcloud.min.js"></script>
+		<script src="js/modal.js"></script>
+	</body>
 </html>

@@ -5,8 +5,76 @@
     .page__title-h3 {
         text-transform: uppercase;
         margin-bottom: 5%;
+        .xs-block({
+            padding-top: 7%;
+            padding-bottom: 4%;
+            font-size: 170px;
+            line-height: 160px;
+        });
+    }
+    .mob {
+        display: none;
+        .xs-block({
+            display: block;
+        });
+        &-slider-news {
+            background: transparent;
+            height: 45vh;
+            position: relative;
+            padding: 60px 60px 10px 60px;
+            .slick-list {
+                overflow: hidden;
+            }
+            .slick-track{
+                display: flex;
+                
+            }
+           
+            .slick-arrow{
+                display: none;
+                
+            }
+            .slick-dots {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                padding-top: 10%;
+            }
+
+            .slick-dots li {
+                list-style: none;
+                
+            }
+
+            .slick-dots li button {
+                height: 67px;
+                width: 10px;
+                font-size: 0;
+                border-radius: 50%;
+                border: transparent;
+                margin: 0 40px;
+                background-color: #000;               
+            }
+
+            .slick-dots li.slick-active button {
+                background-color: @color_red;
+                
+                
+            }
+
+            
+
+        }
+
+        
+        
+        
     }
     &-block {
+        .xs-block({
+            display: none;
+        });
         &-items {
             .row-flex();
            &-spb {
