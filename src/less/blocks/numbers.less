@@ -3,7 +3,355 @@
     initial-value: 0;
     inherits: false;
 }
+
 .numbers {
+    .mob {
+        display: none;
+        .xs-block({
+            display: block;
+        });
+
+        .page__title-h3-numbers {
+            text-align: center;
+            font-size: 220px;
+            span {
+                
+            }
+        }
+
+        .page__text_extra-md {
+            padding: 5% 0;
+            text-align: center;
+            font-size: 130px;
+            text-transform: uppercase;
+            line-height: 140px;
+        }
+
+        .more-pd {
+            padding: 10% 0 7% 0;
+        }
+
+        .page__btn {
+            height: 300px;
+            border-radius: 0%;
+            font-size: 80px;
+            letter-spacing: 25px;
+        }
+
+        &-row {
+            
+            &-top {
+                display: flex;
+                padding: 5% 0;
+                &-left {
+                    .size(6);
+                   
+                    .page__text-medium-small {
+                        font-size: 70px;
+                        line-height: 100px;
+                        margin-bottom: 5%;
+    
+                    }
+    
+                    .page__title-h4 {
+                        margin-bottom: 5%;
+                        font-size: 220px;
+                        text-align: center;
+                        transition: --num 5s;
+                        counter-reset: num var(--num);
+                        
+                        &::after {
+                            content: counter(num);
+                        }
+                
+                        .xs-block({
+                            display: block;
+                        });
+                    }
+                    &.isVisible {
+                        .page__title-h4 {
+                            --num: var(--targetNum);
+                            
+                        }
+                
+                        
+                    }
+    
+                    .page__text_extra-middle {
+                        text-align: center;
+                        font-size: 200px;
+                    }
+                    
+                }
+    
+                &-right {
+                    .size(6);
+                    
+                    .page__text-medium-small {
+                        font-size: 70px;
+                        padding-left: 7%;
+                        line-height: 100px;
+                        margin-bottom: 5%;
+    
+                    }
+    
+                    .page__title-h4 {
+                        margin-bottom: 5%;
+                        font-size: 220px;
+                        text-align: center;
+                        transition: --num 5s;
+                        counter-reset: num var(--num);
+                        
+                        &::after {
+                            content: counter(num);
+                        }
+                
+                        .xs-block({
+                            display: block;
+                        });
+                    }
+                    &.isVisible {
+                        .page__title-h4 {
+                            --num: var(--targetNum);
+                            
+                        }
+                
+                        
+                    }
+    
+                    .page__text_extra-middle {
+                        text-align: center;
+                        font-size: 200px;
+                    }
+                    
+                }
+            }
+
+            &-middle {
+                    display: flex;
+                    
+                    &-left {
+                        .size(6);
+                       
+                        .page__text-medium-small {
+                            font-size: 70px;
+                            line-height: 100px;
+                            margin-bottom: 5%;
+                            padding-left: 25%;
+        
+                        }
+        
+                        .page__title-h4 {
+                            margin-bottom: 5%;
+                            font-size: 160px;
+                            text-align: center;
+                            transition: --num 5s;
+                            counter-reset: num var(--num);
+                            
+                            &::after {
+                                content: counter(num);
+                            }
+                    
+                            .xs-block({
+                                display: block;
+                            });
+                        }
+                        &.isVisible {
+                            .page__title-h4 {
+                                --num: var(--targetNum);
+                                
+                            }
+                    
+                            
+                        }
+        
+                        .page__text_extra-middle {
+                            text-align: center;
+                            font-size: 70px;
+                        }
+                        
+                    }
+        
+                    &-right {
+                        .size(6);
+                        
+                        .page__text-medium-small {
+                            font-size: 70px;
+                            padding-left: 7%;
+                            line-height: 100px;
+                            margin-bottom: 5%;
+        
+                        }
+        
+                        .page__title-h4 {
+                            margin-bottom: 5%;
+                            font-size: 160px;
+                            text-align: center;
+                            transition: --num 5s;
+                            counter-reset: num var(--num);
+                            
+                            &::after {
+                                content: counter(num);
+                            }
+                    
+                            .xs-block({
+                                display: block;
+                            });
+                        }
+                        &.isVisible {
+                            .page__title-h4 {
+                                --num: var(--targetNum);
+                                
+                            }
+                    
+                            
+                        }
+        
+                        .page__text_extra-middle {
+                            text-align: center;
+                            font-size: 70px;
+                        }
+                        
+                    }
+            }
+
+            &-bottom {
+                
+                    display: flex;
+                    
+                    &-left {
+                        .size(6);
+                       
+                        .page__text-medium-small {
+                            font-size: 70px;
+                            line-height: 100px;
+                            margin-bottom: 5%;
+                            padding-left: 25%;
+        
+                        }
+        
+                        .page__title-h4 {
+                            margin-bottom: 5%;
+                            font-size: 220px;
+                            text-align: center;
+                            transition: --num 5s;
+                            counter-reset: num var(--num);
+                            
+                            &::after {
+                                content: counter(num);
+                            }
+                    
+                            .xs-block({
+                                display: block;
+                            });
+                        }
+                        &.isVisible {
+                            .page__title-h4 {
+                                --num: var(--targetNum);
+                                
+                            }
+                    
+                            
+                        }
+        
+                        .page__text_extra-middle {
+                            text-align: center;
+                            font-size: 70px;
+                        }
+                        
+                    }
+        
+                    &-right {
+                        .size(6);
+                        
+                        .page__text-medium-small {
+                            font-size: 70px;
+                            padding-left: 7%;
+                            line-height: 100px;
+                            margin-bottom: 5%;
+        
+                        }
+        
+                        .page__title-h4 {
+                            margin-bottom: 5%;
+                            font-size: 220px;
+                            text-align: center;
+                            transition: --num 5s;
+                            counter-reset: num var(--num);
+                            
+                            &::after {
+                                content: counter(num);
+                            }
+                    
+                            .xs-block({
+                                display: block;
+                            });
+                        }
+                        &.isVisible {
+                            .page__title-h4 {
+                                --num: var(--targetNum);
+                                
+                            }
+                    
+                            
+                        }
+        
+                        .page__text_extra-middle {
+                            text-align: center;
+                            font-size: 70px;
+                        }
+                        
+                    }
+
+                    &-bottom {
+                        padding: 9% 0;
+                        .size(6);
+                        .shift-left(3);
+                        .page__text-medium-small {
+                            font-size: 70px;
+                            padding-left: 7%;
+                            line-height: 100px;
+                            margin-bottom: 5%;
+        
+                        }
+        
+                        .page__title-h4 {
+                            margin-bottom: 5%;
+                            font-size: 220px;
+                            text-align: center;
+                            transition: --num 5s;
+                            counter-reset: num var(--num);
+                            
+                            &::after {
+                                content: counter(num);
+                            }
+                    
+                            .xs-block({
+                                display: block;
+                            });
+                        }
+                        &.isVisible {
+                            .page__title-h4 {
+                                --num: var(--targetNum);
+                                
+                            }
+                    
+                            
+                        }
+        
+                        .page__text_extra-middle {
+                            text-align: center;
+                            font-size: 70px;
+                        }
+                    }
+
+
+            }
+            
+        }
+    }
+
+    
     padding-top: 6%;
     .page__title-h4 {
         transition: --num 5s;
@@ -12,11 +360,17 @@
         &::after {
             content: counter(num);
         }
+
+        .xs-block({
+            display: none;
+        });
     }
     &.isVisible {
         .page__title-h4 {
             --num: var(--targetNum);
         }
+
+        
     }
     &-block {
         border: 10px solid @color_red;
@@ -24,7 +378,9 @@
             border: transparent;
         });
         .page__title-h3-numbers {
-
+            .xs-block({
+                display: none;
+            });
             text-align: center;
             padding-bottom: 1%;
             position: relative;
@@ -39,6 +395,9 @@
         }
         
         .page__btn {
+            .xs-block({
+                display: none;
+            });
             .size(3.8);
             .col();
             .shift-left(8);
@@ -72,6 +431,10 @@
         &-items {
             display: flex;
             .xs-block({
+                display: none;
+            });
+            
+            .xs-block({
                 flex-direction: column;
             });
             &-platform {
@@ -79,6 +442,10 @@
                 .shift-left(1);
                 .page__text_extra-md {
                     text-transform: uppercase;
+                    .xs-block({
+                        display: none;
+                    });
+                    
                     .size(6);
                     .xs-block({
                         .size(5);

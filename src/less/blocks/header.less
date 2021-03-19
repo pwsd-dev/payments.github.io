@@ -6,10 +6,26 @@
     z-index: 101;
     background: #fff;
     padding: 1% 0;
+    .mob {
+        display: none;
+        &-logo {
+            .xs-block({
+                display: block;
+            });
+
+            .page__img {
+                .size(6);
+                .shift-left(2);
+            }
+        }
+        
+    }
     .xs-block({
-        left: -23%;
+        left: 23%;
         top: 4%;
+        //position: relative;
         background: transparent;
+        //display: none;
         
     });
     &-block {

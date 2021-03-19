@@ -1,10 +1,29 @@
 .clients {
     padding-top: 5%;
     padding-bottom: 4%;
+    .mob {
+        display: none;
+        .xs-block({
+            display: block;
+        });
+
+        .page__title-h3 {
+            text-transform: uppercase;
+            padding-bottom: .2%;
+            font-size: 230px;
+            padding: 5% 5%;
+        }
+
+        
+    }
     .tag_cloud .tagcloud {
         width: 100% !important;
         height: 400px !important;
         overflow: hidden;
+        .xs-block({
+            width: 100% !important;
+            height: 1000px !important;
+        });
         .tagcloud--item {
             font-size: 40px;
             line-height: 93.5%;
@@ -17,7 +36,9 @@
         }
     }
     &-block {
-        
+        .xs-block({
+            display: none;
+        });
         .page__title-h3 {
             text-transform: uppercase;
             padding-bottom: .2%;
@@ -26,6 +47,9 @@
         .page__text-medium-small {
             text-align: center;
             margin-bottom: 3%;
+            .xs-block({
+                font-size: 130px;
+            });
             span {
                 color: @color_red;
             }

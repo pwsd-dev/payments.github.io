@@ -50,12 +50,14 @@ function animations() {
     // animation('.classNameForAnimate'); // css class который включает анимацию
     // animation('.class', '.class-from'); // .class -> секция которая должна анимироваться .class-from -> место откуда будет начинаться анимация когда достигнет window.bottom > 0
     // animation('.skills', '.skills-content');
-    animation('.isAnimate');
-   
+    animation('.architect');
+    //animation('.banner');
+
 }
 
 window.addEventListener('scroll', function () {
     animations();
+
 });
 
 animations();
