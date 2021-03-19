@@ -128,7 +128,7 @@
 								</li>
 							</ul>
 						</div>
-						<ul class="pay pay-second active">
+						<ul class="pay pay-second" id="someId">
 							<li class="pay__li">
 								<div class="polygon">
 									<div class="polygon__item"><svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,10 +149,14 @@
 <path d="M0 31.7188H10.875C11.3734 31.7188 11.7812 32.1266 11.7812 32.625V48.9375C11.7812 49.4359 11.3734 49.8438 10.875 49.8438H0" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
 </svg>
 									</div>
-								</div><a class="page__text-bold_middle_top">Быстрые расчеты и платежи</a>
+								</div>
+								<button class="page__toggle" type="button" onclick="openBlock()"><a class="page__text-bold_middle_top" id="openBlockBtn">Быстрые расчеты и платежи</a></button>
 								<div class="page__img"><img src="assets/img/line-red.svg"></div>
 								<div class="page__button">
-									<button></button>
+									<button type="button" onclick="closeBlock()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.19266 1.7945L18.5708 19.1726M1.22278 19.0847L18.6009 1.70654" stroke="black" stroke-width="2.04803"/>
+</svg> 
+									</button>
 								</div>
 							</li>
 							<li class="pay-second__li">

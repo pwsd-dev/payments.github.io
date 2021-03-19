@@ -4141,6 +4141,7 @@ input:focus {
 
   .transition .page__title-h3 {
     font-size: 9.375vw;
+    display: none;
   }
 
   .transition .mob {
