@@ -104,3 +104,25 @@ window.addEventListener('scroll', function (event) {
     }
   });
 }, false);
+
+
+function openBlock() {
+  const someId = document.getElementById("someId");
+
+  someId.classList.toggle("active");
+
+}
+
+function closeBlock() {
+  const someId = document.getElementById("someId");
+
+  someId.classList.remove("active");
+
+}
+
+
+
+
+
+
+

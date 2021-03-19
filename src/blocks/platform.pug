@@ -52,7 +52,7 @@ section#platform.platform
                             .polygon__item
                                 img(src="assets/img/clock.svg")
                         p.page__text-bold_middle Эффективная маршрутизация платежных документов
-            ul.pay.pay-second
+            ul#someId.pay.pay-second
                 li.pay__li
                     .polygon
                         .polygon__item
@@ -73,9 +73,15 @@ section#platform.platform
                                 <path d="M42.5938 9.0625V10.875" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
                                 <path d="M0 31.7188H10.875C11.3734 31.7188 11.7812 32.1266 11.7812 32.625V48.9375C11.7812 49.4359 11.3734 49.8438 10.875 49.8438H0" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
                                 </svg>
-                    a.page__text-bold_middle_top Быстрые расчеты и платежи
+                    button(type="button" onclick="openBlock()").page__toggle
+                        a#openBlockBtn.page__text-bold_middle_top Быстрые расчеты и платежи
                     .page__img
                         img(src="assets/img/line-red.svg")
+                    .page__button
+                        button(type="button" onclick="closeBlock()")
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.19266 1.7945L18.5708 19.1726M1.22278 19.0847L18.6009 1.70654" stroke="black" stroke-width="2.04803"/>
+                            </svg> 
                 li.pay-second__li
                     .page__text-medium Высокая производительность и масштабируемость решений в составе платформы для обслуживания большого числа одновременно работающих пользователей
                     .page__text-medium Гибкое масштабирование решений при росте бизнеса и открытии новых точек обслуживания клиентов

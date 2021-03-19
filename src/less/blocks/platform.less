@@ -116,13 +116,56 @@
             }
         }
         .pay-second {
+            &.active {
+               background-color: #fff;
+               z-index: 3000;
+               
+                .pay-second__li {
+                    display: block;
+                    
+                    height: 100vh;
+                    max-height: 400px;
+                    transition: .4s ease-in-out;
+                    
+                    overflow: hidden;
+                }
+
+                .page__img {
+                    transform: rotate(180deg);
+                    
+                }
+
+                .page__text-bold_middle_top {
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                .page__button {
+                    button {
+                        display: block;
+                        
+                        
+                    }
+                    
+                }
+            }
             .size(5);
-           
+            position: relative;
             .xs-block({
                 display: none;
             });
             &__li {
-                display: none;
+                position: absolute;
+                height: 0;
+                left: 0;
+                max-height: 0;
+                //box-shadow: 0 0.756881px 73.4174px 35.5734px rgba(0, 0, 0, 0.07);
+                overflow: hidden;
+                transition: .4s ease-in-out;
+                //display: none;
+                background-color: #fff;
+                z-index: 3000;
                 .page__text-medium {
                     margin-bottom: 20px;
                     position: relative;
@@ -138,6 +181,20 @@
                         border-radius: 50%;
                         background-color: @color_red;
                     }
+                }
+                
+            }
+
+            .page__button {
+                
+                button {
+                    display: none;
+                    border: transparent;
+                    background: transparent;
+                    position: absolute;
+                    right: 23px;
+                    top: 23px;
+                    
                 }
                 
             }
@@ -291,5 +348,10 @@
         }
 
         clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
+    }
+
+    .page__toggle {
+        border: transparent;
+        background: transparent;
     }
 }

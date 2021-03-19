@@ -1012,10 +1012,46 @@ input:focus {
 
 .platform-block .pay-second {
   width: calc(41.66666666666667% - 1.5625vw);
+  position: relative;
+}
+
+.platform-block .pay-second.active {
+  background-color: #fff;
+  z-index: 3000;
+}
+
+.platform-block .pay-second.active .pay-second__li {
+  display: block;
+  height: 100vh;
+  max-height: 20.83333vw;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.platform-block .pay-second.active .page__img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.platform-block .pay-second.active .page__text-bold_middle_top::before {
+  display: none;
+}
+
+.platform-block .pay-second.active .page__button button {
+  display: block;
 }
 
 .platform-block .pay-second__li {
-  display: none;
+  position: absolute;
+  height: 0;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background-color: #fff;
+  z-index: 3000;
 }
 
 .platform-block .pay-second__li .page__text-medium {
@@ -1034,6 +1070,15 @@ input:focus {
   top: 0.52083vw;
   border-radius: 50%;
   background-color: #b11832;
+}
+
+.platform-block .pay-second .page__button button {
+  display: none;
+  border: transparent;
+  background: transparent;
+  position: absolute;
+  right: 1.19792vw;
+  top: 1.19792vw;
 }
 
 .platform-block-description .block__ul {
@@ -1167,6 +1212,11 @@ input:focus {
   stroke: red;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.platform .page__toggle {
+  border: transparent;
+  background: transparent;
 }
 
 .architect {
