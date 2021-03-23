@@ -1604,6 +1604,26 @@ input:focus {
   transition: all 0.5s ease;
 }
 
+.platform svg {
+  position: relative;
+  width: 3.125vw;
+  height: 3.125vw;
+  left: 0.78125vw;
+  top: 0.67708vw;
+  color: red;
+  max-width: 100%;
+}
+
+.platform svg path {
+  stroke: white;
+}
+
+.platform svg:hover path {
+  stroke: red;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .platform .page__toggle {
   border: transparent;
   background: transparent;
@@ -5175,6 +5195,14 @@ input:focus {
   }
 
   .platform .polygon__item svg {
+    top: 2.34375vw;
+    position: relative;
+    width: 7.8125vw;
+    height: 7.8125vw;
+    left: 3.125vw;
+  }
+
+  .platform svg {
     top: 2.34375vw;
     position: relative;
     width: 7.8125vw;
