@@ -173,17 +173,17 @@ section#platform.platform
                         a#openBlockBtn.page__text-bold_middle_top Быстрые расчеты и платежи
                     .page__img
                         img(src="assets/img/line-red.svg")
-                    .page__button
-                        button(type="button" onclick="closeBlock()")
-                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.19266 1.7945L18.5708 19.1726M1.22278 19.0847L18.6009 1.70654" stroke="black" stroke-width="2.04803"/>
-                            </svg> 
+                    //- .page__button
+                    //-     button(type="button" onclick="closeBlock()")
+                    //-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    //-         <path d="M1.19266 1.7945L18.5708 19.1726M1.22278 19.0847L18.6009 1.70654" stroke="black" stroke-width="2.04803"/>
+                    //-         </svg> 
                 li.pay-second__li
                     .page__text-medium Высокая производительность и масштабируемость решений в составе платформы для обслуживания большого числа одновременно работающих пользователей
                     .page__text-medium Гибкое масштабирование решений при росте бизнеса и открытии новых точек обслуживания клиентов
             .platform-block-description
                 ul.block__ul
-                            li.block__li
+                            li#otherId.block__li.otherpay
                                 .polygon
                                     .polygon__item
                                         <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,8 +210,15 @@ section#platform.platform
                                         </clipPath>
                                         </defs>
                                         </svg>
-                                p.page__text-bold_middle Эффективная маршрутизация платежных <br> документов
-                            li.block__li
+                                button(type="button" onclick="openBlockOther()").page__toggle
+                                    a#openBlockBtn.page__text-bold_middle_top Эффективная маршрутизация платежных документов
+                                .otherpay__li
+                                    .page__text-medium Настройка процесса обработки документа в зависимости от его параметров
+                                    .page__text-medium Контроль реквизитов документа в зависимости от его типа
+                                    .page__text-medium Возможность отслеживания этапов обработки документа
+                                .page__img
+                                    img(src="assets/img/line-red.svg")
+                            li#otherForm.block__li.otherForm
                                 .polygon
                                     .polygon__item
                                         <svg width="56" height="49" viewBox="0 0 56 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -245,8 +252,16 @@ section#platform.platform
                                         </clipPath>
                                         </defs>
                                         </svg>
-                                p.page__text-bold_middle Формирование и обработка операций по <br> денежным переводам
-                            li.block__li
+                                button(type="button" onclick="openBlockForm()").page__toggle
+                                    a#openBlockBtn.page__text-bold_middle_top Формирование и обработка операций по денежным переводам
+                                .page__img
+                                    img(src="assets/img/line-red.svg")
+                                .otherForm__li
+                                    .page__text-medium Настройка процесса обработки документа в зависимости от его параметров
+                                    .page__text-medium Контроль реквизитов документа в зависимости от его типа
+                                    .page__text-medium Возможность отслеживания этапов обработки документа
+                                p.page__text-bold_middle 
+                            li#inform.block__li.inform
                                 .polygon
                                     .polygon__item
                                         <svg width="64" height="54" viewBox="0 0 64 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -266,8 +281,14 @@ section#platform.platform
                                         <path d="M29 37H11V7H29" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
                                         <path d="M35 11H53V41H35" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
                                         </svg>
-                                p.page__text-bold_middle Поддержка различных форматов обмена <br> информацией
-                            li.block__li
+                                button(type="button" onclick="openBlockInform()").page__toggle
+                                    a#openBlockBtn.page__text-bold_middle_top Поддержка различных форматов обмена <br> информацией
+                                .page__img
+                                    img(src="assets/img/line-red.svg")
+                                .page__button
+                                .inform__li
+                                    .page__text-medium Единое информационное пространство для проведения расчетов современного универсального баека и его филиалов
+                            li#connect.block__li.connect
                                 .polygon
                                     .polygon
                                         .polygon__item
@@ -292,4 +313,10 @@ section#platform.platform
                                             </filter>
                                             </defs>
                                             </svg>
-                                p.page__text-bold_middle Поддержка различных форматов обмена <br> информацией
+                                button(type="button" onclick="openBlockConnect()").page__toggle
+                                    a#openBlockBtn.page__text-bold_middle_top Простое подключение новых платформ и расчетных систем
+                                .connect__li.connect
+                                    .page__text-medium Открытая архитектура
+                                    .page__text-medium Готовый слой API для интеграции в существующую IT-инфраструктуру банка
+                                .page__img
+                                    img(src="assets/img/line-red.svg")

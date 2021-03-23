@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<title>Заголовок страницы</title>
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
@@ -256,12 +257,6 @@
 								</div>
 								<button class="page__toggle" type="button" onclick="openBlock()"><a class="page__text-bold_middle_top" id="openBlockBtn">Быстрые расчеты и платежи</a></button>
 								<div class="page__img"><img src="assets/img/line-red.svg"></div>
-								<div class="page__button">
-									<button type="button" onclick="closeBlock()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.19266 1.7945L18.5708 19.1726M1.22278 19.0847L18.6009 1.70654" stroke="black" stroke-width="2.04803"/>
-</svg> 
-									</button>
-								</div>
 							</li>
 							<li class="pay-second__li">
 								<div class="page__text-medium">Высокая производительность и масштабируемость решений в составе платформы для обслуживания большого числа одновременно работающих пользователей</div>
@@ -270,7 +265,7 @@
 						</ul>
 						<div class="platform-block-description">
 							<ul class="block__ul">
-								<li class="block__li">
+								<li class="block__li otherpay" id="otherId">
 									<div class="polygon">
 										<div class="polygon__item"><svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
@@ -298,9 +293,15 @@
 </svg>
 										</div>
 									</div>
-									<p class="page__text-bold_middle">Эффективная маршрутизация платежных <br> документов</p>
+									<button class="page__toggle" type="button" onclick="openBlockOther()"><a class="page__text-bold_middle_top" id="openBlockBtn">Эффективная маршрутизация платежных документов</a></button>
+									<div class="otherpay__li">
+										<div class="page__text-medium">Настройка процесса обработки документа в зависимости от его параметров</div>
+										<div class="page__text-medium">Контроль реквизитов документа в зависимости от его типа</div>
+										<div class="page__text-medium">Возможность отслеживания этапов обработки документа</div>
+									</div>
+									<div class="page__img"><img src="assets/img/line-red.svg"></div>
 								</li>
-								<li class="block__li">
+								<li class="block__li otherForm" id="otherForm">
 									<div class="polygon">
 										<div class="polygon__item"><svg width="56" height="49" viewBox="0 0 56 49" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
@@ -335,9 +336,16 @@
 </svg>
 										</div>
 									</div>
-									<p class="page__text-bold_middle">Формирование и обработка операций по <br> денежным переводам</p>
+									<button class="page__toggle" type="button" onclick="openBlockForm()"><a class="page__text-bold_middle_top" id="openBlockBtn">Формирование и обработка операций по денежным переводам</a></button>
+									<div class="page__img"><img src="assets/img/line-red.svg"></div>
+									<div class="otherForm__li">
+										<div class="page__text-medium">Настройка процесса обработки документа в зависимости от его параметров</div>
+										<div class="page__text-medium">Контроль реквизитов документа в зависимости от его типа</div>
+										<div class="page__text-medium">Возможность отслеживания этапов обработки документа</div>
+									</div>
+									<p class="page__text-bold_middle"> </p>
 								</li>
-								<li class="block__li">
+								<li class="block__li inform" id="inform">
 									<div class="polygon">
 										<div class="polygon__item"><svg width="64" height="54" viewBox="0 0 64 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M29 47H5L1 43V41H25L27 43H29" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
@@ -358,9 +366,14 @@
 </svg>
 										</div>
 									</div>
-									<p class="page__text-bold_middle">Поддержка различных форматов обмена <br> информацией</p>
+									<button class="page__toggle" type="button" onclick="openBlockInform()"><a class="page__text-bold_middle_top" id="openBlockBtn">Поддержка различных форматов обмена <br> информацией</a></button>
+									<div class="page__img"><img src="assets/img/line-red.svg"></div>
+									<div class="page__button"></div>
+									<div class="inform__li">
+										<div class="page__text-medium">Единое информационное пространство для проведения расчетов современного универсального баека и его филиалов</div>
+									</div>
 								</li>
-								<li class="block__li">
+								<li class="block__li connect" id="connect">
 									<div class="polygon">
 										<div class="polygon">
 											<div class="polygon__item"><svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -387,7 +400,12 @@
 											</div>
 										</div>
 									</div>
-									<p class="page__text-bold_middle">Поддержка различных форматов обмена <br> информацией</p>
+									<button class="page__toggle" type="button" onclick="openBlockConnect()"><a class="page__text-bold_middle_top" id="openBlockBtn">Простое подключение новых платформ и расчетных систем</a></button>
+									<div class="connect__li connect">
+										<div class="page__text-medium">Открытая архитектура</div>
+										<div class="page__text-medium">Готовый слой API для интеграции в существующую IT-инфраструктуру банка</div>
+									</div>
+									<div class="page__img"><img src="assets/img/line-red.svg"></div>
 								</li>
 							</ul>
 						</div>
@@ -512,6 +530,9 @@
 										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
 										<p class="page__text-medium-small">Платежный документ </p>
 										<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
+										<div class="border-arc-top-vertical"></div>
+										<div class="border-arc-top-horizontal"></div>
+										<div class="red-dot-arc-top"></div>
 									</div>
 								</div>
 								<div class="architect-block-calc-estimation-item_1">
@@ -646,9 +667,18 @@
 			<section class="products" id="products">
 				<div class="wrapper">
 					<h3 class="page__title-h3"><span>Продукты</span><br> и возможности</h3>
+					<div class="mob">
+						<div class="mob-slider-news">
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+						</div>
+					</div>
+					<div class="news-block"></div>
 					<div class="products-block">
 						<div class="products-block-items">
 							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-1.jpg"></div>
 								<div class="page__img"><img src="assets/img/estim-products.svg"></div>
 								<div class="polygon">
 									<div class="polygon__item"><svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -659,6 +689,7 @@
 								<p class="page__text_extra-small">Расчеты</p>
 							</div>
 							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-2.jpg"></div>
 								<div class="page__img"><img src="assets/img/icon-item-2.svg"></div>
 								<div class="polygon">
 									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -669,6 +700,7 @@
 								<p class="page__text_extra-small">Расчетный центр</p>
 							</div>
 							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-3.jpg"></div>
 								<div class="page__img"><img src="assets/img/icon-item-3.svg"></div>
 								<div class="polygon">
 									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -679,6 +711,7 @@
 								<p class="page__text_extra-small">СБП. Координатор</p>
 							</div>
 							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-4.jpg"></div>
 								<div class="page__img"><img src="assets/img/icon-item-4.svg"></div>
 								<div class="polygon">
 									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -689,6 +722,7 @@
 								<p class="page__text_extra-small">Расчеты через SWIFT</p>
 							</div>
 							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-5.jpg"></div>
 								<div class="page__img"><img src="assets/img/icon-item-5.svg"></div>
 								<div class="polygon">
 									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -699,6 +733,7 @@
 								<p class="page__text_extra-small">Защита сообщений SWIFT</p>
 							</div>
 							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-6.jpg"></div>
 								<div class="page__img"><img src="assets/img/icon-item-6.svg"></div>
 								<div class="polygon">
 									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -717,7 +752,6 @@
 			<section class="safety" id="safety">
 				<div class="wrapper">
 					<h3 class="page__title-h3"><span> безопасность </span> расчетов</h3>
-					<p class="page__text-medium">Важная задача платформы развития бизнеса <span> Payments </span> – обеспечить безопасность расчетов. Для ее выполнения в рамках платформы реализовано несколько продуктов.</p>
 					<div class="safety-block">
 						<div class="safety-block-messages">
 							<div class="bg_white">
@@ -918,8 +952,8 @@
 			<section class="clients" id="clients">
 				<div class="mob">
 					<h3 class="page__title-h3"><span>Клиенты</h3>
+					<div class="tag_cloud"></div>
 				</div>
-				<div class="tag_cloud"></div>
 				<div class="wrapper">
 					<div class="clients-block">
 						<h3 class="page__title-h3"><span>Клиенты</h3>
@@ -1103,11 +1137,12 @@
 		</div>
 		<script src="js/debug-grid-create.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/animations.js"></script>
 		<script src="js/tagcloud.min.js"></script>
 		<script src="js/modal.js"></script>
-		<script src="js/animations.js"></script>
 	</body>
 </html>

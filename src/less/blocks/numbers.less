@@ -10,7 +10,22 @@
         .xs-block({
             display: block;
         });
-
+        .page__title-h4 {
+            margin-bottom: 5%;
+            font-size: 220px;
+            text-align: center;
+            transition: --num 5s;
+            counter-reset: num var(--num);
+            --num: var(--targetNum);
+            &::after {
+                content: counter(num);
+            }
+    
+            .xs-block({
+                display: block;
+            });
+        }
+        
         .page__title-h3-numbers {
             text-align: center;
             font-size: 220px;
@@ -59,7 +74,7 @@
                         text-align: center;
                         transition: --num 5s;
                         counter-reset: num var(--num);
-                        
+                        --num: var(--targetNum);
                         &::after {
                             content: counter(num);
                         }

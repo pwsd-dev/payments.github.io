@@ -56,6 +56,18 @@ gsap.to('.border_bottom', {
 });
 
 
+gsap.to('.border-arc-top-vertical', {
+  //left: '0',
+  height: '100%',
+  scrollTrigger: {
+    trigger: ".border-arc-top-vertical",
+    start: 'top center',
+    end: 'bottom center',
+    scrub: 1,
+
+  }
+});
+
 $(document).ready(function () {
   $('.mob-slider-news').slick({
     arrows: false,
@@ -117,6 +129,63 @@ function closeBlock() {
   const someId = document.getElementById("someId");
 
   someId.classList.remove("active");
+
+}
+
+function openBlockOther() {
+  const otherId = document.getElementById("otherId");
+
+  otherId.classList.toggle("activeTwo");
+
+}
+
+function closeBlockOther() {
+  const otherId = document.getElementById("otherId");
+
+  otherId.classList.remove("activeTwo");
+
+}
+
+
+function openBlockForm() {
+  const otherForm = document.getElementById("otherForm");
+
+  otherForm.classList.toggle("activeThird");
+
+}
+
+function closeBlockForm() {
+  const otherForm = document.getElementById("otherForm");
+
+  otherForm.classList.remove("activeThird");
+
+}
+
+function openBlockConnect() {
+  const connect = document.getElementById("connect");
+
+  connect.classList.toggle("activeFourth");
+
+}
+
+function closeBlockForm() {
+  const connect = document.getElementById("connect");
+
+  connect.classList.remove("activeFourth");
+
+}
+
+function openBlockInform() {
+  const connect = document.getElementById("inform");
+
+  connect.classList.toggle("activeFive");
+
+}
+
+function closeBlockInform() {
+  const connect = document.getElementById("inform");
+
+  connect.classList.remove("activeFive");
 
 }
 
