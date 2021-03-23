@@ -986,26 +986,6 @@ input:focus {
   color: #b11832;
 }
 
-.platform-block .page__text-bold_middle_top:hover + .polygon svg {
-  position: relative;
-  width: 3.125vw;
-  height: 3.125vw;
-  left: 0.78125vw;
-  top: 0.67708vw;
-  color: red;
-  max-width: 100%;
-}
-
-.platform-block .page__text-bold_middle_top:hover + .polygon svg path {
-  stroke: white;
-}
-
-.platform-block .page__text-bold_middle_top:hover + .polygon svg:hover path {
-  stroke: red;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
 .platform-block .pay {
   margin-left: calc(7.083333333333334% + 0.78125vw);
   position: relative;
@@ -1529,6 +1509,27 @@ input:focus {
 
 .platform-block-description .page__text-bold_middle {
   width: calc(100% - 5.20833vw);
+}
+
+.platform-block .page__img {
+  opacity: 0;
+}
+
+.platform-block .block__li:hover .polygon,
+.platform-block .pay-second:hover .polygon {
+  background: #fff;
+}
+
+.platform-block .block__li:hover svg,
+.platform-block .pay-second:hover svg,
+.platform-block .block__li:hover svg path,
+.platform-block .pay-second:hover svg path {
+  stroke: red;
+}
+
+.platform-block .block__li:hover .page__img,
+.platform-block .pay-second:hover .page__img {
+  opacity: 1;
 }
 
 .platform-block .mob {
@@ -5141,14 +5142,6 @@ input:focus {
   .platform .page__title-h3 {
     font-size: 10.41667vw;
     text-align: left;
-  }
-
-  .platform-block .page__text-bold_middle_top:hover + .polygon svg {
-    top: 2.34375vw;
-    position: relative;
-    width: 7.8125vw;
-    height: 7.8125vw;
-    left: 3.125vw;
   }
 
   .platform-block .pay {

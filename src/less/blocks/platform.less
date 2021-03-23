@@ -91,38 +91,6 @@
                 // }
             }
         }
-        .page__text-bold_middle_top:hover + .polygon {
-            
-            svg {
-                position: relative;
-                width: 60px;
-                height: 60px;
-                left: 15px;
-                top: 13px;
-                color: red;
-                max-width: 100%;
-                .xs-block({
-                    top: 45px;
-                    position: relative;
-                    width: 150px;
-                    height: 150px;
-                    left: 60px;
-                });
-                
-            }
-            
-            svg path {
-                stroke: white;
-                //transition: all .5s ease;
-                
-                
-            }
-
-            svg:hover path {
-                stroke: red;
-                transition: all .5s ease;
-            }
-        }
 
         .pay {
             
@@ -670,7 +638,21 @@
                 width: calc(100% - 100px);
            }
         }
+        .page__img {
+            opacity: 0;
+        }
 
+        .block__li:hover, .pay-second:hover  {
+            .polygon {
+                 background: #fff;
+            }
+            svg, svg path {
+                stroke: red;
+            }
+            .page__img {
+                opacity: 1;
+            }
+        }
 
         .mob {
             display: none;
