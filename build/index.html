@@ -1,1456 +1,1147 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<title>Заголовок страницы</title>
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
-</head>
-
-<body>
-	<div class="page">
-		<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
-		<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
-		<div class="debugGrid debugGrid__z-index-negative"></div>
-		<header class="header">
-			<div class="wrapper">
-				<div class="mob">
-					<div class="mob-logo"><a href="/">
-							<div class="page__img"><img src="assets/img/logo.svg"></div>
-						</a></div>
-				</div>
-				<div class="header-block">
-					<div class="header-block-nav__logo"><a href="/">
-							<div class="page__img"><img src="assets/img/logo.svg"></div>
-						</a></div>
-					<div class="nav"> <a class="nav__link" href="#banner">ПЛАТФОРМА</a><a
-							class="nav__link_more padding_left-30" href="#architect">Бизнес</a><a
-							class="nav__link_architect" href="#architect">-архитектура</a><a class="nav__link"
-							href="#products">Продукты</a><a class="nav__link" href="#safety">Безопасность</a><a
-							class="nav__link" href="#advantages">Преимущества</a><a class="nav__link"
-							href="#numbers">цифры</a><a class="nav__link" href="#clients">клиенты</a><a
-							class="nav__link" href="#news">новости</a></div>
-				</div>
-			</div>
-		</header>
-		<section class="banner" id="banner">
-			<div class="wrapper">
-				<div class="banner-block">
+<html lang="ru"> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<title>Заголовок страницы</title>
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
+	</head>
+	<body>
+		<div class="page">
+			<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
+			<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
+			<div class="debugGrid debugGrid__z-index-negative"></div>
+			<header class="header">
+				<div class="wrapper">
 					<div class="mob">
-						<div class="page__img"><img src="assets/img/banner-mob-bg-top.svg"></div>
-						<div class="page__img-mid"><img src="assets/img/banner-mob-bg-bottom.svg"></div>
-						<div class="page__img-bottom"><img src="assets/img/banner-bottom.svg"></div>
-						<p class="page__text-bold_middle">ПЛАТФОРМА РАЗВИТИЯ БИЗНЕСА<br> DIGITAL Q</p>
-						<p class="page__title-h1">pay<span>ments</p>
+						<div class="mob-logo"><a href="/">
+								<div class="page__img"><img src="assets/img/logo.svg"></div></a></div>
 					</div>
-					<div class="banner-block-img">
-						<div class="page__img">
-							<video type="video/mp4" muted loop autoplay>
-								<source src="assets/video/video.mp4">
-							</video>
+					<div class="header-block">
+						<div class="header-block-nav__logo"><a href="/">
+								<div class="page__img"><img src="assets/img/logo.svg"></div></a></div>
+						<div class="nav">        <a class="nav__link" href="#banner">ПЛАТФОРМА</a><a class="nav__link_more padding_left-30" href="#architect">Бизнес</a><a class="nav__link_architect" href="#architect">-архитектура</a><a class="nav__link" href="#products">Продукты</a><a class="nav__link" href="#safety">Безопасность</a><a class="nav__link" href="#advantages">Преимущества</a><a class="nav__link" href="#numbers">цифры</a><a class="nav__link" href="#clients">клиенты</a><a class="nav__link" href="#news">новости</a></div>
+					</div>
+				</div>
+			</header>
+			<section class="banner" id="banner">
+				<div class="wrapper">
+					<div class="banner-block">
+						<div class="mob">
+							<div class="page__img"><img src="assets/img/banner-mob-bg-top.svg"></div>
+							<div class="page__img-mid"><img src="assets/img/banner-mob-bg-bottom.svg"></div>
+							<div class="page__img-bottom"><img src="assets/img/banner-bottom.svg"></div>
+							<p class="page__text-bold_middle">ПЛАТФОРМА РАЗВИТИЯ БИЗНЕСА<br> DIGITAL Q</p>
+							<p class="page__title-h1">pay<span>ments</p>
+						</div>
+						<div class="banner-block-img">
+							<div class="page__img">
+								<video type="video/mp4" muted loop autoplay>
+									<source src="assets/video/video.mp4">
+								</video>
+							</div>
+						</div>
+						<div class="banner-block-img-background">
+							<div class="page__img"><img src="assets/img/bg-banner.png"></div>
+						</div>
+						<div class="banner-block-description">
+							<p class="page__title-h1">pay<span>ments</p>
+							<p class="page__text_Italic">Банковская система – кровеносная система организма, а капиталы – кровь, питающая различные его части</p>
+							<p class="page__text_small-bold">Д. М. Кейнc</p>
+							<p class="page__text_small">\ английский экономист</p>
 						</div>
 					</div>
-					<div class="banner-block-img-background">
-						<div class="page__img"><img src="assets/img/bg-banner.png"></div>
-					</div>
-					<div class="banner-block-description">
-						<p class="page__title-h1">pay<span>ments</p>
-						<p class="page__text_Italic">Банковская система – кровеносная система организма, а капиталы –
-							кровь, питающая различные его части</p>
-						<p class="page__text_small-bold">Д. М. Кейнc</p>
-						<p class="page__text_small">\ английский экономист</p>
+				</div>
+			</section>
+			<section class="heart" id="heart">
+				<div class="wrapper">
+					<div class="heart-block">
+						<div class="heart-block-description">
+							<p class="page__text-bold">ПЛАТФОРМА РАЗВИТИЯ БИЗНЕСА DIGITAL Q</p>
+							<h2 class="page__title-h2">PAYMENTS</h2>
+							<p class="page__text-bold_mid">Выполнение расчетов в национальной и иностранной валюте через платежные и расчетные системы.</p>
+							<p class="page__text-medium">Платформа применима для всех банков и некредитных финансовых организаций.           </p>
+							<div class="heart-block-description-bg"></div>
+						</div>
+						<div class="heart-block-img"> 
+							<div class="page__img"></div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="heart" id="heart">
-			<div class="wrapper">
-				<div class="heart-block">
-					<div class="heart-block-description">
-						<p class="page__text-bold">ПЛАТФОРМА РАЗВИТИЯ БИЗНЕСА DIGITAL Q</p>
-						<h2 class="page__title-h2">PAYMENTS</h2>
-						<p class="page__text-bold_mid">Выполнение расчетов в национальной и иностранной валюте через
-							платежные и расчетные системы.</p>
-						<p class="page__text-medium">Платформа применима для всех банков и некредитных финансовых
-							организаций. </p>
-						<div class="heart-block-description-bg"></div>
-					</div>
-					<div class="heart-block-img">
-						<div class="page__img"></div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="platform" id="platform">
-			<div class="wrapper">
-				<div class="border_top left"></div>
-				<div class="border_top right"></div>
-				<div class="border_side left"></div>
-				<div class="border_side right"></div>
-				<div class="border_bottom left"></div>
-				<div class="border_bottom right"></div>
-				<h3 class="page__title-h3">для чего нужна <span>платформа</h3>
-				<div class="platform-block">
-					<div class="mob">
-						<ul class="pay-mob">
-							<li class="pay-mob">
-								<div class="polygon">
-									<div class="polygon__item"><svg width="58" height="55" viewBox="0 0 58 55"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M11.7812 33.5312H19.9375L29.9062 37.1562H38.0625C39.5669 37.1562 40.7812 38.3706 40.7812 39.875C40.7812 41.3794 39.5669 42.5938 38.0625 42.5938H28.0938C26.5894 42.5938 25.375 43.8081 25.375 45.3125"
-												stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-											<path
-												d="M39.875 41.687L54.375 37.1558C55.8794 37.1558 57.0938 38.3701 57.0938 39.8745C57.0938 40.7808 56.1875 41.687 56.1875 41.687L33.5312 53.4683H31.7188L16.3125 48.0308H12.6875"
-												stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-											<path
-												d="M40.7812 31.7188C43.2838 31.7188 45.3125 29.69 45.3125 27.1875C45.3125 24.685 43.2838 22.6562 40.7812 22.6562C38.2787 22.6562 36.25 24.685 36.25 27.1875C36.25 29.69 38.2787 31.7188 40.7812 31.7188Z"
-												stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-											<path
-												d="M26.2812 24.4688C28.7838 24.4688 30.8125 22.44 30.8125 19.9375C30.8125 17.435 28.7838 15.4062 26.2812 15.4062C23.7787 15.4062 21.75 17.435 21.75 19.9375C21.75 22.44 23.7787 24.4688 26.2812 24.4688Z"
-												stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-											<path d="M9.0625 46.2188H7.25" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M5.4375 46.2188H3.625" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M28.0938 7.25V0" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M24.4688 12.6875V5.4375" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M28.0938 9.0625V10.875" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M24.4688 1.8125V3.625" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M38.9688 14.5V7.25" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M42.5938 19.9375V12.6875" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M38.9688 16.3125V18.125" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M42.5938 9.0625V10.875" stroke="#B11832" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path
-												d="M0 31.7188H10.875C11.3734 31.7188 11.7812 32.1266 11.7812 32.625V48.9375C11.7812 49.4359 11.3734 49.8438 10.875 49.8438H0"
-												stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-										</svg>
-									</div>
-								</div><a class="page__text-bold_middle_top">Быстрые расчеты и платежи</a>
-							</li>
-						</ul>
-						<ul class="pay-mob-second">
-							<li class="pay-mob-second">
-								<div class="polygon">
-									<div class="polygon__item"><svg width="72" height="72" viewBox="0 0 72 72"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<g filter="url(#filter0_d)">
-												<path d="M52 25L47 20L33 34L25 26L20 31L33 44L52 25Z" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-													stroke-linejoin="round" />
-												<path d="M35 57H37" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M35 7H37" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M10 32H12" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M60 32H62" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path
-													d="M36 63C53.1208 63 67 49.1208 67 32C67 14.8792 53.1208 1 36 1C18.8792 1 5 14.8792 5 32C5 49.1208 18.8792 63 36 63Z"
-													stroke="white" stroke-width="2" stroke-miterlimit="10" />
-											</g>
-											<defs>
-												<filter id="filter0_d" x="0" y="0" width="72" height="72"
-													filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-													<feFlood flood-opacity="0" result="BackgroundImageFix" />
-													<feColorMatrix in="SourceAlpha" type="matrix"
-														values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-													<feOffset dy="4" />
-													<feGaussianBlur stdDeviation="2" />
-													<feColorMatrix type="matrix"
-														values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-													<feBlend mode="normal" in2="BackgroundImageFix"
-														result="effect1_dropShadow" />
-													<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
-														result="shape" />
-												</filter>
-											</defs>
-										</svg>
-									</div>
-								</div>
-								<p class="page__text-bold_middle">Простое подключение новых платформ и расчетных систем
-								</p>
-							</li>
-							<li class="pay-mob-second">
-								<div class="polygon">
-									<div class="polygon__item"><svg width="56" height="49" viewBox="0 0 56 49"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<g clip-path="url(#clip0)">
-												<path
-													d="M32.5412 31.5875C29.8812 37.2225 24.15 41.125 17.5 41.125C8.32125 41.125 0.875 33.6787 0.875 24.5C0.875 15.3213 8.32125 7.875 17.5 7.875C24.1938 7.875 29.9687 11.83 32.6025 17.535"
-													stroke="white" stroke-width="2" stroke-miterlimit="10"
-													stroke-linejoin="round" />
-												<path
-													d="M17.5 41.125C23.7822 41.125 28.875 33.6817 28.875 24.5C28.875 15.3183 23.7822 7.875 17.5 7.875C11.2178 7.875 6.125 15.3183 6.125 24.5C6.125 33.6817 11.2178 41.125 17.5 41.125Z"
-													stroke="white" stroke-width="2" stroke-miterlimit="10"
-													stroke-linejoin="round" />
-												<path
-													d="M17.5 41.125C20.8827 41.125 23.625 33.6817 23.625 24.5C23.625 15.3183 20.8827 7.875 17.5 7.875C14.1173 7.875 11.375 15.3183 11.375 24.5C11.375 33.6817 14.1173 41.125 17.5 41.125Z"
-													stroke="white" stroke-width="2" stroke-miterlimit="10"
-													stroke-linejoin="round" />
-												<path d="M17.5 7.875V41.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" stroke-linejoin="round" />
-												<path d="M29.75 13.125H5.25" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" stroke-linejoin="round" />
-												<path d="M30.625 35H4.375" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" stroke-linejoin="round" />
-												<path d="M32.375 24.5H0.875" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" stroke-linejoin="round" />
-												<path
-													d="M30.9224 9.70375C33.1886 8.53125 35.7699 7.875 38.4999 7.875C47.6786 7.875 55.1249 15.3213 55.1249 24.5C55.1249 33.6787 47.6786 41.125 38.4999 41.125C35.7961 41.125 33.2324 40.4775 30.9749 39.3313"
-													stroke="white" stroke-width="2" stroke-miterlimit="10"
-													stroke-linejoin="round" />
-												<path
-													d="M42 21C42 19.0662 40.4338 17.5 38.5 17.5C36.5662 17.5 35 19.0662 35 21C35 22.9338 36.75 23.625 38.5 24.5C40.25 25.375 42 26.0662 42 28C42 29.9338 40.4338 31.5 38.5 31.5C36.5662 31.5 35 29.9338 35 28"
-													stroke="white" stroke-width="2" stroke-miterlimit="10" />
-												<path d="M38.5 17.5V14.875" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M38.5 31.5V34.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M44.625 24.5H46.375" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M44.625 21H46.375" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M44.625 28H46.375" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M0 0.875488H44.625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M46.375 0.875H48.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M49.875 0.875H51.625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M53.375 0.875H55.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M4.375 48.125H6.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M0.875 48.125H2.625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M7.875 48.125H9.625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M11.375 48.125H56" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-											</g>
-											<defs>
-												<clipPath id="clip0">
-													<rect width="56" height="49" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-								</div>
-								<p class="page__text-bold_middle">Формирование и обработка операций по денежным
-									переводам</p>
-							</li>
-							<li class="pay-mob-second">
-								<div class="polygon">
-									<div class="polygon__item"><svg width="50" height="43" viewBox="0 0 50 43"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<g clip-path="url(#clip0)">
-												<path
-													d="M23.0441 36.6829H4.63862L1.57104 33.6153V32.0815H19.9765L21.5103 33.6153H23.0441"
-													stroke="white" stroke-width="1.53379" stroke-miterlimit="10" />
-												<path
-													d="M23.0442 2.93994H8.4732C7.20015 2.93994 6.17252 3.96758 6.17252 5.24063V29.7813"
-													stroke="white" stroke-width="1.53379" stroke-miterlimit="10" />
-												<path
-													d="M27.6455 39.7503H46.051L49.1186 36.6827V35.1489H30.7131L29.1793 36.6827H27.6455"
-													stroke="white" stroke-width="1.53379" stroke-miterlimit="10" />
-												<path
-													d="M27.6455 6.00684H42.2165C43.4896 6.00684 44.5172 7.03448 44.5172 8.30752V32.8482"
-													stroke="white" stroke-width="1.53379" stroke-miterlimit="10" />
-												<path d="M25.3447 26.7134V42.0513" stroke="white" stroke-width="1.53379"
-													stroke-miterlimit="10" />
-												<path d="M25.3447 15.9766V22.1117" stroke="white" stroke-width="1.53379"
-													stroke-miterlimit="10" />
-												<path d="M25.3447 0.638672V11.3752" stroke="white"
-													stroke-width="1.53379" stroke-miterlimit="10" />
-												<path
-													d="M25.3449 24.4127C22.377 24.4127 19.9766 22.0123 19.9766 19.0444"
-													stroke="white" stroke-width="1.53379" stroke-miterlimit="10" />
-												<path
-													d="M25.3448 13.6758C28.3127 13.6758 30.7131 16.0762 30.7131 19.044"
-													stroke="white" stroke-width="1.53379" stroke-miterlimit="10" />
-												<path d="M25.3448 24.4126H31.4799" stroke="white" stroke-width="1.53379"
-													stroke-miterlimit="10" />
-												<path d="M19.2097 13.6758H25.3449" stroke="white" stroke-width="1.53379"
-													stroke-miterlimit="10" />
-												<path d="M28.4125 27.4799L31.4801 24.4123L28.4125 21.3447"
-													stroke="white" stroke-width="1.53379" stroke-miterlimit="10" />
-												<path d="M22.2773 16.7436L19.2097 13.676L22.2773 10.6084" stroke="white"
-													stroke-width="1.53379" stroke-miterlimit="10" />
-												<path d="M23.0441 29.0137H9.24002V6.00684H23.0441" stroke="white"
-													stroke-width="1.53379" stroke-miterlimit="10" />
-												<path d="M27.6455 9.0752H41.4496V32.082H27.6455" stroke="white"
-													stroke-width="1.53379" stroke-miterlimit="10" />
-											</g>
-											<defs>
-												<clipPath id="clip0">
-													<rect width="49.0813" height="41.4123" fill="white"
-														transform="translate(0.804199 0.638672)" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-								</div>
-								<p class="page__text-bold_middle">Поддержка различных форматов обмена информацией</p>
-							</li>
-							<li class="pay-mob-second">
-								<div class="polygon">
-									<div class="polygon__item"><svg width="53" height="53" viewBox="0 0 53 53"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<g clip-path="url(#clip0)">
-												<path d="M12.4219 30.6406V0.828125H43.8906V27.3281" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path d="M46.375 19.0469H52.1719V52.1719H0.828125V19.0469H6.625"
-													stroke="white" stroke-width="2" stroke-miterlimit="10" />
-												<path d="M52.1719 52.1719L26.5 32.2969L0.828125 52.1719" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path d="M0.828125 19.0469L17.3906 35.6094" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path d="M52.1719 19.0469L35.6094 35.6094" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path d="M25.6719 47.2031H27.3281" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M28.9844 47.2031H30.6406" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M22.3594 47.2031H24.0156" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M9.10938 27.3281V4.14062H12.4219" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path
-													d="M28.1562 28.9844C32.7299 28.9844 36.4375 25.2767 36.4375 20.7031C36.4375 16.1295 32.7299 12.4219 28.1562 12.4219C23.5826 12.4219 19.875 16.1295 19.875 20.7031C19.875 25.2767 23.5826 28.9844 28.1562 28.9844Z"
-													stroke="white" stroke-width="2" stroke-miterlimit="10" />
-												<path d="M14.9062 4.14062H16.5625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M18.2188 4.14062H19.875" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M21.5312 4.14062H23.1875" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M14.9062 7.45312H41.4062" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M32.2969 18.2188L27.3281 23.1875L24.0156 19.875" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-											</g>
-											<defs>
-												<clipPath id="clip0">
-													<rect width="53" height="53" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-								</div>
-								<p class="page__text-bold_middle">Эффективная маршрутизация платежных документов</p>
-							</li>
-						</ul>
-					</div>
-					<ul class="pay pay-second" id="someId">
-						<li class="pay__li">
-							<div class="polygon">
-								<div class="polygon__item"><svg width="58" height="55" viewBox="0 0 58 55" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.7812 33.5312H19.9375L29.9062 37.1562H38.0625C39.5669 37.1562 40.7812 38.3706 40.7812 39.875C40.7812 41.3794 39.5669 42.5938 38.0625 42.5938H28.0938C26.5894 42.5938 25.375 43.8081 25.375 45.3125"
-											stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-										<path
-											d="M39.875 41.687L54.375 37.1558C55.8794 37.1558 57.0938 38.3701 57.0938 39.8745C57.0938 40.7808 56.1875 41.687 56.1875 41.687L33.5312 53.4683H31.7188L16.3125 48.0308H12.6875"
-											stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-										<path
-											d="M40.7812 31.7188C43.2838 31.7188 45.3125 29.69 45.3125 27.1875C45.3125 24.685 43.2838 22.6562 40.7812 22.6562C38.2787 22.6562 36.25 24.685 36.25 27.1875C36.25 29.69 38.2787 31.7188 40.7812 31.7188Z"
-											stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-										<path
-											d="M26.2812 24.4688C28.7838 24.4688 30.8125 22.44 30.8125 19.9375C30.8125 17.435 28.7838 15.4062 26.2812 15.4062C23.7787 15.4062 21.75 17.435 21.75 19.9375C21.75 22.44 23.7787 24.4688 26.2812 24.4688Z"
-											stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-										<path d="M9.0625 46.2188H7.25" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path d="M5.4375 46.2188H3.625" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path d="M28.0938 7.25V0" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path d="M24.4688 12.6875V5.4375" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path d="M28.0938 9.0625V10.875" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path d="M24.4688 1.8125V3.625" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path d="M38.9688 14.5V7.25" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path d="M42.5938 19.9375V12.6875" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path d="M38.9688 16.3125V18.125" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path d="M42.5938 9.0625V10.875" stroke="#B11832" stroke-width="2"
-											stroke-miterlimit="10" />
-										<path
-											d="M0 31.7188H10.875C11.3734 31.7188 11.7812 32.1266 11.7812 32.625V48.9375C11.7812 49.4359 11.3734 49.8438 10.875 49.8438H0"
-											stroke="#B11832" stroke-width="2" stroke-miterlimit="10" />
-									</svg>
-								</div>
-							</div>
-							<button class="page__toggle" type="button" onclick="openBlock()"><a
-									class="page__text-bold_middle_top" id="openBlockBtn">Быстрые расчеты и
-									платежи</a></button>
-							<div class="page__img"><img src="assets/img/line-red.svg"></div>
-						</li>
-						<li class="pay-second__li">
-							<div class="page__text-medium">Высокая производительность и масштабируемость решений в
-								составе платформы для обслуживания большого числа одновременно работающих пользователей
-							</div>
-							<div class="page__text-medium">Гибкое масштабирование решений при росте бизнеса и открытии
-								новых точек обслуживания клиентов</div>
-						</li>
-					</ul>
-					<div class="platform-block-description">
-						<ul class="block__ul">
-							<li class="block__li otherpay" id="otherId">
-								<div class="polygon">
-									<div class="polygon__item"><svg width="53" height="53" viewBox="0 0 53 53"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<g clip-path="url(#clip0)">
-												<path d="M12.4219 30.6406V0.828125H43.8906V27.3281" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path d="M46.375 19.0469H52.1719V52.1719H0.828125V19.0469H6.625"
-													stroke="white" stroke-width="2" stroke-miterlimit="10" />
-												<path d="M52.1719 52.1719L26.5 32.2969L0.828125 52.1719" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path d="M0.828125 19.0469L17.3906 35.6094" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path d="M52.1719 19.0469L35.6094 35.6094" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path d="M25.6719 47.2031H27.3281" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M28.9844 47.2031H30.6406" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M22.3594 47.2031H24.0156" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M9.10938 27.3281V4.14062H12.4219" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-												<path
-													d="M28.1562 28.9844C32.7299 28.9844 36.4375 25.2767 36.4375 20.7031C36.4375 16.1295 32.7299 12.4219 28.1562 12.4219C23.5826 12.4219 19.875 16.1295 19.875 20.7031C19.875 25.2767 23.5826 28.9844 28.1562 28.9844Z"
-													stroke="white" stroke-width="2" stroke-miterlimit="10" />
-												<path d="M14.9062 4.14062H16.5625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M18.2188 4.14062H19.875" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M21.5312 4.14062H23.1875" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M14.9062 7.45312H41.4062" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M32.2969 18.2188L27.3281 23.1875L24.0156 19.875" stroke="white"
-													stroke-width="2" stroke-miterlimit="10" />
-											</g>
-											<defs>
-												<clipPath id="clip0">
-													<rect width="53" height="53" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-								</div>
-								<button class="page__toggle" type="button" onclick="openBlockOther()"><a
-										class="page__text-bold_middle_top" id="openBlockBtn">Эффективная маршрутизация
-										платежных документов</a></button>
-								<div class="otherpay__li">
-									<div class="page__text-medium">Настройка процесса обработки документа в зависимости
-										от его параметров</div>
-									<div class="page__text-medium">Контроль реквизитов документа в зависимости от его
-										типа</div>
-									<div class="page__text-medium">Возможность отслеживания этапов обработки документа
-									</div>
-								</div>
-								<div class="page__img"><img src="assets/img/line-red.svg"></div>
-							</li>
-							<li class="block__li otherForm" id="otherForm">
-								<div class="polygon">
-									<div class="polygon__item"><svg width="56" height="49" viewBox="0 0 56 49"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<g clip-path="url(#clip0)">
-												<path
-													d="M32.5412 31.5875C29.8812 37.2225 24.15 41.125 17.5 41.125C8.32125 41.125 0.875 33.6787 0.875 24.5C0.875 15.3213 8.32125 7.875 17.5 7.875C24.1938 7.875 29.9687 11.83 32.6025 17.535"
-													stroke="white" stroke-width="2" stroke-miterlimit="10"
-													stroke-linejoin="round" />
-												<path
-													d="M17.5 41.125C23.7822 41.125 28.875 33.6817 28.875 24.5C28.875 15.3183 23.7822 7.875 17.5 7.875C11.2178 7.875 6.125 15.3183 6.125 24.5C6.125 33.6817 11.2178 41.125 17.5 41.125Z"
-													stroke="white" stroke-width="2" stroke-miterlimit="10"
-													stroke-linejoin="round" />
-												<path
-													d="M17.5 41.125C20.8827 41.125 23.625 33.6817 23.625 24.5C23.625 15.3183 20.8827 7.875 17.5 7.875C14.1173 7.875 11.375 15.3183 11.375 24.5C11.375 33.6817 14.1173 41.125 17.5 41.125Z"
-													stroke="white" stroke-width="2" stroke-miterlimit="10"
-													stroke-linejoin="round" />
-												<path d="M17.5 7.875V41.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" stroke-linejoin="round" />
-												<path d="M29.75 13.125H5.25" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" stroke-linejoin="round" />
-												<path d="M30.625 35H4.375" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" stroke-linejoin="round" />
-												<path d="M32.375 24.5H0.875" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" stroke-linejoin="round" />
-												<path
-													d="M30.9224 9.70375C33.1886 8.53125 35.7699 7.875 38.4999 7.875C47.6786 7.875 55.1249 15.3213 55.1249 24.5C55.1249 33.6787 47.6786 41.125 38.4999 41.125C35.7961 41.125 33.2324 40.4775 30.9749 39.3313"
-													stroke="white" stroke-width="2" stroke-miterlimit="10"
-													stroke-linejoin="round" />
-												<path
-													d="M42 21C42 19.0662 40.4338 17.5 38.5 17.5C36.5662 17.5 35 19.0662 35 21C35 22.9338 36.75 23.625 38.5 24.5C40.25 25.375 42 26.0662 42 28C42 29.9338 40.4338 31.5 38.5 31.5C36.5662 31.5 35 29.9338 35 28"
-													stroke="white" stroke-width="2" stroke-miterlimit="10" />
-												<path d="M38.5 17.5V14.875" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M38.5 31.5V34.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M44.625 24.5H46.375" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M44.625 21H46.375" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M44.625 28H46.375" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M0 0.875488H44.625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M46.375 0.875H48.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M49.875 0.875H51.625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M53.375 0.875H55.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M4.375 48.125H6.125" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M0.875 48.125H2.625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M7.875 48.125H9.625" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-												<path d="M11.375 48.125H56" stroke="white" stroke-width="2"
-													stroke-miterlimit="10" />
-											</g>
-											<defs>
-												<clipPath id="clip0">
-													<rect width="56" height="49" fill="white" />
-												</clipPath>
-											</defs>
-										</svg>
-									</div>
-								</div>
-								<button class="page__toggle" type="button" onclick="openBlockForm()"> <a
-										class="page__text-bold_middle_top" id="openBlockBtn">Формирование и обработка
-										операций по денежным переводам</a></button>
-								<div class="page__img"><img src="assets/img/line-red.svg"></div>
-								<div class="otherForm__li">
-									<div class="page__text-medium">Настройка процесса обработки документа в зависимости
-										от его параметров</div>
-									<div class="page__text-medium">Контроль реквизитов документа в зависимости от его
-										типа</div>
-									<div class="page__text-medium">Возможность отслеживания этапов обработки документа
-									</div>
-								</div>
-							</li>
-							<li class="block__li inform" id="inform">
-								<div class="polygon">
-									<div class="polygon__item"><svg width="64" height="54" viewBox="0 0 64 54"
-											fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M29 47H5L1 43V41H25L27 43H29" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M29 3H10C8.34 3 7 4.34 7 6V38" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M35 51H59L63 47V45H39L37 47H35" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M35 7H54C55.66 7 57 8.34 57 10V42" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M32 34V54" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M32 20V28" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M32 0V14" stroke="white" stroke-width="2" stroke-miterlimit="10" />
-											<path d="M32 31C28.13 31 25 27.87 25 24" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M32 17C35.87 17 39 20.13 39 24" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M32 31H40" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M24 17H32" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M36 35L40 31L36 27" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M28 21L24 17L28 13" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M29 37H11V7H29" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-											<path d="M35 11H53V41H35" stroke="white" stroke-width="2"
-												stroke-miterlimit="10" />
-										</svg>
-									</div>
-								</div>
-								<button class="page__toggle" type="button" onclick="openBlockInform()"><a
-										class="page__text-bold_middle_top" id="openBlockBtn">Поддержка различных
-										форматов обмена <br> информацией</a></button>
-								<div class="page__img"><img src="assets/img/line-red.svg"></div>
-								<div class="page__button"></div>
-								<div class="inform__li">
-									<div class="page__text-medium">Единое информационное пространство для проведения
-										расчетов современного универсального баека и его филиалов</div>
-								</div>
-							</li>
-							<li class="block__li connect" id="connect">
-								<div class="polygon">
+			</section>
+			<section class="platform" id="platform">
+				<div class="wrapper">
+					<div class="border_top left"></div>
+					<div class="border_top right"></div>
+					<div class="border_side left"></div>
+					<div class="border_side right"></div>
+					<div class="border_bottom left"></div>
+					<div class="border_bottom right"></div>
+					<h3 class="page__title-h3">для чего нужна <span>платформа</h3>
+					<div class="platform-block">
+						<div class="mob">
+							<ul class="pay-mob">
+								<li class="pay-mob">
 									<div class="polygon">
-										<div class="polygon__item"><svg width="72" height="72" viewBox="0 0 72 72"
-												fill="none" xmlns="http://www.w3.org/2000/svg">
-												<g filter="url(#filter0_d)">
-													<path d="M52 25L47 20L33 34L25 26L20 31L33 44L52 25Z" stroke="white"
-														stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-														stroke-linejoin="round" />
-													<path d="M35 57H37" stroke="white" stroke-width="2"
-														stroke-miterlimit="10" />
-													<path d="M35 7H37" stroke="white" stroke-width="2"
-														stroke-miterlimit="10" />
-													<path d="M10 32H12" stroke="white" stroke-width="2"
-														stroke-miterlimit="10" />
-													<path d="M60 32H62" stroke="white" stroke-width="2"
-														stroke-miterlimit="10" />
-													<path
-														d="M36 63C53.1208 63 67 49.1208 67 32C67 14.8792 53.1208 1 36 1C18.8792 1 5 14.8792 5 32C5 49.1208 18.8792 63 36 63Z"
-														stroke="white" stroke-width="2" stroke-miterlimit="10" />
-												</g>
-												<defs>
-													<filter id="filter0_d" x="0" y="0" width="72" height="72"
-														filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-														<feFlood flood-opacity="0" result="BackgroundImageFix" />
-														<feColorMatrix in="SourceAlpha" type="matrix"
-															values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-														<feOffset dy="4" />
-														<feGaussianBlur stdDeviation="2" />
-														<feColorMatrix type="matrix"
-															values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-														<feBlend mode="normal" in2="BackgroundImageFix"
-															result="effect1_dropShadow" />
-														<feBlend mode="normal" in="SourceGraphic"
-															in2="effect1_dropShadow" result="shape" />
-													</filter>
-												</defs>
-											</svg>
+										<div class="polygon__item"><svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.7812 33.5312H19.9375L29.9062 37.1562H38.0625C39.5669 37.1562 40.7812 38.3706 40.7812 39.875C40.7812 41.3794 39.5669 42.5938 38.0625 42.5938H28.0938C26.5894 42.5938 25.375 43.8081 25.375 45.3125" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M39.875 41.687L54.375 37.1558C55.8794 37.1558 57.0938 38.3701 57.0938 39.8745C57.0938 40.7808 56.1875 41.687 56.1875 41.687L33.5312 53.4683H31.7188L16.3125 48.0308H12.6875" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M40.7812 31.7188C43.2838 31.7188 45.3125 29.69 45.3125 27.1875C45.3125 24.685 43.2838 22.6562 40.7812 22.6562C38.2787 22.6562 36.25 24.685 36.25 27.1875C36.25 29.69 38.2787 31.7188 40.7812 31.7188Z" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M26.2812 24.4688C28.7838 24.4688 30.8125 22.44 30.8125 19.9375C30.8125 17.435 28.7838 15.4062 26.2812 15.4062C23.7787 15.4062 21.75 17.435 21.75 19.9375C21.75 22.44 23.7787 24.4688 26.2812 24.4688Z" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M9.0625 46.2188H7.25" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M5.4375 46.2188H3.625" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28.0938 7.25V0" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M24.4688 12.6875V5.4375" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28.0938 9.0625V10.875" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M24.4688 1.8125V3.625" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.9688 14.5V7.25" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M42.5938 19.9375V12.6875" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.9688 16.3125V18.125" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M42.5938 9.0625V10.875" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 31.7188H10.875C11.3734 31.7188 11.7812 32.1266 11.7812 32.625V48.9375C11.7812 49.4359 11.3734 49.8438 10.875 49.8438H0" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+</svg>
+										</div>
+									</div><a class="page__text-bold_middle_top">Быстрые расчеты и платежи</a>
+								</li>
+							</ul>
+							<ul class="pay-mob-second">
+								<li class="pay-mob-second">
+									<div class="polygon">
+										<div class="polygon__item"><svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M52 25L47 20L33 34L25 26L20 31L33 44L52 25Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35 57H37" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M35 7H37" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M10 32H12" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M60 32H62" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M36 63C53.1208 63 67 49.1208 67 32C67 14.8792 53.1208 1 36 1C18.8792 1 5 14.8792 5 32C5 49.1208 18.8792 63 36 63Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
 										</div>
 									</div>
-								</div>
-								<button class="page__toggle" type="button" onclick="openBlockConnect()"><a
-										class="page__text-bold_middle_top" id="openBlockBtn">Простое подключение новых
-										платформ и расчетных систем</a></button>
-								<div class="connect__li connect">
-									<div class="page__text-medium">Открытая архитектура</div>
-									<div class="page__text-medium">Готовый слой API для интеграции в существующую
-										IT-инфраструктуру банка</div>
-								</div>
-								<div class="page__img"><img src="assets/img/line-red.svg"></div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="architect" id="architect">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span>БИЗНЕС-АРХИТЕКТУРА</span> ПЛАТФОРМЫ</h3>
-				<div class="architect-block">
-					<div class="mob">
-						<p class="page__text_extra">Расчеты</p>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Платежный документ </p>
-									<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
-								</div>
-							</div>
+									<p class="page__text-bold_middle">Простое подключение новых платформ и расчетных систем</p>
+								</li>
+								<li class="pay-mob-second">
+									<div class="polygon">
+										<div class="polygon__item"><svg width="56" height="49" viewBox="0 0 56 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M32.5412 31.5875C29.8812 37.2225 24.15 41.125 17.5 41.125C8.32125 41.125 0.875 33.6787 0.875 24.5C0.875 15.3213 8.32125 7.875 17.5 7.875C24.1938 7.875 29.9687 11.83 32.6025 17.535" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.5 41.125C23.7822 41.125 28.875 33.6817 28.875 24.5C28.875 15.3183 23.7822 7.875 17.5 7.875C11.2178 7.875 6.125 15.3183 6.125 24.5C6.125 33.6817 11.2178 41.125 17.5 41.125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.5 41.125C20.8827 41.125 23.625 33.6817 23.625 24.5C23.625 15.3183 20.8827 7.875 17.5 7.875C14.1173 7.875 11.375 15.3183 11.375 24.5C11.375 33.6817 14.1173 41.125 17.5 41.125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.5 7.875V41.125" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M29.75 13.125H5.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M30.625 35H4.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M32.375 24.5H0.875" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M30.9224 9.70375C33.1886 8.53125 35.7699 7.875 38.4999 7.875C47.6786 7.875 55.1249 15.3213 55.1249 24.5C55.1249 33.6787 47.6786 41.125 38.4999 41.125C35.7961 41.125 33.2324 40.4775 30.9749 39.3313" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M42 21C42 19.0662 40.4338 17.5 38.5 17.5C36.5662 17.5 35 19.0662 35 21C35 22.9338 36.75 23.625 38.5 24.5C40.25 25.375 42 26.0662 42 28C42 29.9338 40.4338 31.5 38.5 31.5C36.5662 31.5 35 29.9338 35 28" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.5 17.5V14.875" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.5 31.5V34.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.625 24.5H46.375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.625 21H46.375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.625 28H46.375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 0.875488H44.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M46.375 0.875H48.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M49.875 0.875H51.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M53.375 0.875H55.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M4.375 48.125H6.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0.875 48.125H2.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M7.875 48.125H9.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M11.375 48.125H56" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="56" height="49" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+										</div>
+									</div>
+									<p class="page__text-bold_middle">Формирование и обработка операций по денежным переводам</p>
+								</li>
+								<li class="pay-mob-second">
+									<div class="polygon">
+										<div class="polygon__item"><svg width="50" height="43" viewBox="0 0 50 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M23.0441 36.6829H4.63862L1.57104 33.6153V32.0815H19.9765L21.5103 33.6153H23.0441" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M23.0442 2.93994H8.4732C7.20015 2.93994 6.17252 3.96758 6.17252 5.24063V29.7813" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M27.6455 39.7503H46.051L49.1186 36.6827V35.1489H30.7131L29.1793 36.6827H27.6455" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M27.6455 6.00684H42.2165C43.4896 6.00684 44.5172 7.03448 44.5172 8.30752V32.8482" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M25.3447 26.7134V42.0513" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M25.3447 15.9766V22.1117" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M25.3447 0.638672V11.3752" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M25.3449 24.4127C22.377 24.4127 19.9766 22.0123 19.9766 19.0444" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M25.3448 13.6758C28.3127 13.6758 30.7131 16.0762 30.7131 19.044" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M25.3448 24.4126H31.4799" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M19.2097 13.6758H25.3449" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M28.4125 27.4799L31.4801 24.4123L28.4125 21.3447" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M22.2773 16.7436L19.2097 13.676L22.2773 10.6084" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M23.0441 29.0137H9.24002V6.00684H23.0441" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+<path d="M27.6455 9.0752H41.4496V32.082H27.6455" stroke="white" stroke-width="1.53379" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="49.0813" height="41.4123" fill="white" transform="translate(0.804199 0.638672)"/>
+</clipPath>
+</defs>
+</svg>
+										</div>
+									</div>
+									<p class="page__text-bold_middle">Поддержка различных форматов обмена информацией</p>
+								</li>
+								<li class="pay-mob-second">
+									<div class="polygon">
+										<div class="polygon__item"><svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M12.4219 30.6406V0.828125H43.8906V27.3281" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M46.375 19.0469H52.1719V52.1719H0.828125V19.0469H6.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M52.1719 52.1719L26.5 32.2969L0.828125 52.1719" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0.828125 19.0469L17.3906 35.6094" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M52.1719 19.0469L35.6094 35.6094" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M25.6719 47.2031H27.3281" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28.9844 47.2031H30.6406" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M22.3594 47.2031H24.0156" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M9.10938 27.3281V4.14062H12.4219" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28.1562 28.9844C32.7299 28.9844 36.4375 25.2767 36.4375 20.7031C36.4375 16.1295 32.7299 12.4219 28.1562 12.4219C23.5826 12.4219 19.875 16.1295 19.875 20.7031C19.875 25.2767 23.5826 28.9844 28.1562 28.9844Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M14.9062 4.14062H16.5625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M18.2188 4.14062H19.875" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M21.5312 4.14062H23.1875" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M14.9062 7.45312H41.4062" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32.2969 18.2188L27.3281 23.1875L24.0156 19.875" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="53" height="53" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+										</div>
+									</div>
+									<p class="page__text-bold_middle">Эффективная маршрутизация платежных документов</p>
+								</li>
+							</ul>
 						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Обработка постановлений </p>
-									<p class="page__text-medium-small-grey">ФССП и исполнительных документов</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Ведение очередей </p>
-									<p class="page__text-medium-small-grey">распоряжений (картотек) документов</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Координатор операций </p>
-									<p class="page__text-medium-small-grey left">ОПКЦ СБП</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small left-too">Поручение банка</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Кассовый документ</p>
-								</div>
-							</div>
-						</div>
-						<p class="page__text_extra">Расчетный центр</p>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Обмен сообщениями банка </p>
-									<p class="page__text-medium-small-grey left-too">России формата УФЕБС</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Картотека незавершенных </p>
-									<p class="page__text-medium-small-grey left">расчетов</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Картотека невыясненных </p>
-									<p class="page__text-medium-small-grey left-first">сумм</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Обмен сообщениями </p>
-									<p class="page__text-medium-small-grey left-third">с платежной системой SWIFT</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Обработка сообщений </p>
-									<p class="page__text-medium-small-grey left-fourth">формата «Банк-Партнер»</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Защита электронных </p>
-									<p class="page__text-medium-small-grey left-fourth">сообщений Банка России</p>
-								</div>
-							</div>
-						</div>
-						<div class="mob-item">
-							<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
-								<div class="mob-item-descr">
-									<p class="page__text-medium-small">Защита сообщений </p>
-									<p class="page__text-medium-small-grey left">SWIFT</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="architect-block-calc">
-						<div class="architect-block-calc-estimation">
-							<p class="page__text_extra">Расчеты</p>
-							<div class="architect-block-calc-estimation-item_1">
-								<div class="architect-block-calc-estimation-item_1-bg">
-									<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-									<p class="page__text-medium-small">Платежный документ </p>
-									<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
-									<div class="border-arc-top-vertical"></div>
-									<div class="border-arc-top-horizontal"></div>
-									<div class="red-dot-arc-top"></div>
-								</div>
-							</div>
-							<div class="architect-block-calc-estimation-item_1">
-								<div class="architect-block-calc-estimation-item_1-bg">
-									<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-									<p class="page__text-medium-small-two">Обработка постановлений </p>
-									<p class="page__text-medium-small-grey">ФССП и исполнительных документов</p>
-								</div>
-							</div>
-						</div>
-						<div class="architect-block-calc-estimation-item_3">
-							<div class="architect-block-calc-estimation-item_3">
-								<div class="architect-block-calc-estimation-item_3-big">
-									<div class="architect-block-calc-estimation-item_3-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Ведение очередей </p>
-										<p class="page__text-medium-small-grey">распоряжений (картотек) документов</p>
+						<ul class="pay pay-second" id="someId">
+							<li class="pay__li">
+								<div class="polygon">
+									<div class="polygon__item"><svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.7812 33.5312H19.9375L29.9062 37.1562H38.0625C39.5669 37.1562 40.7812 38.3706 40.7812 39.875C40.7812 41.3794 39.5669 42.5938 38.0625 42.5938H28.0938C26.5894 42.5938 25.375 43.8081 25.375 45.3125" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M39.875 41.687L54.375 37.1558C55.8794 37.1558 57.0938 38.3701 57.0938 39.8745C57.0938 40.7808 56.1875 41.687 56.1875 41.687L33.5312 53.4683H31.7188L16.3125 48.0308H12.6875" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M40.7812 31.7188C43.2838 31.7188 45.3125 29.69 45.3125 27.1875C45.3125 24.685 43.2838 22.6562 40.7812 22.6562C38.2787 22.6562 36.25 24.685 36.25 27.1875C36.25 29.69 38.2787 31.7188 40.7812 31.7188Z" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M26.2812 24.4688C28.7838 24.4688 30.8125 22.44 30.8125 19.9375C30.8125 17.435 28.7838 15.4062 26.2812 15.4062C23.7787 15.4062 21.75 17.435 21.75 19.9375C21.75 22.44 23.7787 24.4688 26.2812 24.4688Z" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M9.0625 46.2188H7.25" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M5.4375 46.2188H3.625" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28.0938 7.25V0" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M24.4688 12.6875V5.4375" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28.0938 9.0625V10.875" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M24.4688 1.8125V3.625" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.9688 14.5V7.25" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M42.5938 19.9375V12.6875" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.9688 16.3125V18.125" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M42.5938 9.0625V10.875" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 31.7188H10.875C11.3734 31.7188 11.7812 32.1266 11.7812 32.625V48.9375C11.7812 49.4359 11.3734 49.8438 10.875 49.8438H0" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
+</svg>
 									</div>
 								</div>
-							</div>
-							<div class="architect-block-calc-estimation-item_3">
-								<div class="architect-block-calc-estimation-item_3-small">
-									<div class="architect-block-calc-estimation-item_3-small-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+								<button class="page__toggle" type="button" onclick="openBlock()"><a class="page__text-bold_middle_top" id="openBlockBtn">Быстрые расчеты и платежи</a></button>
+								<div class="page__img"><img src="assets/img/line-red.svg"></div>
+							</li>
+							<li class="pay-second__li">
+								<div class="page__text-medium">Высокая производительность и масштабируемость решений в составе платформы для обслуживания большого числа одновременно работающих пользователей</div>
+								<div class="page__text-medium">Гибкое масштабирование решений при росте бизнеса и открытии новых точек обслуживания клиентов</div>
+							</li>
+						</ul>
+						<div class="platform-block-description">
+							<ul class="block__ul">
+								<li class="block__li otherpay" id="otherId">
+									<div class="polygon">
+										<div class="polygon__item"><svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M12.4219 30.6406V0.828125H43.8906V27.3281" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M46.375 19.0469H52.1719V52.1719H0.828125V19.0469H6.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M52.1719 52.1719L26.5 32.2969L0.828125 52.1719" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0.828125 19.0469L17.3906 35.6094" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M52.1719 19.0469L35.6094 35.6094" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M25.6719 47.2031H27.3281" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28.9844 47.2031H30.6406" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M22.3594 47.2031H24.0156" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M9.10938 27.3281V4.14062H12.4219" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28.1562 28.9844C32.7299 28.9844 36.4375 25.2767 36.4375 20.7031C36.4375 16.1295 32.7299 12.4219 28.1562 12.4219C23.5826 12.4219 19.875 16.1295 19.875 20.7031C19.875 25.2767 23.5826 28.9844 28.1562 28.9844Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M14.9062 4.14062H16.5625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M18.2188 4.14062H19.875" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M21.5312 4.14062H23.1875" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M14.9062 7.45312H41.4062" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32.2969 18.2188L27.3281 23.1875L24.0156 19.875" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="53" height="53" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+										</div>
+									</div>
+									<button class="page__toggle" type="button" onclick="openBlockOther()"><a class="page__text-bold_middle_top" id="openBlockBtn">Эффективная маршрутизация платежных документов</a></button>
+									<div class="otherpay__li">
+										<div class="page__text-medium">Настройка процесса обработки документа в зависимости от его параметров</div>
+										<div class="page__text-medium">Контроль реквизитов документа в зависимости от его типа</div>
+										<div class="page__text-medium">Возможность отслеживания этапов обработки документа</div>
+									</div>
+									<div class="page__img"><img src="assets/img/line-red.svg"></div>
+								</li>
+								<li class="block__li otherForm" id="otherForm">
+									<div class="polygon">
+										<div class="polygon__item"><svg width="56" height="49" viewBox="0 0 56 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M32.5412 31.5875C29.8812 37.2225 24.15 41.125 17.5 41.125C8.32125 41.125 0.875 33.6787 0.875 24.5C0.875 15.3213 8.32125 7.875 17.5 7.875C24.1938 7.875 29.9687 11.83 32.6025 17.535" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.5 41.125C23.7822 41.125 28.875 33.6817 28.875 24.5C28.875 15.3183 23.7822 7.875 17.5 7.875C11.2178 7.875 6.125 15.3183 6.125 24.5C6.125 33.6817 11.2178 41.125 17.5 41.125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.5 41.125C20.8827 41.125 23.625 33.6817 23.625 24.5C23.625 15.3183 20.8827 7.875 17.5 7.875C14.1173 7.875 11.375 15.3183 11.375 24.5C11.375 33.6817 14.1173 41.125 17.5 41.125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M17.5 7.875V41.125" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M29.75 13.125H5.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M30.625 35H4.375" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M32.375 24.5H0.875" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M30.9224 9.70375C33.1886 8.53125 35.7699 7.875 38.4999 7.875C47.6786 7.875 55.1249 15.3213 55.1249 24.5C55.1249 33.6787 47.6786 41.125 38.4999 41.125C35.7961 41.125 33.2324 40.4775 30.9749 39.3313" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M42 21C42 19.0662 40.4338 17.5 38.5 17.5C36.5662 17.5 35 19.0662 35 21C35 22.9338 36.75 23.625 38.5 24.5C40.25 25.375 42 26.0662 42 28C42 29.9338 40.4338 31.5 38.5 31.5C36.5662 31.5 35 29.9338 35 28" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.5 17.5V14.875" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.5 31.5V34.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.625 24.5H46.375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.625 21H46.375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44.625 28H46.375" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0 0.875488H44.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M46.375 0.875H48.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M49.875 0.875H51.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M53.375 0.875H55.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M4.375 48.125H6.125" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M0.875 48.125H2.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M7.875 48.125H9.625" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M11.375 48.125H56" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="56" height="49" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+										</div>
+									</div>
+									<button class="page__toggle" type="button" onclick="openBlockForm()"> <a class="page__text-bold_middle_top" id="openBlockBtn">Формирование и обработка операций по денежным переводам</a></button>
+									<div class="page__img"><img src="assets/img/line-red.svg"></div>
+									<div class="otherForm__li">
+										<div class="page__text-medium">Настройка процесса обработки документа в зависимости от его параметров</div>
+										<div class="page__text-medium">Контроль реквизитов документа в зависимости от его типа</div>
+										<div class="page__text-medium">Возможность отслеживания этапов обработки документа</div>
+									</div>
+								</li>
+								<li class="block__li inform" id="inform">
+									<div class="polygon">
+										<div class="polygon__item"><svg width="64" height="54" viewBox="0 0 64 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29 47H5L1 43V41H25L27 43H29" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M29 3H10C8.34 3 7 4.34 7 6V38" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M35 51H59L63 47V45H39L37 47H35" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M35 7H54C55.66 7 57 8.34 57 10V42" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32 34V54" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32 20V28" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32 0V14" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32 31C28.13 31 25 27.87 25 24" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32 17C35.87 17 39 20.13 39 24" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32 31H40" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M24 17H32" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M36 35L40 31L36 27" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28 21L24 17L28 13" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M29 37H11V7H29" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M35 11H53V41H35" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</svg>
+										</div>
+									</div>
+									<button class="page__toggle" type="button" onclick="openBlockInform()"><a class="page__text-bold_middle_top" id="openBlockBtn">Поддержка различных форматов обмена <br> информацией</a></button>
+									<div class="page__img"><img src="assets/img/line-red.svg"></div>
+									<div class="page__button"></div>
+									<div class="inform__li">
+										<div class="page__text-medium">Единое информационное пространство для проведения расчетов современного универсального баека и его филиалов</div>
+									</div>
+								</li>
+								<li class="block__li connect" id="connect">
+									<div class="polygon">
+										<div class="polygon">
+											<div class="polygon__item"><svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M52 25L47 20L33 34L25 26L20 31L33 44L52 25Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35 57H37" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M35 7H37" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M10 32H12" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M60 32H62" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M36 63C53.1208 63 67 49.1208 67 32C67 14.8792 53.1208 1 36 1C18.8792 1 5 14.8792 5 32C5 49.1208 18.8792 63 36 63Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
+											</div>
+										</div>
+									</div>
+									<button class="page__toggle" type="button" onclick="openBlockConnect()"><a class="page__text-bold_middle_top" id="openBlockBtn">Простое подключение новых платформ и расчетных систем</a></button>
+									<div class="connect__li connect">
+										<div class="page__text-medium">Открытая архитектура</div>
+										<div class="page__text-medium">Готовый слой API для интеграции в существующую IT-инфраструктуру банка</div>
+									</div>
+									<div class="page__img"><img src="assets/img/line-red.svg"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="architect" id="architect">
+				<div class="wrapper">
+					<h3 class="page__title-h3"><span>БИЗНЕС-АРХИТЕКТУРА</span> ПЛАТФОРМЫ</h3>
+					<div class="architect-block">
+						<div class="mob">
+							<p class="page__text_extra">Расчеты</p>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
 										<p class="page__text-medium-small">Платежный документ </p>
 										<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="architect-block-calc-estimation-item_4">
-							<div class="architect-block-calc-estimation-item_4">
-								<div class="architect-block-calc-estimation-item_4-big">
-									<div class="architect-block-calc-estimation-item_4-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Обработка постановлений </p>
+										<p class="page__text-medium-small-grey">ФССП и исполнительных документов</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Ведение очередей </p>
+										<p class="page__text-medium-small-grey">распоряжений (картотек) документов</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Координатор операций </p>
+										<p class="page__text-medium-small-grey left">ОПКЦ СБП</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small left-too">Поручение банка</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
 										<p class="page__text-medium-small">Кассовый документ</p>
 									</div>
 								</div>
 							</div>
-							<div class="architect-block-calc-estimation-item_4">
-								<div class="architect-block-calc-estimation-item_4-small">
-									<div class="architect-block-calc-estimation-item_4-small-bg">
+							<p class="page__text_extra">Расчетный центр</p>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Обмен сообщениями банка </p>
+										<p class="page__text-medium-small-grey left-too">России формата УФЕБС</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Картотека незавершенных </p>
+										<p class="page__text-medium-small-grey left">расчетов</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Картотека невыясненных </p>
+										<p class="page__text-medium-small-grey left-first">сумм</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Обмен сообщениями </p>
+										<p class="page__text-medium-small-grey left-third">с платежной системой SWIFT</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Обработка сообщений </p>
+										<p class="page__text-medium-small-grey left-fourth">формата «Банк-Партнер»</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Защита электронных </p>
+										<p class="page__text-medium-small-grey left-fourth">сообщений Банка России</p>
+									</div>
+								</div>
+							</div>
+							<div class="mob-item">
+								<div class="mob-item-bg"><img src="assets/img/bg-architect.svg">
+									<div class="mob-item-descr">
+										<p class="page__text-medium-small">Защита сообщений </p>
+										<p class="page__text-medium-small-grey left">SWIFT</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="architect-block-calc">
+							<div class="architect-block-calc-estimation">
+								<p class="page__text_extra">Расчеты</p>
+								<div class="architect-block-calc-estimation-item_1">
+									<div class="architect-block-calc-estimation-item_1-bg">
 										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Поручение банка</p>
+										<p class="page__text-medium-small">Платежный документ </p>
+										<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
+										<div class="border-arc-top-vertical"></div>
+										<div class="border-arc-top-horizontal"></div>
+										<div class="red-dot-arc-top"></div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimation-item_1">
+									<div class="architect-block-calc-estimation-item_1-bg">
+										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+										<p class="page__text-medium-small-two">Обработка постановлений </p>
+										<p class="page__text-medium-small-grey">ФССП и исполнительных документов</p>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimation-item_3">
+								<div class="architect-block-calc-estimation-item_3">
+									<div class="architect-block-calc-estimation-item_3-big">
+										<div class="architect-block-calc-estimation-item_3-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Ведение очередей </p>
+											<p class="page__text-medium-small-grey">распоряжений (картотек) документов</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimation-item_3">
+									<div class="architect-block-calc-estimation-item_3-small">
+										<div class="architect-block-calc-estimation-item_3-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Платежный документ </p>
+											<p class="page__text-medium-small-grey">(межбанковский и внутрибанковский)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimation-item_4">
+								<div class="architect-block-calc-estimation-item_4">
+									<div class="architect-block-calc-estimation-item_4-big">
+										<div class="architect-block-calc-estimation-item_4-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Кассовый документ</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimation-item_4">
+									<div class="architect-block-calc-estimation-item_4-small">
+										<div class="architect-block-calc-estimation-item_4-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Поручение банка</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="architect-block-calc">
+							<div class="architect-block-calc-estimcentr">
+								<p class="page__text_extra">Расчетный центр</p>
+								<div class="architect-block-calc-estimcentr-item_1">
+									<div class="architect-block-calc-estimcentr-item_1-bg">
+										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+										<p class="page__text-medium-small">Обмен сообщениями</p>
+										<p class="page__text-medium-small-grey">банка России формата УФЕБС</p>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimcentr-item_3">
+								<div class="architect-block-calc-estimcentr-item_3">
+									<div class="architect-block-calc-estimcentr-item_3-big">
+										<div class="architect-block-calc-estimcentr-item_3-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Картотека незавершенных</p>
+											<p class="page__text-medium-small-grey">расчетов</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimcentr-item_3">
+									<div class="architect-block-calc-estimcentr-item_3-small">
+										<div class="architect-block-calc-estimcentr-item_3-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Картотека невыясненных </p>
+											<p class="page__text-medium-small-grey">сумм</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimcentr-item_4">
+								<div class="architect-block-calc-estimcentr-item_4">
+									<div class="architect-block-calc-estimcentr-item_4-big">
+										<div class="architect-block-calc-estimcentr-item_4-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Обмен сообщениями с </p>
+											<p class="page__text-medium-small-grey">платежной системой SWIFT</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimcentr-item_4">
+									<div class="architect-block-calc-estimcentr-item_4-small">
+										<div class="architect-block-calc-estimcentr-item_4-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Обработка сообщений</p>
+											<p class="page__text-medium-small-grey-bank">формата «Банк-Партнер»</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="architect-block-calc-estimcentr-item_4">
+								<div class="architect-block-calc-estimcentr-item_4">
+									<div class="architect-block-calc-estimcentr-item_4-big">
+										<div class="architect-block-calc-estimcentr-item_4-big-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Защита электронных </p>
+											<p class="page__text-medium-small-grey">сообщений Банка России</p>
+										</div>
+									</div>
+								</div>
+								<div class="architect-block-calc-estimcentr-item_4">
+									<div class="architect-block-calc-estimcentr-item_4-small">
+										<div class="architect-block-calc-estimcentr-item_4-small-bg">
+											<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
+											<p class="page__text-medium-small">Защита сообщений </p>
+											<p class="page__text-medium-small-grey">swift</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="architect-block-calc">
-						<div class="architect-block-calc-estimcentr">
-							<p class="page__text_extra">Расчетный центр</p>
-							<div class="architect-block-calc-estimcentr-item_1">
-								<div class="architect-block-calc-estimcentr-item_1-bg">
-									<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-									<p class="page__text-medium-small">Обмен сообщениями</p>
-									<p class="page__text-medium-small-grey">банка России формата УФЕБС</p>
-								</div>
-							</div>
-						</div>
-						<div class="architect-block-calc-estimcentr-item_3">
-							<div class="architect-block-calc-estimcentr-item_3">
-								<div class="architect-block-calc-estimcentr-item_3-big">
-									<div class="architect-block-calc-estimcentr-item_3-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Картотека незавершенных</p>
-										<p class="page__text-medium-small-grey">расчетов</p>
-									</div>
-								</div>
-							</div>
-							<div class="architect-block-calc-estimcentr-item_3">
-								<div class="architect-block-calc-estimcentr-item_3-small">
-									<div class="architect-block-calc-estimcentr-item_3-small-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Картотека невыясненных </p>
-										<p class="page__text-medium-small-grey">сумм</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="architect-block-calc-estimcentr-item_4">
-							<div class="architect-block-calc-estimcentr-item_4">
-								<div class="architect-block-calc-estimcentr-item_4-big">
-									<div class="architect-block-calc-estimcentr-item_4-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Обмен сообщениями с </p>
-										<p class="page__text-medium-small-grey">платежной системой SWIFT</p>
-									</div>
-								</div>
-							</div>
-							<div class="architect-block-calc-estimcentr-item_4">
-								<div class="architect-block-calc-estimcentr-item_4-small">
-									<div class="architect-block-calc-estimcentr-item_4-small-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Обработка сообщений</p>
-										<p class="page__text-medium-small-grey-bank">формата «Банк-Партнер»</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="architect-block-calc-estimcentr-item_4">
-							<div class="architect-block-calc-estimcentr-item_4">
-								<div class="architect-block-calc-estimcentr-item_4-big">
-									<div class="architect-block-calc-estimcentr-item_4-big-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Защита электронных </p>
-										<p class="page__text-medium-small-grey">сообщений Банка России</p>
-									</div>
-								</div>
-							</div>
-							<div class="architect-block-calc-estimcentr-item_4">
-								<div class="architect-block-calc-estimcentr-item_4-small">
-									<div class="architect-block-calc-estimcentr-item_4-small-bg">
-										<div class="page__img"><img src="assets/img/yacheyka-first.svg"></div>
-										<p class="page__text-medium-small">Защита сообщений </p>
-										<p class="page__text-medium-small-grey">swift</p>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="information-row">
+						<p class="page__text-bold__middle">Есть вопросы? Можете пообщаться с архитектором платформы</p>
+						<div class="page__btn open-modal" data-modal="modal">отправить сообщение</div>
 					</div>
 				</div>
-				<div class="information-row">
-					<p class="page__text-bold__middle">Есть вопросы? Можете пообщаться с архитектором платформы</p>
+				<div class="mob-button">
 					<div class="page__btn open-modal" data-modal="modal">отправить сообщение</div>
 				</div>
-			</div>
-			<div class="mob-button">
-				<div class="page__btn open-modal" data-modal="modal">отправить сообщение</div>
-			</div>
-		</section>
-		<section class="products" id="products">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span>Продукты</span><br> и возможности</h3>
-				<div class="mob">
-					<div class="mob-slider-news">
-						<div class="page__img"><img src="assets/img/news-slider.svg"></div>
-						<div class="page__img"><img src="assets/img/news-slider.svg"></div>
-						<div class="page__img"><img src="assets/img/news-slider.svg"></div>
-					</div>
-				</div>
-				<div class="news-block"></div>
-				<div class="products-block">
-					<div class="products-block-items">
-						<div class="products-block-items-calculations">
-							<div class="page__bg"><img src="assets/img/bg-hover-item-1.jpg"></div>
-							<div class="page__img"><img src="assets/img/estim-products.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><svg width="23" height="20" viewBox="0 0 23 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195"
-											stroke="white" stroke-width="2.30068" />
-									</svg>
-								</div>
-							</div>
-							<p class="page__text_extra-small">Расчеты</p>
-						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__bg"><img src="assets/img/bg-hover-item-2.jpg"></div>
-							<div class="page__img"><img src="assets/img/icon-item-2.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195"
-											stroke="white" stroke-width="2.30068" />
-									</svg>
-								</div>
-							</div>
-							<p class="page__text_extra-small">Расчетный центр</p>
-						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__bg"><img src="assets/img/bg-hover-item-3.jpg"></div>
-							<div class="page__img"><img src="assets/img/icon-item-3.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195"
-											stroke="white" stroke-width="2.30068" />
-									</svg>
-								</div>
-							</div>
-							<p class="page__text_extra-small">СБП. Координатор</p>
-						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__bg"><img src="assets/img/bg-hover-item-4.jpg"></div>
-							<div class="page__img"><img src="assets/img/icon-item-4.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195"
-											stroke="white" stroke-width="2.30068" />
-									</svg>
-								</div>
-							</div>
-							<p class="page__text_extra-small">Расчеты через SWIFT</p>
-						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__bg"><img src="assets/img/bg-hover-item-5.jpg"></div>
-							<div class="page__img"><img src="assets/img/icon-item-5.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195"
-											stroke="white" stroke-width="2.30068" />
-									</svg>
-								</div>
-							</div>
-							<p class="page__text_extra-small">Защита сообщений SWIFT</p>
-						</div>
-						<div class="products-block-items-calculations">
-							<div class="page__bg"><img src="assets/img/bg-hover-item-6.jpg"></div>
-							<div class="page__img"><img src="assets/img/icon-item-6.svg"></div>
-							<div class="polygon">
-								<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195"
-											stroke="white" stroke-width="2.30068" />
-									</svg>
-								</div>
-							</div>
-							<p class="page__text_extra-small">Защита электронных<br> сообщений Банка России</p>
-						</div>
-					</div>
-				</div>
-				<div class="page__btn open-modal" data-modal="demo">запросить демо</div>
-			</div>
-			<div class="page__btn mob">запросить демо</div>
-		</section>
-		<section class="safety" id="safety">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span> безопасность </span> расчетов</h3>
-				<div class="safety-block">
-					<div class="safety-block-messages">
-						<div class="bg_white">
-							<div class="safety-block-messages">
-								<div class="safety-block-messages-row">
-									<div class="page__img"><img src="assets/img/safety-1.svg"></div>
-									<p class="page__text_extra-mid">ЗАЩИТА ЭЛЕКТРОННЫХ СООБЩЕНИЙ (УФЭБС)</p>
-								</div>
-								<p class="page__text-medium-small"><span> Обеспечение информационной безопасности при
-										передаче электронных сообщений в Банк России. Для выполнения проверки кодов
-										аутентификации и защитных кодов, шифрования и дешифрования электронных сообщений
-										в программном продукте применяется СКАД «Сигнатура»</p>
-								<p class="page__text-bold">Возможности продукта:</p>
-								<ul>
-									<li>Загрузка электронных сообщений и пакетов электронных сообщений из АБС клиента
-									</li>
-									<li>Проверка контрольной суммы электронного сообщения, полученного из АБС клиента
-									</li>
-									<li>Установка защитных кодов и кодов аутентификации на электронные сообщения и
-										пакеты электронных сообщений, полученные из АБС клиента</li>
-									<li>Выгрузка и получение данных из Автоматизированного рабочего места клиента Банка
-										России (новое) (АРМ КБР-Н)</li>
-									<li>Проверка подписи, поставленной в АРМ КБР-Н</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="safety-block-swift">
-						<div class="bg_grey">
-							<div class="safety-block-swift">
-								<div class="safety-block-swift-row">
-									<div class="page__img"><img src="assets/img/safety-2.svg"></div>
-									<p class="page__text_extra-mid">ЗАЩИТА СООБЩЕНИЙ (SWIFT LAU)</p>
-								</div>
-								<p class="page__text-medium-small"><span> Обеспечение передачи защитного ключа из АБС
-										клиента в SWIFT-терминал в составе SWIFT-сообщения. Ключ формируется с
-										использованием алгоритма хеширования HMAC-SHA256</p>
-								<p class="page__text-bold">Возможности продукта:</p>
-								<ul>
-									<li>
-										<div class="page__img"><img src="assets/img/red-dot.svg"></div>
-										<p class="page__text-mediun">Подписание исходящих сообщений SWIFT с
-											использованием алгоритма LAU перед их передачей в терминал SWIFT</p>
-									</li>
-									<li>Проверка подписи с использованием алгоритма LAU для входящих сообщений SWIFT,
-										приходящих из терминала SWIFT</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="advantages" id="advantages">
-			<div class="wrapper">
-				<h3 class="page__title-h3-white">Преимущества <span> Для бизнеса </span></h3>
-				<div class="advantages-block">
-					<div class="advantages-block-item">
-						<div class="page__img"><img src="assets/img/advantages-1.svg"></div>
-						<div class="page__text_extra-mid"> <span> Централизация </span> процессов </div>
-						<div class="page__text-medium">Единый бэк-офис. Единый операционный день. Единый
-							корреспондентский счет</div>
-					</div>
-					<div class="advantages-block-item">
-						<div class="page__img"><img src="assets/img/advantages-2.svg"></div>
-						<div class="page__text_extra-mid"><span> Time-to-Market</div>
-						<div class="page__text-medium left"><span> Внедрение новых технологий и облегчение доступа к
-								сервисам платежных систем. Совершенствование календаря платежей</div>
-					</div>
-					<div class="advantages-block-item">
-						<div class="page__img"><img src="assets/img/advantages-3.svg"></div>
-						<div class="page__text_extra-mid"><span> Гибкая настройка<span> и контроль</div>
-						<div class="page__text-medium">Внедрение новых технологий и облегчение доступа к сервисам
-							платежных систем. Совершенствование календаря платежей</div>
-					</div>
-					<div class="advantages-block-item">
-						<div class="page__img"><img src="assets/img/advantages-4.svg"></div>
-						<div class="page__text_extra-mid"><span> Работа </span><br> 24х7 </div>
-						<div class="page__text-medium">Поддержка работы многофилиального банка в режиме 24х7</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="principles" id="principles">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span> АРХИТЕКТУРНЫЕ </span> ПРИНЦИПЫ</h3>
-				<div class="principles-block">
-					<div class="principles-block-products">
-						<div class="principles-block-products-title">
-							<div class="page__img"><img src="assets/img/princips-1.svg"></div>
-							<p class="page__text_extra-middle">В <span>разработке</span> программных продуктов</p>
-						</div>
-						<div class="principles-block-products-spisok">
-							<ul>
-								<li>Открытая, надежная, масштабируемая и событийно управляемая микросервисная
-									архитектура</li>
-								<li>Разработка приложений (PBC) и сервисов ведется один раз для всех каналов одной
-									командой</li>
-								<li>Компонуемая бизнес-архитектура на основе платформ развития бизнеса</li>
-								<li>Технологические платформы и каналы не содержат продуктовой логики</li>
-								<li>Стандартизированный технологический стек с ориентацией на ПО с открытым исходным
-									кодом (open source) и на российские компоненты</li>
-							</ul>
-						</div>
-					</div>
-					<div class="principles-block-clients">
-						<div class="principles-block-clients-title">
-							<div class="page__img"><img src="assets/img/princips-2.svg"></div>
-							<p class="page__text_extra-middle">Во <span> заимодействии </span> с клиентом</p>
-						</div>
-						<div class="principles-block-clients-spisok">
-							<ul>
-								<li>Омниканальная процессно-ориентированная среда взаимодействия с клиентом</li>
-								<li>Единая логика представления пользовательских сценариев (UX) во всех каналах</li>
-								<li>Компонуемые бизнес-решения на основе платформ развития бизнеса</li>
-								<li>Надежная и удобная система идентификации клиента в каждом канале</li>
-								<li>Роботизация и использование технологий искусственного интеллекта</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="numbers checkViewport" id="numbers">
-			<div class="mob">
+			</section>
+			<section class="products" id="products">
 				<div class="wrapper">
-					<h3 class="page__title-h3-numbers"><span> ЦИФРЫ </span></h3>
-					<p class="page__text_extra-md">разработка платформы</p>
-					<div class="mob-row-top">
-						<div class="mob-row-top-left">
-							<p class="page__text-medium-small">Развиваем платформу</p>
-							<div class="page__title-h4" style="--targetNum: 25"></div>
-							<div class="page__text_extra-middle">лет</div>
-						</div>
-						<div class="mob-row-top-right">
-							<p class="page__text-medium-small">Команда разработки</p>
-							<div class="page__title-h4" style="--targetNum: 127"></div>
-							<div class="page__text_extra-middle">человек</div>
+					<h3 class="page__title-h3"><span>Продукты</span><br> и возможности</h3>
+					<div class="mob">
+						<div class="mob-slider-news">
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
 						</div>
 					</div>
-					<p class="page__text_extra-md more-pd">производительность</p>
-					<div class="mob-row-middle">
-						<div class="mob-row-middle-left">
-							<p class="page__text-medium-small">обработка</p>
-							<div class="page__title-h4" style="--targetNum: 200000"></div>
-							<div class="page__text_extra-middle">документов/час</div>
-						</div>
-						<div class="mob-row-middle-right">
-							<p class="page__text-medium-small">Работа одновременно</p>
-							<div class="page__title-h4" style="--targetNum: 10000"></div>
-							<div class="page__text_extra-middle">человек</div>
+					<div class="news-block"></div>
+					<div class="products-block">
+						<div class="products-block-items">
+							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-1.jpg"></div>
+								<div class="page__img"><img src="assets/img/estim-products.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195" stroke="white" stroke-width="2.30068"/>
+</svg>
+									</div>
+								</div>
+								<p class="page__text_extra-small">Расчеты</p>
+							</div>
+							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-2.jpg"></div>
+								<div class="page__img"><img src="assets/img/icon-item-2.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195" stroke="white" stroke-width="2.30068"/>
+</svg>
+									</div>
+								</div>
+								<p class="page__text_extra-small">Расчетный центр</p>
+							</div>
+							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-3.jpg"></div>
+								<div class="page__img"><img src="assets/img/icon-item-3.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195" stroke="white" stroke-width="2.30068"/>
+</svg>
+									</div>
+								</div>
+								<p class="page__text_extra-small">СБП. Координатор</p>
+							</div>
+							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-4.jpg"></div>
+								<div class="page__img"><img src="assets/img/icon-item-4.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195" stroke="white" stroke-width="2.30068"/>
+</svg>
+									</div>
+								</div>
+								<p class="page__text_extra-small">Расчеты через SWIFT</p>
+							</div>
+							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-5.jpg"></div>
+								<div class="page__img"><img src="assets/img/icon-item-5.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195" stroke="white" stroke-width="2.30068"/>
+</svg>
+									</div>
+								</div>
+								<p class="page__text_extra-small">Защита сообщений SWIFT</p>
+							</div>
+							<div class="products-block-items-calculations">
+								<div class="page__bg"><img src="assets/img/bg-hover-item-6.jpg"></div>
+								<div class="page__img"><img src="assets/img/icon-item-6.svg"></div>
+								<div class="polygon">
+									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195" stroke="white" stroke-width="2.30068"/>
+</svg>
+									</div>
+								</div>
+								<p class="page__text_extra-small">Защита электронных<br> сообщений Банка России</p>
+							</div>
 						</div>
 					</div>
-					<p class="page__text_extra-md more-pd">производительность операций СБП</p>
-					<div class="mob-row-bottom">
-						<div class="mob-row-bottom-left">
-							<div class="page__title-h4" style="--targetNum: 100"></div>
-							<div class="page__text_extra-middle">мс/операция</div>
+					<div class="page__btn open-modal" data-modal="demo">запросить демо</div>
+				</div>
+				<div class="page__btn mob">запросить демо</div>
+			</section>
+			<section class="safety" id="safety">
+				<div class="wrapper">
+					<h3 class="page__title-h3"><span> безопасность </span> расчетов</h3>
+					<div class="safety-block">
+						<div class="safety-block-messages">
+							<div class="bg_white">
+								<div class="safety-block-messages">
+									<div class="safety-block-messages-row">
+										<div class="page__img"><img src="assets/img/safety-1.svg"></div>
+										<p class="page__text_extra-mid">ЗАЩИТА ЭЛЕКТРОННЫХ СООБЩЕНИЙ (УФЭБС)</p>
+									</div>
+									<p class="page__text-medium-small"><span> Обеспечение информационной безопасности при передаче электронных сообщений в Банк России. Для выполнения проверки кодов аутентификации и защитных кодов, шифрования и дешифрования электронных сообщений в программном продукте применяется СКАД «Сигнатура»</p>
+									<p class="page__text-bold">Возможности продукта:</p>
+									<ul>
+										<li>Загрузка электронных сообщений и пакетов электронных сообщений из АБС клиента</li>
+										<li>Проверка контрольной суммы электронного сообщения, полученного из АБС клиента</li>
+										<li>Установка защитных кодов и кодов аутентификации на электронные сообщения и пакеты электронных сообщений, полученные из АБС клиента</li>
+										<li>Выгрузка и получение данных из Автоматизированного рабочего места клиента Банка России (новое) (АРМ КБР-Н)</li>
+										<li>Проверка подписи, поставленной в АРМ КБР-Н</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="mob-row-bottom-right">
-							<div class="page__title-h4" style="--targetNum: 50000"></div>
-							<div class="page__text_extra-middle">переводов/час</div>
+						<div class="safety-block-swift">
+							<div class="bg_grey">
+								<div class="safety-block-swift">
+									<div class="safety-block-swift-row">
+										<div class="page__img"><img src="assets/img/safety-2.svg"></div>
+										<p class="page__text_extra-mid">ЗАЩИТА СООБЩЕНИЙ (SWIFT LAU)</p>
+									</div>
+									<p class="page__text-medium-small"><span> Обеспечение передачи защитного ключа из АБС клиента в SWIFT-терминал в составе SWIFT-сообщения. Ключ формируется с использованием алгоритма хеширования HMAC-SHA256</p>
+									<p class="page__text-bold">Возможности продукта:</p>
+									<ul>
+										<li> 
+											<div class="page__img"><img src="assets/img/red-dot.svg"></div>
+											<p class="page__text-mediun">Подписание исходящих сообщений SWIFT с использованием алгоритма LAU перед их передачей в терминал SWIFT</p>
+										</li>
+										<li>Проверка подписи с использованием алгоритма LAU для входящих сообщений SWIFT, приходящих из терминала SWIFT</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="mob-row-bottom-bottom">
-						<div class="page__title-h4" style="--targetNum: 70"></div>
-						<div class="page__text_extra-middle">транзакций/с</div>
 					</div>
 				</div>
-				<div class="page__btn open-modal" data-modal="modal">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</div>
-			</div>
-			<div class="wrapper">
-				<div class="numbers-block">
-					<h3 class="page__title-h3-numbers"><span> ЦИФРЫ </span></h3>
-					<div class="numbers-block-items">
-						<div class="numbers-block-items-platform">
-							<p class="page__text_extra-md">разработка платформы</p>
-							<p class="page__text-medium-small">Развиваем платформу</p>
-							<div class="row-top">
+			</section>
+			<section class="advantages" id="advantages">
+				<div class="wrapper">
+					<h3 class="page__title-h3-white">Преимущества <span> Для бизнеса </span></h3>
+					<div class="advantages-block">
+						<div class="advantages-block-item">
+							<div class="page__img"><img src="assets/img/advantages-1.svg"></div>
+							<div class="page__text_extra-mid"> <span> Централизация </span> процессов </div>
+							<div class="page__text-medium">Единый бэк-офис. Единый операционный день. Единый корреспондентский счет</div>
+						</div>
+						<div class="advantages-block-item">
+							<div class="page__img"><img src="assets/img/advantages-2.svg"></div>
+							<div class="page__text_extra-mid"><span> Time-to-Market</div>
+							<div class="page__text-medium left"><span> Внедрение новых технологий и облегчение доступа к сервисам платежных систем. Совершенствование календаря платежей</div>
+						</div>
+						<div class="advantages-block-item">
+							<div class="page__img"><img src="assets/img/advantages-3.svg"></div>
+							<div class="page__text_extra-mid"><span> Гибкая настройка<span> и контроль</div>
+							<div class="page__text-medium">Внедрение новых технологий и облегчение доступа к сервисам платежных систем. Совершенствование календаря платежей</div>
+						</div>
+						<div class="advantages-block-item">
+							<div class="page__img"><img src="assets/img/advantages-4.svg"></div>
+							<div class="page__text_extra-mid"><span> Работа </span><br> 24х7 </div>
+							<div class="page__text-medium">Поддержка работы многофилиального банка в режиме 24х7</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="principles" id="principles">
+				<div class="wrapper">
+					<h3 class="page__title-h3"><span> АРХИТЕКТУРНЫЕ </span> ПРИНЦИПЫ</h3>
+					<div class="principles-block">
+						<div class="principles-block-products">
+							<div class="principles-block-products-title">
+								<div class="page__img"><img src="assets/img/princips-1.svg"></div>
+								<p class="page__text_extra-middle">В <span>разработке</span> программных продуктов</p>
+							</div>
+							<div class="principles-block-products-spisok">
+								<ul>
+									<li>Открытая, надежная, масштабируемая и событийно управляемая микросервисная архитектура</li>
+									<li>Разработка приложений (PBC) и сервисов ведется один раз для всех каналов одной командой</li>
+									<li>Компонуемая бизнес-архитектура на основе платформ развития бизнеса</li>
+									<li>Технологические платформы и каналы не содержат продуктовой логики</li>
+									<li>Стандартизированный технологический стек с ориентацией на ПО с открытым исходным кодом (open source) и на российские компоненты</li>
+								</ul>
+							</div>
+						</div>
+						<div class="principles-block-clients">
+							<div class="principles-block-clients-title">
+								<div class="page__img"><img src="assets/img/princips-2.svg"></div>
+								<p class="page__text_extra-middle">Во <span> заимодействии </span> с клиентом</p>
+							</div>
+							<div class="principles-block-clients-spisok">
+								<ul>
+									<li>Омниканальная процессно-ориентированная среда взаимодействия с клиентом</li>
+									<li>Единая логика представления пользовательских сценариев (UX) во всех каналах</li>
+									<li>Компонуемые бизнес-решения на основе платформ развития бизнеса</li>
+									<li>Надежная и удобная система идентификации клиента в каждом канале</li>
+									<li>Роботизация и использование технологий искусственного интеллекта</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="numbers checkViewport" id="numbers">
+				<div class="mob">
+					<div class="wrapper">
+						<h3 class="page__title-h3-numbers"><span> ЦИФРЫ </span></h3>
+						<p class="page__text_extra-md">разработка платформы</p>
+						<div class="mob-row-top">
+							<div class="mob-row-top-left">
+								<p class="page__text-medium-small">Развиваем платформу</p>
 								<div class="page__title-h4" style="--targetNum: 25"></div>
 								<div class="page__text_extra-middle">лет</div>
 							</div>
-							<p class="page__text-medium-small">Команда разработки</p>
-							<div class="row-bottom">
+							<div class="mob-row-top-right">
+								<p class="page__text-medium-small">Команда разработки</p>
 								<div class="page__title-h4" style="--targetNum: 127"></div>
 								<div class="page__text_extra-middle">человек</div>
 							</div>
 						</div>
-						<div class="numbers-block-items-productivity">
-							<p class="page__text_extra-md">производительность</p>
-							<p class="page__text-medium-small">Обработка
+						<p class="page__text_extra-md more-pd">производительность</p>
+						<div class="mob-row-middle">
+							<div class="mob-row-middle-left">
+								<p class="page__text-medium-small">обработка</p>
 								<div class="page__title-h4" style="--targetNum: 200000"></div>
 								<div class="page__text_extra-middle">документов/час</div>
-							</p>
-							<p class="page__text-medium-small">Работа одновременно
+							</div>
+							<div class="mob-row-middle-right">
+								<p class="page__text-medium-small">Работа одновременно</p>
 								<div class="page__title-h4" style="--targetNum: 10000"></div>
-								<div class="page__text_extra-middle">пользователей</div>
-							</p>
+								<div class="page__text_extra-middle">человек</div>
+							</div>
 						</div>
-						<div class="numbers-block-items-spb">
-							<p class="page__text_extra-md">производительность операций СБП
+						<p class="page__text_extra-md more-pd">производительность операций СБП</p>
+						<div class="mob-row-bottom">
+							<div class="mob-row-bottom-left">
 								<div class="page__title-h4" style="--targetNum: 100"></div>
 								<div class="page__text_extra-middle">мс/операция</div>
+							</div>
+							<div class="mob-row-bottom-right">
 								<div class="page__title-h4" style="--targetNum: 50000"></div>
 								<div class="page__text_extra-middle">переводов/час</div>
-								<div class="page__title-h4" style="--targetNum: 70"></div>
-								<div class="page__text_extra-middle">транзакций/с</div>
-							</p>
+							</div>
+						</div>
+						<div class="mob-row-bottom-bottom">
+							<div class="page__title-h4" style="--targetNum: 70"></div>
+							<div class="page__text_extra-middle">транзакций/с</div>
 						</div>
 					</div>
 					<div class="page__btn open-modal" data-modal="modal">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</div>
 				</div>
-			</div>
-		</section>
-		<section class="clients" id="clients">
-			<div class="mob">
-				<h3 class="page__title-h3"><span>Клиенты</h3>
-				<div class="tag_cloud"></div>
-			</div>
-			<div class="wrapper">
-				<div class="clients-block">
-					<h3 class="page__title-h3"><span>Клиенты</h3>
+				<div class="wrapper">
+					<div class="numbers-block">
+						<h3 class="page__title-h3-numbers"><span> ЦИФРЫ </span></h3>
+						<div class="numbers-block-items">
+							<div class="numbers-block-items-platform">
+								<p class="page__text_extra-md">разработка платформы</p>
+								<p class="page__text-medium-small">Развиваем платформу</p>
+								<div class="row-top">
+									<div class="page__title-h4" style="--targetNum: 25"></div>
+									<div class="page__text_extra-middle">лет</div>
+								</div>
+								<p class="page__text-medium-small">Команда разработки</p>
+								<div class="row-bottom">
+									<div class="page__title-h4" style="--targetNum: 127"></div>
+									<div class="page__text_extra-middle">человек</div>
+								</div>
+							</div>
+							<div class="numbers-block-items-productivity">
+								<p class="page__text_extra-md">производительность</p>
+								<p class="page__text-medium-small">Обработка
+									<div class="page__title-h4" style="--targetNum: 200000"></div>
+									<div class="page__text_extra-middle">документов/час</div>
+								</p>
+								<p class="page__text-medium-small">Работа одновременно
+									<div class="page__title-h4" style="--targetNum: 10000"></div>
+									<div class="page__text_extra-middle">пользователей</div>
+								</p>
+							</div>
+							<div class="numbers-block-items-spb">
+								<p class="page__text_extra-md">производительность операций СБП
+									<div class="page__title-h4" style="--targetNum: 100"></div>
+									<div class="page__text_extra-middle">мс/операция</div>
+									<div class="page__title-h4" style="--targetNum: 50000"></div>
+									<div class="page__text_extra-middle">переводов/час</div>
+									<div class="page__title-h4" style="--targetNum: 70"></div>
+									<div class="page__text_extra-middle">транзакций/с</div>
+								</p>
+							</div>
+						</div>
+						<div class="page__btn open-modal" data-modal="modal">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</div>
+					</div>
 				</div>
-			</div>
-			<div class="tag_cloud"></div>
-			<div class="wrapper">
-				<div class="clients-block">
-					<p class="page__text-medium-small"><span>*</span> Клиенты СБП</p>
-					<div class="page__btn open-modal" data-modal="modal">список клиентов</div>
-				</div>
-			</div>
-		</section>
-		<section class="news" id="news">
-			<div class="wrapper">
-				<h3 class="page__title-h3"><span>Новости</span> о платформе</h3>
+			</section>
+			<section class="clients" id="clients">
 				<div class="mob">
-					<div class="mob-slider-news">
-						<div class="page__img"><img src="assets/img/news-slider.svg"></div>
-						<div class="page__img"><img src="assets/img/news-slider.svg"></div>
-						<div class="page__img"><img src="assets/img/news-slider.svg"></div>
-					</div>
+					<h3 class="page__title-h3"><span>Клиенты</h3>
+					<div class="tag_cloud"></div>
 				</div>
-				<div class="news-block">
-					<div class="news-block-items">
-						<div class="news-block-items-spb">
-							<div class="page__img"><img src="assets/img/spb-logo.svg"></div>
-							<p class="page__text-medium-small">10.09.2020</p>
-							<p class="page__text-bold_middle">«Диасофт» – в числе официальных сертифицированных
-								поставщиков решений для Системы быстрых платежей</p>
-							<div class="polygon">
-								<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195"
-											stroke="white" stroke-width="2.30068" />
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="news-block-items-spo">
-							<div class="page__img"><img src="assets/img/nfa.svg"></div>
-							<p class="page__text-medium-small">02.09.2020</p>
-							<p class="page__text-bold_middle">Сергей Добриднюк о комплексном подходе к решению задачи
-								автоматизации работы<br> с СБП</p>
-							<div class="polygon">
-								<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195"
-											stroke="white" stroke-width="2.30068" />
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="news-block-items-conews">
-							<div class="page__img"><img src="assets/img/c-news.svg"></div>
-							<p class="page__text-medium-small">02.09.2020</p>
-							<p class="page__text-bold_middle">«Универсальные» микросервисы: почему «Интерпромбанк»
-								выбрал необычный способ подключения к СБП</p>
-							<div class="polygon">
-								<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195"
-											stroke="white" stroke-width="2.30068" />
-									</svg>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="page__btn open-modal" data-modal="modal">еще новости</div>
-				</div>
-			</div>
-		</section>
-		<section class="transition" id="transition">
-			<div class="mob">
 				<div class="wrapper">
-					<div class="page__img"><img src="assets/img/iso.svg"></div>
-				</div>
-				<div class="background-grey">
-					<p class="page__text-medium-middle"><span>«Диасофт»</span> ведет активную подготовку к глобальному
-						переходу финансовых систем на новый стандарт <span>ISO 20022.</span> Идет процесс разработки
-						механизмов формирования сообщений SWIFT в формате ISO 20022 с возможностью отправки в составе
-						электронного сообщения ED506 в формате <span>УФЭБС.</span></p>
-				</div>
-				<div class="background-white">
-					<p class="page__text-medium">Узнайте о других планах по развитию<br> платформы в 2021 году</p>
-				</div>
-				<div class="page__btn open-modal" data-modal="modal">запись вебинара</div>
-				<div class="wrapper">
-					<h3 class="page__title-h3">обратная связь</h3>
-					<p class="page__text-bold-thirty">Остались вопросы?</p>
-					<p class="page__text-medium">Напишите нам, и мы обязательно вам ответим!</p>
-					<div class="form">
-						<form action="">
-							<input class="place" type="text" placeholder="Ваше имя" required>
-						</form>
-						<div class="background-red"><a class="page__text-bold" href="#">Email <span>
-									voodoos.lab@gmail.com</a></div>
-						<textarea class="textarea">Ваш вопрос </textarea>
+					<div class="clients-block">
+						<h3 class="page__title-h3"><span>Клиенты</h3>
 					</div>
 				</div>
-				<div class="page__btn">отправить</div>
-				<div class="footer-mob">
+				<div class="tag_cloud"></div>
+				<div class="wrapper">
+					<div class="clients-block">
+						<p class="page__text-medium-small"><span>*</span> Клиенты СБП</p>
+						<div class="page__btn open-modal" data-modal="modal">список клиентов</div>
+					</div>
+				</div>
+			</section>
+			<section class="news" id="news">
+				<div class="wrapper">
+					<h3 class="page__title-h3"><span>Новости</span> о платформе</h3>
+					<div class="mob">
+						<div class="mob-slider-news">
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+							<div class="page__img"><img src="assets/img/news-slider.svg"></div>
+						</div>
+					</div>
+					<div class="news-block">
+						<div class="news-block-items">
+							<div class="news-block-items-spb">
+								<div class="page__img"><img src="assets/img/spb-logo.svg"></div>
+								<p class="page__text-medium-small">10.09.2020</p>
+								<p class="page__text-bold_middle">«Диасофт» – в числе официальных сертифицированных поставщиков решений для Системы быстрых платежей</p>
+								<div class="polygon">
+									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195" stroke="white" stroke-width="2.30068"/>
+</svg>
+									</div>
+								</div>
+							</div>
+							<div class="news-block-items-spo">
+								<div class="page__img"><img src="assets/img/nfa.svg"></div>
+								<p class="page__text-medium-small">02.09.2020</p>
+								<p class="page__text-bold_middle">Сергей Добриднюк о комплексном подходе к решению задачи автоматизации работы<br> с СБП</p>
+								<div class="polygon">
+									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195" stroke="white" stroke-width="2.30068"/>
+</svg>
+									</div>
+								</div>
+							</div>
+							<div class="news-block-items-conews">
+								<div class="page__img"><img src="assets/img/c-news.svg"></div>
+								<p class="page__text-medium-small">02.09.2020</p>
+								<p class="page__text-bold_middle">«Универсальные» микросервисы: почему «Интерпромбанк» выбрал необычный способ подключения к СБП</p>
+								<div class="polygon">
+									<div class="polygon__item"><svg width="25" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.486084 10.0002H20.4254M20.4254 10.0002L11.6061 1.18091M20.4254 10.0002L11.6061 18.8195" stroke="white" stroke-width="2.30068"/>
+</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page__btn open-modal" data-modal="modal">еще новости</div>
+					</div>
+				</div>
+			</section>
+			<section class="transition" id="transition">
+				<div class="mob">
 					<div class="wrapper">
-						<p class="page__text-medium">Нажимая кнопку отправить Вы соглашаетесь на предоставление
-							персональных данных</p>
-						<p class="page__text-medium-small"><span> © </span> 2020 Diasoft</p>
-						<div class="row-mail">
-							<p class="page__text-medium">info<span>@</span>diasoft.ru</p>
-							<p class="page__text-medium">sales<span>@</span>diasoft.ru</p>
-						</div><a class="page__text-bold-thirty" href="#"><span>+7 495</span> 780—7575</a>
-						<div class="row-soc"><a href="#">
-								<div class="page__img"><img src="assets/img/facebook.svg"></div>
-							</a><a class="youtube" href="#">
-								<div class="page__img"><img src="assets/img/youtube.svg"></div>
-							</a><a class="telegram" href="#">
-								<div class="page__img"><img src="assets/img/telegram.svg"></div>
-							</a></div>
-					</div>
-				</div>
-			</div>
-			<div class="wrapper">
-				<div class="page__title-h3"><span>ПЕРЕХОД НА</span><br> ISO 20022</div>
-				<div class="transition-block">
-					<div class="transition-block-iso">
 						<div class="page__img"><img src="assets/img/iso.svg"></div>
 					</div>
-					<div class="transition-block-record">
-						<div class="background">
-							<p class="page__text-medium-middle"><span>«Диасофт»</span> ведет активную подготовку к
-								глобальному переходу финансовых систем на новый стандарт <span>ISO 20022.</span> Идет
-								процесс разработки механизмов формирования сообщений SWIFT в формате ISO 20022 с
-								возможностью отправки в составе электронного сообщения ED506 в формате
-								<span>УФЭБС.</span></p>
-						</div>
-						<div class="record-row">
-							<p class="page__text-medium">Узнайте о других планах по развитию платформы в 2021 году</p>
-							<div class="page__btn open-modal" data-modal="modal">ЗАПИСЬ ВЕБИНАРА</div>
-						</div>
+					<div class="background-grey">
+						<p class="page__text-medium-middle"><span>«Диасофт»</span> ведет активную подготовку к глобальному переходу финансовых систем на новый стандарт <span>ISO 20022.</span> Идет процесс разработки механизмов формирования сообщений SWIFT в формате ISO 20022 с возможностью отправки в составе электронного сообщения ED506 в формате <span>УФЭБС.</span></p>
 					</div>
-				</div>
-				<div class="connection-block">
-					<h3 class="page__title-h3"><span>обратная</span> связь</h3>
-					<p class="page__text-bold-thirty">Остались вопросы?</p>
-					<p class="page__text-medium">Напишите нам, и мы обязательно вам ответим!</p>
-					<div class="page__btn open-modal" data-modal="modal">ОБРАТНАЯ СВЯЗЬ</div>
-				</div>
-				<footer class="footer">
+					<div class="background-white">
+						<p class="page__text-medium">Узнайте о других планах по развитию<br> платформы в 2021 году</p>
+					</div>
+					<div class="page__btn open-modal" data-modal="modal">запись вебинара</div>
 					<div class="wrapper">
-						<div class="footer-block">
-							<div class="footer-block-row">
-								<div class="copy">
-									<div class="page__img"><img src="assets/img/copy.svg"></div>
-									<p class="page__text-medium-small">2021 Diasoft</p>
-								</div><a class="page__btn" href="#banner">наверх </a>
-								<p class="page__text-bold-thirty"><span>+7 495</span> 780—7575</p>
+						<h3 class="page__title-h3">обратная связь</h3>
+						<p class="page__text-bold-thirty">Остались вопросы?</p>
+						<p class="page__text-medium">Напишите нам, и мы обязательно вам ответим!</p>
+						<div class="form">
+							<form action="">
+								<input class="place" type="text" placeholder="Ваше имя" required>
+							</form>
+							<div class="background-red"><a class="page__text-bold" href="#">Email <span> voodoos.lab@gmail.com</a></div>
+							<textarea class="textarea">Ваш вопрос </textarea>
+						</div>
+					</div>
+					<div class="page__btn">отправить</div>
+					<div class="footer-mob">
+						<div class="wrapper">
+							<p class="page__text-medium">Нажимая кнопку отправить Вы соглашаетесь на предоставление персональных данных</p>
+							<p class="page__text-medium-small"><span> © </span> 2020 Diasoft</p>
+							<div class="row-mail">
+								<p class="page__text-medium">info<span>@</span>diasoft.ru</p>
+								<p class="page__text-medium">sales<span>@</span>diasoft.ru</p>
+							</div><a class="page__text-bold-thirty" href="#"><span>+7 495</span> 780—7575</a>
+							<div class="row-soc"><a href="#">
+									<div class="page__img"><img src="assets/img/facebook.svg"></div></a><a class="youtube" href="#">
+									<div class="page__img"><img src="assets/img/youtube.svg"></div></a><a class="telegram" href="#">
+									<div class="page__img"><img src="assets/img/telegram.svg"></div></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper">
+					<div class="page__title-h3"><span>ПЕРЕХОД НА</span><br> ISO 20022</div>
+					<div class="transition-block">
+						<div class="transition-block-iso">
+							<div class="page__img"><img src="assets/img/iso.svg"></div>
+						</div>
+						<div class="transition-block-record">
+							<div class="background">
+								<p class="page__text-medium-middle"><span>«Диасофт»</span> ведет активную подготовку к глобальному переходу финансовых систем на новый стандарт <span>ISO 20022.</span> Идет процесс разработки механизмов формирования сообщений SWIFT в формате ISO 20022 с возможностью отправки в составе электронного сообщения ED506 в формате <span>УФЭБС.</span></p>
 							</div>
-							<div class="footer-block-bottom">
-								<div class="sites">
-									<p class="page__text-medium">info<span>@</span>diasoft.ru</p>
-									<p class="page__text-medium">sales<span>@</span>diasoft.ru</p>
-								</div>
-								<div class="soc"><a href="#">
-										<div class="page__img"><img src="assets/img/facebook.svg"></div>
-									</a><a class="youtube" href="#">
-										<div class="page__img"><img src="assets/img/youtube.svg"></div>
-									</a><a class="telegram" href="#">
-										<div class="page__img"><img src="assets/img/telegram.svg"></div>
-									</a></div>
+							<div class="record-row">
+								<p class="page__text-medium">Узнайте о других планах по развитию платформы в 2021 году</p>
+								<div class="page__btn open-modal" data-modal="modal">ЗАПИСЬ ВЕБИНАРА</div>
 							</div>
 						</div>
 					</div>
-				</footer>
+					<div class="connection-block">
+						<h3 class="page__title-h3"><span>обратная</span> связь</h3>
+						<p class="page__text-bold-thirty">Остались вопросы?</p>
+						<p class="page__text-medium">Напишите нам, и мы обязательно вам ответим!</p>
+						<div class="page__btn open-modal" data-modal="modal">ОБРАТНАЯ СВЯЗЬ</div>
+					</div>
+					<footer class="footer">
+						<div class="wrapper">
+							<div class="footer-block">
+								<div class="footer-block-row">
+									<div class="copy">
+										<div class="page__img"><img src="assets/img/copy.svg"></div>
+										<p class="page__text-medium-small">2021 Diasoft</p>
+									</div><a class="page__btn" href="#banner">наверх </a>
+									<p class="page__text-bold-thirty"><span>+7 495</span> 780—7575</p>
+								</div>
+								<div class="footer-block-bottom">
+									<div class="sites">
+										<p class="page__text-medium">info<span>@</span>diasoft.ru</p>
+										<p class="page__text-medium">sales<span>@</span>diasoft.ru</p>
+									</div>
+									<div class="soc"><a href="#">
+											<div class="page__img"><img src="assets/img/facebook.svg"></div></a><a class="youtube" href="#">
+											<div class="page__img"><img src="assets/img/youtube.svg"></div></a><a class="telegram" href="#">
+											<div class="page__img"><img src="assets/img/telegram.svg"></div></a></div>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</section>
+			<div class="modal" id="modal" data-modal="modal">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
 			</div>
-		</section>
-		<div class="modal" id="modal" data-modal="modal">
-			<div class="modal__in modal-container">
-				<div class="modal__title">modal</div>
-				<div class="modal__body">test</div>
+			<div class="modal" id="demo" data-modal="demo">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
+			</div>
+			<div class="modal" id="numbers" data-modal="numbers">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
+			</div>
+			<div class="modal" id="clients" data-modal="clients">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
+			</div>
+			<div class="modal" id="news" data-modal="news">
+				<div class="modal__in modal-container">
+					<div class="modal__title">modal</div>
+					<div class="modal__body">test</div>
+				</div>
 			</div>
 		</div>
-		<div class="modal" id="demo" data-modal="demo">
-			<div class="modal__in modal-container">
-				<div class="modal__title">modal</div>
-				<div class="modal__body">test</div>
-			</div>
-		</div>
-		<div class="modal" id="numbers" data-modal="numbers">
-			<div class="modal__in modal-container">
-				<div class="modal__title">modal</div>
-				<div class="modal__body">test</div>
-			</div>
-		</div>
-		<div class="modal" id="clients" data-modal="clients">
-			<div class="modal__in modal-container">
-				<div class="modal__title">modal</div>
-				<div class="modal__body">test</div>
-			</div>
-		</div>
-		<div class="modal" id="news" data-modal="news">
-			<div class="modal__in modal-container">
-				<div class="modal__title">modal</div>
-				<div class="modal__body">test</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/debug-grid-create.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/animations.js"></script>
-	<script src="js/tagcloud.min.js"></script>
-	<script src="js/modal.js"></script>
-</body>
-
+		<script src="js/debug-grid-create.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/animations.js"></script>
+		<script src="js/tagcloud.min.js"></script>
+		<script src="js/modal.js"></script>
+	</body>
 </html>
