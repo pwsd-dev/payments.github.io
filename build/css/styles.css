@@ -1548,13 +1548,13 @@ input:focus {
 }
 
 .platform .polygon {
-  width: 4.6875vw;
+  width: 4.16667vw;
   height: 4.6875vw;
   margin-right: 0.78125vw;
   background-color: #b41f34;
   z-index: 100;
-  -webkit-clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
-          clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
+  -webkit-clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 24%);
+          clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 24%);
 }
 
 .platform .polygon:hover {
@@ -1571,7 +1571,7 @@ input:focus {
   position: relative;
   width: 3.125vw;
   height: 3.125vw;
-  left: 0.78125vw;
+  left: 0.52083vw;
   top: 0.67708vw;
   z-index: 5000;
   max-width: 100%;
@@ -3099,8 +3099,8 @@ input:focus {
   background-color: #b41f34;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  -webkit-clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
-          clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
+  -webkit-clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 24%);
+          clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 24%);
 }
 
 .products-block .polygon__item {
@@ -3391,10 +3391,6 @@ input:focus {
 .advantages-block-item .page__text-medium span {
   position: absolute;
   top: -2.08333vw;
-}
-
-.advantages-block-item .left {
-  display: none;
 }
 
 .principles {
@@ -4323,17 +4319,17 @@ input:focus {
   position: relative;
   top: -14.0625vw;
   left: 18.22917vw;
-  width: 3.125vw;
+  width: 2.60417vw;
   height: 2.60417vw;
   margin-right: 0.78125vw;
   background-color: #b41f34;
   z-index: 100;
-  -webkit-clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
-          clip-path: polygon(13% 19%, 50% 0, 90% 16%, 90% 78%, 56% 99%, 14% 80%);
+  -webkit-clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 24%);
+          clip-path: polygon(50% 0, 100% 23%, 100% 77%, 50% 100%, 0 77%, 0 24%);
 }
 
 .news .polygon:hover {
-  background: transparent;
+  background: #000;
 }
 
 .news .polygon__item {
@@ -4346,7 +4342,7 @@ input:focus {
   position: relative;
   width: 1.5625vw;
   height: 1.5625vw;
-  left: 0.78125vw;
+  left: 0.52083vw;
   top: 0.46875vw;
   color: red;
   max-width: 100%;
@@ -4357,7 +4353,7 @@ input:focus {
 }
 
 .news .polygon__item svg:hover path {
-  stroke: red;
+  stroke: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -4884,6 +4880,10 @@ input:focus {
   .debugGrid > div {
     padding-left: 0.78125vw;
     padding-right: 0.78125vw;
+  }
+
+  .advantages-block-item .left {
+    left: 7.8125vw;
   }
 
   .clients .mob .tag_cloud .tag_cloud {
