@@ -1,6 +1,9 @@
 .banner{
     overflow: hidden;
     height: 1200px;
+    .laptopMd-block({
+        height: 1200px;
+    });
     .xs-block({
         height: 100vh;
     });
@@ -75,6 +78,10 @@
             &-background {
                 position: relative;
                 bottom: 100px;
+                .laptopMd-block({
+                    bottom: 140px;
+                    height: 900px;
+                });
                 .page__img {
                     .shift-left(18);
                     .size(46);
@@ -100,6 +107,9 @@
                 position: absolute;
                 bottom: 1px;
                 left: 100px;
+                .laptopMd-block({
+                    left: 130px;
+                });
             }
         }
     }

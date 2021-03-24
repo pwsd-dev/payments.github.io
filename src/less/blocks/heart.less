@@ -3,10 +3,16 @@
     &-block {
         .row-flex();
         position: relative;
-        
+        .laptopMd-block({
+            padding-bottom: 10%;
+        });
         &-description {
             .size(6);
-            
+            .col();
+            .laptopMd-block({
+                padding-top: 10%;
+                
+            });
             .page__text-bold_mid {
                 margin-bottom: 2%;
                 
@@ -69,6 +75,11 @@
                 top: 10px;
                 left: 0px;
                 height: 410px;
+            });
+
+            .laptopMd-block({
+                height: 500px;
+                top: -150px;
             });
             //overflow: auto;
             z-index: 10;

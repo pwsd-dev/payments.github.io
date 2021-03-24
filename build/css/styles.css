@@ -881,6 +881,10 @@ input:focus {
 
 .heart-block-description {
   width: calc(50% - 1.5625vw);
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 0.78125vw;
+  margin-right: 0.78125vw;
 }
 
 .heart-block-description .page__text-bold_mid {
@@ -3115,7 +3119,7 @@ input:focus {
   position: relative;
   width: 1.5625vw;
   height: 1.5625vw;
-  left: 0.52083vw;
+  left: 0.41667vw;
   top: 0.67708vw;
   color: red;
   max-width: 100%;
@@ -4347,7 +4351,7 @@ input:focus {
   position: relative;
   width: 1.5625vw;
   height: 1.5625vw;
-  left: 0.52083vw;
+  left: 0.46875vw;
   top: 0.46875vw;
   color: red;
   max-width: 100%;
@@ -4957,6 +4961,32 @@ input:focus {
   .debugGrid > div {
     padding-left: 0.78125vw;
     padding-right: 0.78125vw;
+  }
+
+  .banner {
+    height: 62.5vw;
+  }
+
+  .banner-block-img-background {
+    bottom: 140px;
+    height: 900px;
+  }
+
+  .banner-block-description .page__text_small {
+    left: 6.77083vw;
+  }
+
+  .heart-block {
+    padding-bottom: 10%;
+  }
+
+  .heart-block-description {
+    padding-top: 10%;
+  }
+
+  .heart-block-img {
+    height: 500px;
+    top: -150px;
   }
 
   .architect-block-calc-estimation-item_1-bg .page__text-medium-small-two::after {
