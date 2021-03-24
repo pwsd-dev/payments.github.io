@@ -149,7 +149,7 @@ section#platform.platform
                                         </svg>
                         p.page__text-bold_middle Эффективная маршрутизация платежных документов
             ul#someId.pay.pay-second
-                li.pay__li
+                li.pay__li(data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="500")
                     .polygon
                         .polygon__item
                             <svg width="58" height="55" viewBox="0 0 58 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,7 +170,7 @@ section#platform.platform
                                 <path d="M0 31.7188H10.875C11.3734 31.7188 11.7812 32.1266 11.7812 32.625V48.9375C11.7812 49.4359 11.3734 49.8438 10.875 49.8438H0" stroke="#B11832" stroke-width="2" stroke-miterlimit="10"/>
                                 </svg>
                     button(type="button" onclick="openBlock()").page__toggle
-                        a#openBlockBtn.page__text-bold_middle_top Быстрые расчеты и платежи
+                        a#openBlockBtn.page__text-bold_middle_top(data-aos="fade-right" data-aos-duration="700" data-aos-delay="800") Быстрые расчеты и платежи
                     .page__img
                         img(src="assets/img/line-red.svg")
                     //- .page__button
@@ -183,7 +183,7 @@ section#platform.platform
                     .page__text-medium Гибкое масштабирование решений при росте бизнеса и открытии новых точек обслуживания клиентов
             .platform-block-description
                 ul.block__ul
-                            li#otherId.block__li.otherpay
+                            li#otherId.block__li.otherpay.pay__li(data-aos="fade-down-right" data-aos-duration="800" data-aos-delay="2000")
                                 .polygon
                                     .polygon__item
                                         <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,14 +211,14 @@ section#platform.platform
                                             </defs>
                                             </svg>
                                 button(type="button" onclick="openBlockOther()").page__toggle
-                                    a#openBlockBtn.page__text-bold_middle_top Эффективная маршрутизация платежных документов
+                                    a#openBlockBtn.page__text-bold_middle_top(data-aos="fade-right" data-aos-duration="700" data-aos-delay="2200") Эффективная маршрутизация платежных документов
                                 .otherpay__li
                                     .page__text-medium Настройка процесса обработки документа в зависимости от его параметров
                                     .page__text-medium Контроль реквизитов документа в зависимости от его типа
                                     .page__text-medium Возможность отслеживания этапов обработки документа
                                 .page__img
                                     img(src="assets/img/line-red.svg")
-                            li#otherForm.block__li.otherForm
+                            li#otherForm.block__li.otherForm(data-aos="fade-down-right" data-aos-duration="900" data-aos-delay="1000")
                                 .polygon
                                     .polygon__item
                                         <svg width="50" height="43" viewBox="0 0 50 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -246,14 +246,14 @@ section#platform.platform
                                                     </defs>
                                                     </svg>    
                                 button(type="button" onclick="openBlockForm()").page__toggle 
-                                    a#openBlockBtn.page__text-bold_middle_top Формирование и обработка операций по денежным переводам
+                                    a#openBlockBtn.page__text-bold_middle_top(data-aos="fade-right" data-aos-duration="700" data-aos-delay="1200") Формирование и обработка операций по денежным переводам
                                 .page__img
                                     img(src="assets/img/line-red.svg")
                                 .otherForm__li
                                     .page__text-medium Настройка процесса обработки документа в зависимости от его параметров
                                     .page__text-medium Контроль реквизитов документа в зависимости от его типа
                                     .page__text-medium Возможность отслеживания этапов обработки документа
-                            li#inform.block__li.inform
+                            li#inform.block__li.inform(data-aos="fade-down-right" data-aos-duration="900" data-aos-delay="1400")
                                 .polygon
                                     .polygon__item
                                         <svg width="64" height="54" viewBox="0 0 64 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,13 +274,13 @@ section#platform.platform
                                         <path d="M35 11H53V41H35" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
                                         </svg>
                                 button(type="button" onclick="openBlockInform()").page__toggle
-                                    a#openBlockBtn.page__text-bold_middle_top Поддержка различных форматов обмена <br> информацией
+                                    a#openBlockBtn.page__text-bold_middle_top(data-aos="fade-right" data-aos-duration="700" data-aos-delay="1600") Поддержка различных форматов обмена <br> информацией
                                 .page__img
                                     img(src="assets/img/line-red.svg")
                                 .page__button
                                 .inform__li
                                     .page__text-medium Единое информационное пространство для проведения расчетов современного универсального баека и его филиалов
-                            li#connect.block__li.connect
+                            li#connect.block__li.connect(data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="800")
                                 .polygon
                                     .polygon
                                         .polygon__item
@@ -306,7 +306,7 @@ section#platform.platform
                                             </defs>
                                             </svg>
                                 button(type="button" onclick="openBlockConnect()").page__toggle
-                                    a#openBlockBtn.page__text-bold_middle_top Простое подключение новых платформ и расчетных систем
+                                    a#openBlockBtn.page__text-bold_middle_top(data-aos="fade-right" data-aos-duration="700" data-aos-delay="1000") Простое подключение новых платформ и расчетных систем
                                 .connect__li.connect
                                     .page__text-medium Открытая архитектура
                                     .page__text-medium Готовый слой API для интеграции в существующую IT-инфраструктуру банка

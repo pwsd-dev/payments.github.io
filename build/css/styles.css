@@ -1629,6 +1629,7 @@ input:focus {
 
 .architect .page__title-h3 {
   width: calc(83.33333333333334% - 1.5625vw);
+  line-height: 4.6875vw;
   margin-bottom: 5%;
 }
 
@@ -2923,6 +2924,7 @@ input:focus {
 .products .page__title-h3 {
   text-transform: uppercase;
   margin-bottom: 3%;
+  line-height: 4.16667vw;
 }
 
 .products .mob {
@@ -3093,7 +3095,7 @@ input:focus {
 }
 
 .products-block .polygon {
-  width: 3.125vw;
+  width: 2.60417vw;
   height: 3.125vw;
   margin-right: 0.78125vw;
   background-color: #b41f34;
@@ -3113,7 +3115,7 @@ input:focus {
   position: relative;
   width: 1.5625vw;
   height: 1.5625vw;
-  left: 0.78125vw;
+  left: 0.52083vw;
   top: 0.67708vw;
   color: red;
   max-width: 100%;
@@ -3142,6 +3144,7 @@ input:focus {
 }
 
 .safety .page__title-h3 {
+  line-height: 4.6875vw;
   width: calc(58.333333333333336% - 1.5625vw);
   text-transform: uppercase;
   padding-top: 3%;
@@ -3340,6 +3343,7 @@ input:focus {
 
 .advantages .page__title-h3-white {
   text-transform: uppercase;
+  line-height: 4.6875vw;
   width: calc(58.333333333333336% - 1.5625vw);
   padding-top: 5%;
   padding-bottom: 4%;
@@ -3402,6 +3406,7 @@ input:focus {
   width: calc(66.66666666666667% - 1.5625vw);
   padding-top: 5%;
   padding-bottom: 4%;
+  line-height: 4.6875vw;
 }
 
 .principles-block {
