@@ -11,6 +11,10 @@ module.exports = {
             width: "1920px",
             fields: "15px"
         },
+        laptopBigLd: {
+            width: "1680px",
+            fields: "15px"
+        },
         laptopBig: {
             width: "1600px",
             fields: "15px"
