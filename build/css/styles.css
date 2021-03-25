@@ -4958,6 +4958,71 @@ input:focus {
     padding-left: 0.78125vw;
     padding-right: 0.78125vw;
   }
+
+  .banner {
+    height: 62.5vw;
+  }
+
+  .banner-block-img-background {
+    bottom: 140px;
+    height: 950px;
+  }
+
+  .architect-block-calc-estimation-item_1-bg .page__text-medium-small {
+    padding-left: 2.60417vw;
+    padding-top: 0.52083vw;
+  }
+
+  .architect-block-calc-estimation-item_1-bg .page__text-medium-small-two {
+    padding-left: 1.5625vw;
+    padding-top: 0.52083vw;
+  }
+
+  .architect-block-calc-estimation-item_1-bg .page__text-medium-small-two::after {
+    height: 22.39583vw;
+    top: -21.09375vw;
+  }
+
+  .architect-block-calc-estimation-item_1-bg .page__text-medium-small-grey {
+    top: 4.94792vw;
+    left: 15.10417vw;
+  }
+
+  .architect-block-calc-estimation-item_3-big-bg .page__text-medium-small-grey {
+    padding-left: 0.78125vw;
+  }
+
+  .architect-block-calc-estimcentr-item_1-bg .page__text-medium-small {
+    padding-left: 3.48958vw;
+    padding-top: 0.52083vw;
+  }
+
+  .architect-block-calc-estimcentr-item_1-bg .page__text-medium-small-grey {
+    padding-left: 3.90625vw;
+    padding-top: 1.04167vw;
+  }
+
+  .architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small::after {
+    left: 31.77083vw;
+  }
+
+  .architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small-grey {
+    left: 7.29167vw;
+  }
+
+  .architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small-grey::before {
+    left: -7.8125vw;
+  }
+
+  .architect-block-calc-estimcentr-item_3-big-bg .page__text-medium-small-grey::after {
+    left: 25.52083vw;
+  }
+
+  .architect-block-calc-estimcentr-item_4-small-bg .page__text-medium-small-grey-bank {
+    font-size: 0.78125vw;
+    top: 2.60417vw;
+    left: 3.90625vw;
+  }
 }
 
 @media screen and (max-width: 1367px) {
