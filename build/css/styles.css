@@ -4916,6 +4916,11 @@ input:focus {
     padding-right: 0.78125vw;
   }
 
+  .banner-block .page__text_Italic::before,
+  .banner-block .page__text_Italic::after {
+    width: 2.23958vw;
+  }
+
   .heart-block {
     padding-bottom: 14%;
   }
@@ -4963,9 +4968,18 @@ input:focus {
     height: 62.5vw;
   }
 
+  .banner-block .page__text_Italic::before,
+  .banner-block .page__text_Italic::after {
+    width: 2.23958vw;
+  }
+
   .banner-block-img-background {
     bottom: 140px;
     height: 950px;
+  }
+
+  .banner-block-description .page__text_small {
+    left: 6.25vw;
   }
 
   .architect-block-calc-estimation-item_1-bg .page__text-medium-small {
