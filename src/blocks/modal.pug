@@ -1,20 +1,30 @@
 .modal#modal(data-modal="modal")
     .modal__in.modal-container
-        .modal__title modal
-        .modal__body test
-.modal#demo(data-modal="demo")
-    .modal__in.modal-container
-        .modal__title modal
-        .modal__body test
-.modal#numbers(data-modal="numbers")
-    .modal__in.modal-container
-        .modal__title modal
-        .modal__body test
-.modal#clients(data-modal="clients")
-    .modal__in.modal-container
-        .modal__title modal
-        .modal__body test
-.modal#news(data-modal="news")
-    .modal__in.modal-container
-        .modal__title modal
-        .modal__body test
+
+        .modal__title.page__title-h3 <span> обратная </span> связь
+        p.page__text-bold-thirty Остались вопросы?
+        p.page__text-medium Напишите нам, и мы обязательно вам ответим!
+        .form
+            form(action="")
+                input.place(type="text" placeholder="Ваше имя" required ) 
+            .background-red
+                a(href="#").page__text-bold Email <span> voodoos.lab@gmail.com
+            textarea.textarea Ваш вопрос 
+        .page__btn отправить
+        p.page__text-small Нажимая кнопку отправить Вы соглашаетесь на предоставление персональных данных
+//- .modal#demo(data-modal="demo")
+//-     .modal__in.modal-container
+//-         .modal__title modal
+//-         .modal__body test
+//- .modal#numbers(data-modal="numbers")
+//-     .modal__in.modal-container
+//-         .modal__title modal
+//-         .modal__body test
+//- .modal#clients(data-modal="clients")
+//-     .modal__in.modal-container
+//-         .modal__title modal
+//-         .modal__body test
+//- .modal#news(data-modal="news")
+//-     .modal__in.modal-container
+//-         .modal__title modal
+//-         .modal__body test

@@ -272,6 +272,7 @@
         &:hover .page__img {
             transform: translateX(20px);
             transition: .2s ease;
+            
         }
 
         .activeTwo  {
@@ -301,18 +302,29 @@
             width: 80%;
             background-color: #fff;
             transition: .2s ease;
+            
             .page__img {
                 font-size: 0;
                 transition: .3s ease;
+                
             }
         }
         .otherForm {
             position: relative;
             .page__text-bold_middle_top {
                 margin-right: 20px;
+                
             } 
             .page__button {
                 display: none;
+                
+            }
+
+            .page__img {
+                .laptopMiddle-block({
+                    position: relative;
+                    left: -90px;
+                });
             }
             
         }
@@ -350,6 +362,7 @@
             .page__img {
                 transform: rotate(180deg);
                 transition: .2s ease;
+                
             }
 
             button {
@@ -391,6 +404,13 @@
             } 
             .page__button {
                 display: none;
+            }
+
+            .page__img {
+                .laptopMiddle-block({
+                    position: relative;
+                    left: -20px;
+                });
             }
         }
         .connect__li {
